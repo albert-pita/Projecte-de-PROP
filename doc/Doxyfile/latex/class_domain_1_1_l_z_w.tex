@@ -1,0 +1,216 @@
+\hypertarget{class_domain_1_1_l_z_w}{}\doxysection{Referència de la Classe Domain.\+L\+ZW}
+\label{class_domain_1_1_l_z_w}\index{Domain.LZW@{Domain.LZW}}
+
+
+Classe que representa l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_w}{L\+ZW}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Domain.\+L\+ZW\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_domain_1_1_l_z_w}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_l_z_w_abbd2f93fed98f7c786e00acd2ec4b78f}{L\+ZW}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_l_z_w_ac1f5b409490826433b468070f7c93d52}{compress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Realitza la compressió d\textquotesingle{}un arxiu .txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_l_z_w_ab0a6c2c2f9e5f6cd03ac05e3ad800144}{decompress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Realitza la descompressió d\textquotesingle{}un arxiu .lzw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_w}{L\+ZW}}. 
+
+Classe que hereda de \mbox{\hyperlink{class_domain_1_1_algorithm}{Algorithm}}. Consta de dues operacions, {\itshape compress} i {\itshape decompress}.
+
+\begin{DoxyAuthor}{Autor}
+Carlos Gascón Dominguez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_l_z_w_abbd2f93fed98f7c786e00acd2ec4b78f}\label{class_domain_1_1_l_z_w_abbd2f93fed98f7c786e00acd2ec4b78f}} 
+\index{Domain.LZW@{Domain.LZW}!LZW@{LZW}}
+\index{LZW@{LZW}!Domain.LZW@{Domain.LZW}}
+\doxysubsubsection{\texorpdfstring{LZW()}{LZW()}}
+{\footnotesize\ttfamily Domain.\+L\+Z\+W.\+L\+ZW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa al declarar un nou \mbox{\hyperlink{class_domain_1_1_l_z_w}{L\+ZW}}. \begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un \mbox{\hyperlink{class_domain_1_1_l_z_w}{L\+ZW}} buit. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_l_z_w_ac1f5b409490826433b468070f7c93d52}\label{class_domain_1_1_l_z_w_ac1f5b409490826433b468070f7c93d52}} 
+\index{Domain.LZW@{Domain.LZW}!compress@{compress}}
+\index{compress@{compress}!Domain.LZW@{Domain.LZW}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void Domain.\+L\+Z\+W.\+compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Realitza la compressió d\textquotesingle{}un arxiu .txt. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}arxiu .txt que es vol comprimir ja ha estat seleccionat. Aquest arxiu no està buit. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+L\textquotesingle{}arxiu destí sleccionat prèviament contindrà el resultat de la compressió. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                               \{}
+\DoxyCodeLine{43         }
+\DoxyCodeLine{44         CtrlDomain.initializeCompressionBitBuffer();}
+\DoxyCodeLine{45         }
+\DoxyCodeLine{46         TreeMap<String,Integer> dict = \textcolor{keyword}{new} TreeMap<>();}
+\DoxyCodeLine{47         }
+\DoxyCodeLine{48         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 256; i++)\{}
+\DoxyCodeLine{49             dict.put(Character.toString((\textcolor{keywordtype}{char}) i), i);}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51         }
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{53         \textcolor{keywordtype}{int} code = 257;}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} binsize = 9;}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} max = 511;}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} auxcode;}
+\DoxyCodeLine{57         \textcolor{keywordtype}{char} B;}
+\DoxyCodeLine{58         String prefix = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{59         String auxprefix;}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61          \textcolor{keywordflow}{while}((x = CtrlDomain.read()) != -\/1) \{}
+\DoxyCodeLine{62             B = (char) x;}
+\DoxyCodeLine{63             auxprefix = prefix + B;}
+\DoxyCodeLine{64             \textcolor{keywordflow}{if}(dict.containsKey(auxprefix) == \textcolor{keyword}{true}) prefix += B;}
+\DoxyCodeLine{65             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{66                 dict.put(auxprefix, code);}
+\DoxyCodeLine{67                 code++;}
+\DoxyCodeLine{68                 auxcode = dict.get(prefix);}
+\DoxyCodeLine{69                 CtrlDomain.writeBitBuffer(auxcode, binsize);}
+\DoxyCodeLine{70                 prefix = Character.toString(B);}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if}(dict.size() > max)\{}
+\DoxyCodeLine{73                     binsize++;}
+\DoxyCodeLine{74                     max = (int) (Math.pow(2, binsize)) -\/ 1;}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         auxcode = dict.get(prefix);}
+\DoxyCodeLine{78         CtrlDomain.writeBitBuffer(auxcode, binsize);}
+\DoxyCodeLine{79         CtrlDomain.writeBitBuffer(256, binsize);}
+\DoxyCodeLine{80         CtrlDomain.closeBitBuffer(this.\mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\_isFile}}());}
+\DoxyCodeLine{81     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_l_z_w_ab0a6c2c2f9e5f6cd03ac05e3ad800144}\label{class_domain_1_1_l_z_w_ab0a6c2c2f9e5f6cd03ac05e3ad800144}} 
+\index{Domain.LZW@{Domain.LZW}!decompress@{decompress}}
+\index{decompress@{decompress}!Domain.LZW@{Domain.LZW}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily void Domain.\+L\+Z\+W.\+decompress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Realitza la descompressió d\textquotesingle{}un arxiu .lzw. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}arxiu .lzw que es vol descomprimir ja ha estat seleccionat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+L\textquotesingle{}arxiu destí seleccionat prèviament contindrà el resultat de la descompressió. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                 \{}
+\DoxyCodeLine{92         }
+\DoxyCodeLine{93         CtrlDomain.initializeDecompressionBitBuffer();}
+\DoxyCodeLine{94         }
+\DoxyCodeLine{95         TreeMap<Integer,String> dict = \textcolor{keyword}{new} TreeMap<>();}
+\DoxyCodeLine{96         }
+\DoxyCodeLine{97         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 256; i++) \{}
+\DoxyCodeLine{98             dict.put(i, Character.toString((\textcolor{keywordtype}{char}) i));}
+\DoxyCodeLine{99         \}}
+\DoxyCodeLine{100         }
+\DoxyCodeLine{101         \textcolor{keywordtype}{int} code = 257;}
+\DoxyCodeLine{102         \textcolor{keywordtype}{int} max = 510;}
+\DoxyCodeLine{103         \textcolor{keywordtype}{int} binsize = 9;}
+\DoxyCodeLine{104         String entry = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{105         String auxstr;}
+\DoxyCodeLine{106         \textcolor{keywordtype}{char} B;}
+\DoxyCodeLine{107         \textcolor{keywordtype}{int} old, index;}
+\DoxyCodeLine{108                 }
+\DoxyCodeLine{109         index = CtrlDomain.readBitBuffer(binsize);}
+\DoxyCodeLine{110         auxstr = dict.get(index);}
+\DoxyCodeLine{111         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < auxstr.length();i++)\{}
+\DoxyCodeLine{112             CtrlDomain.write(auxstr.charAt(i));}
+\DoxyCodeLine{113         \}}
+\DoxyCodeLine{114         }
+\DoxyCodeLine{115         old = index;}
+\DoxyCodeLine{116         }
+\DoxyCodeLine{117         \textcolor{keywordflow}{while}((index = CtrlDomain.readBitBuffer(binsize)) != 256)\{}
+\DoxyCodeLine{118             \textcolor{keywordflow}{if}(dict.containsKey(index) == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{119                 entry = dict.get(index);}
+\DoxyCodeLine{120                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < entry.length();i++)\{}
+\DoxyCodeLine{121                     CtrlDomain.write(entry.charAt(i));}
+\DoxyCodeLine{122                 \}}
+\DoxyCodeLine{123                 B = dict.get(index).charAt(0);}
+\DoxyCodeLine{124                 auxstr = dict.get(old) + B;}
+\DoxyCodeLine{125                 dict.put(code, auxstr);}
+\DoxyCodeLine{126                 code++;}
+\DoxyCodeLine{127             \}}
+\DoxyCodeLine{128             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{129                 B = dict.get(old).charAt(0);}
+\DoxyCodeLine{130                 auxstr = dict.get(old) + B;}
+\DoxyCodeLine{131                 dict.put(code, auxstr);}
+\DoxyCodeLine{132                 code++;}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < auxstr.length();i++)\{}
+\DoxyCodeLine{134                     CtrlDomain.write(auxstr.charAt(i));}
+\DoxyCodeLine{135                 \}}
+\DoxyCodeLine{136             \}}
+\DoxyCodeLine{137             old = index;}
+\DoxyCodeLine{138             \textcolor{keywordflow}{if}(dict.size() > max)\{}
+\DoxyCodeLine{139                 binsize++;}
+\DoxyCodeLine{140                 max = (int) (Math.pow(2, binsize)) -\/ 2;}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142         \}}
+\DoxyCodeLine{143         CtrlDomain.closeBitBuffer(this.\mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\_isFile}}());}
+\DoxyCodeLine{144     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_l_z_w_8java}{L\+Z\+W.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,1708 @@
+\hypertarget{class_domain_1_1_ctrl_domain}{}\doxysection{Referència de la Classe Domain.\+Ctrl\+Domain}
+\label{class_domain_1_1_ctrl_domain}\index{Domain.CtrlDomain@{Domain.CtrlDomain}}
+
+
+Aquest és el controlador de domini.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}{compress\+File}} (String in\+\_\+path, String out\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Comprimeix fitxers automàticament amb les millors opcions ja siguin imatges o textos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_af746afc0ea6f57517564cf30cebf7853}{compress\+File}} (String in\+\_\+path, String out\+\_\+path, String algorithm\+Type)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Comprimeix fitxers amb un cert algorisme donat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a1c8f0aa057b1727eb1bbe0e8f0c9d80a}{compress\+File}} (String in\+\_\+path, String out\+\_\+path, String algorithm\+Type, String Options)  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Comprimeix fitxers donades unes certs opcions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a94a087d9eeb3fa67c42074652409d6b0}{decompress\+File}} (String in\+\_\+path, String out\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Descomprimeix fitxers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a1bc396413440f0f7139ba03d5293e6b9}{write\+Folders}} (Array\+List$<$ String $>$ folder\+List, Path base\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui els paths de les carpetes que hi ha dins de la carpeta que volem comprimir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a0bdfca6fdc446a149a8e03c063dd8f39}{write\+Text\+Files}} (Array\+List$<$ String $>$ text\+List, Path base\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui els paths de els arxius de text que hi ha dins de la carpeta que volem comprimir i els comprimeixi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a16b561d58080714afc27fefb3b72be98}{write\+Image\+Files}} (Array\+List$<$ String $>$ image\+List, Path base\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui els paths de les imatges que hi ha dins de la carpeta que volem comprimir i les comprimeixi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ab94ad8a7e14169ca6949ed369a968d35}{compress\+Folder}} (String in\+\_\+path, String out\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Comprimeix carpetes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a06d45f52040a7afa612a7617e7fcdf56}{decompress\+Folder}} (String in\+\_\+path, String out\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Descomprimeix carpetes. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{get\+Type}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Retorna el tipus del fitxer. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}{get\+\_\+ratio}} (String in\+\_\+path, String out\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Retorna el rati de la compressió. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a60668ae7ee10c7359d1214a136945f15}{get\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Demana el contingut de la la base de dades d\textquotesingle{}estadístiques al controlador de persistencia. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ae7fa80dc5109d528bbc96155b8f22518}{get\+Total\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Getter per saber el valor de l\textquotesingle{}atribut {\itshape total\+Time}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_af7b65c15dc0eb8f04b80e79b641c6579}{get\+Compress\+Ratio}} ()
+\begin{DoxyCompactList}\small\item\em Getter per saber el valor de l\textquotesingle{}atribut {\itshape compress\+Ratio}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_abb20bccbb4b2fd933df2c46038b46e3c}{get\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Getter per saber el valor de l\textquotesingle{}atribut {\itshape out\+\_\+path}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a73dd70734f4169e8c58e570d41adcf63}{delete\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque borri tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_aa2bd5327be2fda23fca45e99b2036dbe}{get\+Text}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque obtingui tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a18b4915591138df3fa84d672252abec4}{get\+Image}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia per obtenir el contingut d\textquotesingle{}una imatge i transformarla a una Buffered\+Image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a779b83ee96dd360205554d009865dcc2}{delete\+File}} (String path)
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque elimini un fitxer amb path {\itshape path}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_domain_1_1_ctrl_domain}{Ctrl\+Domain}} \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a0152343e41fa9dcf03927ebc74ea2257}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Obté l\textquotesingle{}ùnica instància del controlador de domini. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ac2b15b2bdb159920be58904b56f821ab}{read}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Demana a la capa de persistencia que llegeixi un byte. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ab8ece35e8ea91949a80528c5ad234990}{read}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia per llegir un nombre de bytes de dades i els guarda al vector de bytes que se li passa per parametre. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ad3cd4a5e86a695dbbc3931e02de198a7}{write}} (int b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia per escriure el byte especificat. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_afe601217980c38955dff0a80aef0229e}{write}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui {\itshape b.\+length} bytes del vector passat per parametres. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ab06536ed5820e08be20b4bc96abeb7ce}{read\+Ascii\+Int}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque llegeixi un integer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a983318d1359bf42316222595394cdfe8}{initialize\+Buffered\+Reader}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque inicialitzi el buffered\+Reader apuntant a un fitxer amb un cert path donat. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a851a591a43dcc985e50c0e7c70fdb961}{initialize\+Buffered\+Reader\+Huffman}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque inicialitzi el buffered\+Reader\+Huffman apuntant a un fitxer amb un cert path donat. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a5fbcc2fba89855f9e395976bae61382f}{initialize\+Buffered\+Reader}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque inicialitzi el buffered\+Reader. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_aa428b43932f67c461b61de4594158743}{close\+Buffered\+Reader}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque tanqui el buffered\+Reader. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a5139fbc11dc99da5c58877dbdfccbc0f}{close\+Buffered\+Reader\+Huffman}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque tanqui el buffered\+Reader\+Huffman. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a901a10d75ab2ae3554f994eb0b627724}{read\+Line}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque llegeixi un linea de text. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ac0fb649bd1d2cf552b3e264145396c25}{read\+Line\+Huffman}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque llegeixi un linea de text del buffered\+Reader\+Huffman. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a48386fda80094e3106c5c96796275d3f}{initialize\+Compression\+Bit\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque inicialitzi el Bit\+Buffer de compressió. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_aec37bea68f0cb81707528fecdc5e144d}{initialize\+Decompression\+Bit\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque inicialitzi el Bit\+Buffer de descompressió. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_ctrl_domain_affd18c12c8e6e87c0f8abfd643542c97}{read\+Bit\+Buffer}} (int i)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque llegeixi {\itshape i} bits del Bit\+Buffer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4d8f8c2a98f499cadea80ad8793398b5}{write\+Bit\+Buffer}} (String s)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_ac3fe193af8ea9261338bacb81a06ade1}{write\+Bit\+Buffer}} (int i, int p)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a5c44d89e2391580ea20db0dc582dfb51}{close\+Bit\+Buffer}} (boolean is\+File)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida al controlador de persistencia perque tanqui el Bit\+Buffer. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_domain_1_1_ctrl_domain_aa10257111d9a85e5dff3e208311ca514}{read\+Line\+\_\+in\+Buffer}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Es crida al controlador de persistencia perque llegeixi un linea de text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Aquest és el controlador de domini. 
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a5c44d89e2391580ea20db0dc582dfb51}\label{class_domain_1_1_ctrl_domain_a5c44d89e2391580ea20db0dc582dfb51}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!closeBitBuffer@{closeBitBuffer}}
+\index{closeBitBuffer@{closeBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{closeBitBuffer()}{closeBitBuffer()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+close\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{boolean}]{is\+File }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque tanqui el Bit\+Buffer. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em is\+File} & Indica si el que s\textquotesingle{}esta tractant es un fitxer o una carpeta. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida al controlador de persistencia perque tanqui el Bit\+Buffer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{832                                                                          \{}
+\DoxyCodeLine{833         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace8aa3652a9557289874a689418e1e9d}{closeBitBuffer}}(isFile);}
+\DoxyCodeLine{834     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_aa428b43932f67c461b61de4594158743}\label{class_domain_1_1_ctrl_domain_aa428b43932f67c461b61de4594158743}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!closeBufferedReader@{closeBufferedReader}}
+\index{closeBufferedReader@{closeBufferedReader}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{closeBufferedReader()}{closeBufferedReader()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+close\+Buffered\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque tanqui el buffered\+Reader. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque tanqui el buffered\+Reader. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{728                                                                 \{}
+\DoxyCodeLine{729         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_aa67abe8cbd125b61feaf8c5883042d26}{closeBufferedReader}}();}
+\DoxyCodeLine{730     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a5139fbc11dc99da5c58877dbdfccbc0f}\label{class_domain_1_1_ctrl_domain_a5139fbc11dc99da5c58877dbdfccbc0f}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!closeBufferedReaderHuffman@{closeBufferedReaderHuffman}}
+\index{closeBufferedReaderHuffman@{closeBufferedReaderHuffman}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{closeBufferedReaderHuffman()}{closeBufferedReaderHuffman()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+close\+Buffered\+Reader\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque tanqui el buffered\+Reader\+Huffman. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque tanqui el buffered\+Reader\+Huffman. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{739                                                                        \{}
+\DoxyCodeLine{740         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a8d621d98f47489c62776d0027d02ca7f}{closeBufferedReaderHuffman}}();}
+\DoxyCodeLine{741     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}\label{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!compressFile@{compressFile}}
+\index{compressFile@{compressFile}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{compressFile()}{compressFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+compress\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix fitxers automàticament amb les millors opcions ja siguin imatges o textos. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer que volem comprimir. \\
+\hline
+{\em out\+\_\+path} & Path del lloc on vole guardar el resultat de la compressió del fitxer d\textquotesingle{}entrada.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Al fitxer que te per path {\itshape out\+\_\+path} conté el contingut del fitxer que té per path {\itshape in\+\_\+path} comprimit. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                                                                   \{}
+\DoxyCodeLine{83         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{84         }
+\DoxyCodeLine{85         String algorithmType = \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{getType}}(in\_path);}
+\DoxyCodeLine{86         }
+\DoxyCodeLine{87         \textcolor{keywordflow}{switch} (algorithmType) \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"PPM"} :}
+\DoxyCodeLine{89                 algorithm = \textcolor{keyword}{new} JPEG(50);}
+\DoxyCodeLine{90                 }
+\DoxyCodeLine{91                 out\_path += \textcolor{stringliteral}{".jpeg"};}
+\DoxyCodeLine{92                 algorithmType = \textcolor{stringliteral}{"JPEG"};}
+\DoxyCodeLine{93                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{94                 }
+\DoxyCodeLine{95                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{96                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{97                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{98                 }
+\DoxyCodeLine{99             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"TXT"} :}
+\DoxyCodeLine{100                 algorithm = \textcolor{keyword}{new} LZSS(12,5,3);}
+\DoxyCodeLine{101                 }
+\DoxyCodeLine{102                 out\_path += \textcolor{stringliteral}{".lzss"};}
+\DoxyCodeLine{103                 algorithmType = \textcolor{stringliteral}{"LZSS"};}
+\DoxyCodeLine{104                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{105                 }
+\DoxyCodeLine{106                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{107                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{109                 }
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111         }
+\DoxyCodeLine{112         this.out\_path = out\_path;}
+\DoxyCodeLine{113         }
+\DoxyCodeLine{114         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{closeFile}}();}
+\DoxyCodeLine{115         }
+\DoxyCodeLine{116         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{117         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{118         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{119         compressedRatio = Double.toString(Math.round(\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}{get\_ratio}}(in\_path,out\_path) * 100) / 100d)+\textcolor{stringliteral}{"\%"};}
+\DoxyCodeLine{120         }
+\DoxyCodeLine{121         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{122         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{123         }
+\DoxyCodeLine{124         String stadistics = algorithmType + \textcolor{stringliteral}{" Compressió "} + totalTime + \textcolor{stringliteral}{" "} + compressedRatio + \textcolor{stringliteral}{" "} + fileName;}
+\DoxyCodeLine{125         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{126         }
+\DoxyCodeLine{127     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_af746afc0ea6f57517564cf30cebf7853}\label{class_domain_1_1_ctrl_domain_af746afc0ea6f57517564cf30cebf7853}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!compressFile@{compressFile}}
+\index{compressFile@{compressFile}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{compressFile()}{compressFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+compress\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path,  }\item[{String}]{algorithm\+Type }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix fitxers amb un cert algorisme donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer que volem comprimir. \\
+\hline
+{\em out\+\_\+path} & Path del lloc on volem guardar el resultat de la compressió del fitxer d\textquotesingle{}entrada. \\
+\hline
+{\em algorithm\+Type} & Algorisme que volem utilitzar per la compressió del fitxer.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}algorisme passat per parametres es adient pel tipus de fitxer. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Al fitxer que te per path {\itshape out\+\_\+path} conté el contingut del fitxer que té per path {\itshape in\+\_\+path} comprimit amb l\textquotesingle{}algorisme {\itshape algorithm\+Type}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                                                                                         \{}
+\DoxyCodeLine{141         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{142         }
+\DoxyCodeLine{143         \textcolor{keywordflow}{switch} (algorithmType) \{}
+\DoxyCodeLine{144             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"JPEG"} :}
+\DoxyCodeLine{145                 algorithm = \textcolor{keyword}{new} JPEG(50);}
+\DoxyCodeLine{146                 }
+\DoxyCodeLine{147                 out\_path += \textcolor{stringliteral}{".jpeg"};}
+\DoxyCodeLine{148                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{149                 }
+\DoxyCodeLine{150                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{151                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{152                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{153                 }
+\DoxyCodeLine{154             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZ78"} :}
+\DoxyCodeLine{155                 algorithm = \textcolor{keyword}{new} LZ78();}
+\DoxyCodeLine{156                 }
+\DoxyCodeLine{157                 out\_path += \textcolor{stringliteral}{".lz78"};}
+\DoxyCodeLine{158                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{159                 }
+\DoxyCodeLine{160                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{161                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{162                 \textcolor{keywordflow}{break}; }
+\DoxyCodeLine{163                 }
+\DoxyCodeLine{164             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZSS"} :}
+\DoxyCodeLine{165                 algorithm = \textcolor{keyword}{new} LZSS(12,5,3);}
+\DoxyCodeLine{166                 }
+\DoxyCodeLine{167                 out\_path += \textcolor{stringliteral}{".lzss"};}
+\DoxyCodeLine{168                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{169   }
+\DoxyCodeLine{170                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{171                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{172                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{173             }
+\DoxyCodeLine{174             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZW"} :}
+\DoxyCodeLine{175                 algorithm = \textcolor{keyword}{new} LZW();}
+\DoxyCodeLine{176                 }
+\DoxyCodeLine{177                 out\_path += \textcolor{stringliteral}{".lzw"};}
+\DoxyCodeLine{178                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{179                 }
+\DoxyCodeLine{180                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{181                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{183         \}}
+\DoxyCodeLine{184         }
+\DoxyCodeLine{185         this.out\_path = out\_path;}
+\DoxyCodeLine{186         }
+\DoxyCodeLine{187         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{closeFile}}();}
+\DoxyCodeLine{188         }
+\DoxyCodeLine{189         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{190         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{191         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{192         compressedRatio = Double.toString(Math.round(\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}{get\_ratio}}(in\_path,out\_path) * 100) / 100d)+\textcolor{stringliteral}{"\%"};}
+\DoxyCodeLine{193         }
+\DoxyCodeLine{194         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{195         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{196         }
+\DoxyCodeLine{197         String stadistics = algorithmType + \textcolor{stringliteral}{" Compressió "} + totalTime + \textcolor{stringliteral}{" "} + compressedRatio + \textcolor{stringliteral}{" "} + fileName;}
+\DoxyCodeLine{198         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{199     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a1c8f0aa057b1727eb1bbe0e8f0c9d80a}\label{class_domain_1_1_ctrl_domain_a1c8f0aa057b1727eb1bbe0e8f0c9d80a}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!compressFile@{compressFile}}
+\index{compressFile@{compressFile}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{compressFile()}{compressFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+compress\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path,  }\item[{String}]{algorithm\+Type,  }\item[{String}]{Options }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix fitxers donades unes certs opcions. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer que volem comprimir. \\
+\hline
+{\em out\+\_\+path} & Path del lloc on es vol guardar el resultat de la compressió del fitxer d\textquotesingle{}entrada. \\
+\hline
+{\em algorithm\+Type} & Algorisme que volem utilitzar per la compressió del fitxer. \\
+\hline
+{\em Options} & Opcions que l\textquotesingle{}usuari a triat per variar el resultat o rendiment de la compressió.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}algorisme passat per parametres es adient pel tipus de fitxer al igual que les opcions. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Al fitxer que te per path {\itshape out\+\_\+path} conté el contingut del fitxer que té per path {\itshape in\+\_\+path} comprimit amb les opcions donades i l\textquotesingle{}algorisme triat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213                                                                                                                        \{}
+\DoxyCodeLine{214         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{215         }
+\DoxyCodeLine{216         String[] compressionOptions = Options.split(\textcolor{stringliteral}{" "});}
+\DoxyCodeLine{217         }
+\DoxyCodeLine{218         \textcolor{keywordflow}{switch} (algorithmType) \{}
+\DoxyCodeLine{219             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"JPEG"} :}
+\DoxyCodeLine{220                 \textcolor{keywordtype}{int} quality = Integer.parseInt(compressionOptions[0]);}
+\DoxyCodeLine{221                 algorithm = \textcolor{keyword}{new} JPEG(quality);}
+\DoxyCodeLine{222                 }
+\DoxyCodeLine{223                 out\_path += \textcolor{stringliteral}{".jpeg"};}
+\DoxyCodeLine{224                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{225                 }
+\DoxyCodeLine{226                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{227                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{228                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{229                 }
+\DoxyCodeLine{230             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZ78"} :}
+\DoxyCodeLine{231                 algorithm = \textcolor{keyword}{new} LZ78();}
+\DoxyCodeLine{232                 }
+\DoxyCodeLine{233                 out\_path += \textcolor{stringliteral}{".lz78"};}
+\DoxyCodeLine{234                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{235                 }
+\DoxyCodeLine{236                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{237                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{238                 \textcolor{keywordflow}{break}; }
+\DoxyCodeLine{239                 }
+\DoxyCodeLine{240             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZSS"} :}
+\DoxyCodeLine{241                 \textcolor{keywordtype}{int} winSize = (int)(Math.log(Integer.parseInt(compressionOptions[0]))/Math.log(2)+1e-\/10);}
+\DoxyCodeLine{242                 \textcolor{keywordtype}{int} maxLen = (int)(Math.log(Integer.parseInt(compressionOptions[1]))/Math.log(2)+1e-\/10);}
+\DoxyCodeLine{243                 \textcolor{keywordtype}{int} minLen = Integer.parseInt(compressionOptions[2]);}
+\DoxyCodeLine{244                 }
+\DoxyCodeLine{245                 algorithm = \textcolor{keyword}{new} LZSS(winSize, maxLen, minLen);}
+\DoxyCodeLine{246                 }
+\DoxyCodeLine{247                 out\_path += \textcolor{stringliteral}{".lzss"};}
+\DoxyCodeLine{248                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{249                 }
+\DoxyCodeLine{250                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{251                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{252                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{253                 }
+\DoxyCodeLine{254             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZW"} :}
+\DoxyCodeLine{255                 algorithm = \textcolor{keyword}{new} LZW();}
+\DoxyCodeLine{256                 }
+\DoxyCodeLine{257                 out\_path += \textcolor{stringliteral}{".lzw"};}
+\DoxyCodeLine{258                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{259                 }
+\DoxyCodeLine{260                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{261                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{262                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{263         \}}
+\DoxyCodeLine{264         }
+\DoxyCodeLine{265         this.out\_path = out\_path;}
+\DoxyCodeLine{266         }
+\DoxyCodeLine{267         }
+\DoxyCodeLine{268         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{closeFile}}();}
+\DoxyCodeLine{269         }
+\DoxyCodeLine{270         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{271         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{272         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{273         compressedRatio = Double.toString(Math.round(\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}{get\_ratio}}(in\_path,out\_path) * 100) / 100d)+\textcolor{stringliteral}{"\%"};}
+\DoxyCodeLine{274         }
+\DoxyCodeLine{275         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{276         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{277         }
+\DoxyCodeLine{278         String stadistics = algorithmType + \textcolor{stringliteral}{" Compressió "} + totalTime + \textcolor{stringliteral}{" "} + compressedRatio + \textcolor{stringliteral}{" "} + fileName;}
+\DoxyCodeLine{279         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{280     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ab94ad8a7e14169ca6949ed369a968d35}\label{class_domain_1_1_ctrl_domain_ab94ad8a7e14169ca6949ed369a968d35}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!compressFolder@{compressFolder}}
+\index{compressFolder@{compressFolder}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{compressFolder()}{compressFolder()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+compress\+Folder (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix carpetes. 
+
+Funciona de la següent manera. Inicialment obté tots els paths de totes les possibles carpetes que hi han dins de la carpeta que es vol comprimir. Després fa el mateix amb els fitxers de text i finalment amb les imatges. Obviament en el cas que siguin text o imatges escriu també el seu contingut comprés.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path de la carpeta que es vol comprimir. \\
+\hline
+{\em out\+\_\+path} & Path del fitxer on es guarden totes les compressions.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Al fitxer que te per path {\itshape out\+\_\+path} conté el contingut de la carpeta comprimida que té per path {\itshape in\+\_\+path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{442                                                                                     \{}
+\DoxyCodeLine{443         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{444         }
+\DoxyCodeLine{445         Path base\_path = Paths.get(ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae29ffcf577fb4c1f72339f8a32cba8f8}{getFileParent}}(in\_path));}
+\DoxyCodeLine{446         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a33017605d21be00a28218d835ce2c058}{set\_outBuffer}}(out\_path);}
+\DoxyCodeLine{447         }
+\DoxyCodeLine{448         ArrayList<String> folderList = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a93b6496f0022851aed1c2d18487771a3}{listFolders}}(in\_path);}
+\DoxyCodeLine{449         ArrayList<String> textList = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a17f6fb5e0707d89236007838cfc5ea2c}{listTextFiles}}(in\_path);}
+\DoxyCodeLine{450         ArrayList<String> imageList = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0281d1b36bc902f1140b26d3300cf0a7}{listImageFiles}}(in\_path);}
+\DoxyCodeLine{451         }
+\DoxyCodeLine{452         \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a1bc396413440f0f7139ba03d5293e6b9}{writeFolders}}(folderList, base\_path);}
+\DoxyCodeLine{453         \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a0bdfca6fdc446a149a8e03c063dd8f39}{writeTextFiles}}(textList, base\_path);}
+\DoxyCodeLine{454         \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a16b561d58080714afc27fefb3b72be98}{writeImageFiles}}(imageList, base\_path);}
+\DoxyCodeLine{455         }
+\DoxyCodeLine{456         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"stop\(\backslash\)n"}.getBytes());}
+\DoxyCodeLine{457         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}{flush\_outBuffer}}();}
+\DoxyCodeLine{458         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{closeFile}}();}
+\DoxyCodeLine{459         }
+\DoxyCodeLine{460         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{461         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{462         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{463         }
+\DoxyCodeLine{464         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{465         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{466         }
+\DoxyCodeLine{467         String stadistics = \textcolor{stringliteral}{"Directori Compressió "} + totalTime + \textcolor{stringliteral}{" -\/ "} + fileName;}
+\DoxyCodeLine{468         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{469     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a94a087d9eeb3fa67c42074652409d6b0}\label{class_domain_1_1_ctrl_domain_a94a087d9eeb3fa67c42074652409d6b0}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!decompressFile@{decompressFile}}
+\index{decompressFile@{decompressFile}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{decompressFile()}{decompressFile()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+decompress\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Descomprimeix fitxers. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer que volem descomprimir. \\
+\hline
+{\em out\+\_\+path} & Path on volem que es guardi la descompressió del fitxer d\textquotesingle{}entrada.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Al fitxer que te per path {\itshape out\+\_\+path} conté el contingut del fitxer que té per path {\itshape in\+\_\+path} descomprimit. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{292                                                                                     \{}
+\DoxyCodeLine{293         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{294         }
+\DoxyCodeLine{295         String algorithmType = \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{getType}}(in\_path);}
+\DoxyCodeLine{296         }
+\DoxyCodeLine{297         \textcolor{keywordflow}{switch} (algorithmType) \{}
+\DoxyCodeLine{298             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"JPEG"} :}
+\DoxyCodeLine{299                 algorithm = \textcolor{keyword}{new} JPEG();}
+\DoxyCodeLine{300                 }
+\DoxyCodeLine{301                 out\_path += \textcolor{stringliteral}{".ppm"};}
+\DoxyCodeLine{302                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{303                 }
+\DoxyCodeLine{304                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{305                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{306                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{307                 }
+\DoxyCodeLine{308             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZ78"} :}
+\DoxyCodeLine{309                 algorithm = \textcolor{keyword}{new} LZ78();}
+\DoxyCodeLine{310                 }
+\DoxyCodeLine{311                 out\_path += \textcolor{stringliteral}{".txt"};}
+\DoxyCodeLine{312                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{313       }
+\DoxyCodeLine{314                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{315                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{316                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{317                 }
+\DoxyCodeLine{318             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZSS"} :}
+\DoxyCodeLine{319                 algorithm = \textcolor{keyword}{new} LZSS(12,5,3);}
+\DoxyCodeLine{320                 }
+\DoxyCodeLine{321                 out\_path += \textcolor{stringliteral}{".txt"};}
+\DoxyCodeLine{322                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{323                 }
+\DoxyCodeLine{324                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{325                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{326                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{327                 }
+\DoxyCodeLine{328             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"LZW"} :}
+\DoxyCodeLine{329                 algorithm = \textcolor{keyword}{new} LZW();}
+\DoxyCodeLine{330                 }
+\DoxyCodeLine{331                 out\_path += \textcolor{stringliteral}{".txt"};}
+\DoxyCodeLine{332                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{333                 }
+\DoxyCodeLine{334                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{335                 algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{336                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{337         \}}
+\DoxyCodeLine{338         }
+\DoxyCodeLine{339         this.out\_path = out\_path;}
+\DoxyCodeLine{340               }
+\DoxyCodeLine{341         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{closeFile}}();}
+\DoxyCodeLine{342             }
+\DoxyCodeLine{343         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{344         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{345         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{346         }
+\DoxyCodeLine{347         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{348         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{349         }
+\DoxyCodeLine{350         String stadistics = algorithmType + \textcolor{stringliteral}{" Descompressió "} + totalTime + \textcolor{stringliteral}{" -\/ "} + fileName;}
+\DoxyCodeLine{351         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{352     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a06d45f52040a7afa612a7617e7fcdf56}\label{class_domain_1_1_ctrl_domain_a06d45f52040a7afa612a7617e7fcdf56}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!decompressFolder@{decompressFolder}}
+\index{decompressFolder@{decompressFolder}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{decompressFolder()}{decompressFolder()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+decompress\+Folder (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Descomprimeix carpetes. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path de la carpeta que es vol descomprimir. \\
+\hline
+{\em out\+\_\+path} & Path de la carpeta volen guardar totes les descompressions. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha descomprés la carpeta amb path {\itshape in\+\_\+path} i el seu contingut s\textquotesingle{}ha guardat a {\itshape out\+\_\+path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{480                                                                                       \{}
+\DoxyCodeLine{481         \textcolor{keywordtype}{long} startTime = System.nanoTime();}
+\DoxyCodeLine{482         }
+\DoxyCodeLine{483         \textcolor{keywordtype}{boolean} canvi = \textcolor{keyword}{false};}
+\DoxyCodeLine{484         }
+\DoxyCodeLine{485         Path dec\_base\_path = Paths.get(out\_path);}
+\DoxyCodeLine{486         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}{set\_inBuffer}}(in\_path);}
+\DoxyCodeLine{487         }
+\DoxyCodeLine{488         String line, dec\_out\_path;}
+\DoxyCodeLine{489         line = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}{readLine\_inBuffer}}();}
+\DoxyCodeLine{490         \textcolor{keywordflow}{while}(! \textcolor{stringliteral}{"stop"}.equals(line)) \{}
+\DoxyCodeLine{491             \textcolor{keywordflow}{if}(line.charAt(0) == \textcolor{charliteral}{'0'})\{}
+\DoxyCodeLine{492                 dec\_out\_path = dec\_base\_path.toString() + \textcolor{stringliteral}{"/"} + line.substring(1);}
+\DoxyCodeLine{493                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae588ab28a359bf351c6e2ddf119eba00}{makeDirectory}}(dec\_out\_path);}
+\DoxyCodeLine{494             \}}
+\DoxyCodeLine{495             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{496                 dec\_out\_path = dec\_base\_path.toString() + \textcolor{stringliteral}{"/"} + line.substring(1);}
+\DoxyCodeLine{497                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adb7af36b3ff38b826cdbfdde38f81cbc}{makeFile}}(dec\_out\_path);}
+\DoxyCodeLine{498                 ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a33017605d21be00a28218d835ce2c058}{set\_outBuffer}}(dec\_out\_path);}
+\DoxyCodeLine{499                 String algorithmType = \mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{getType}}(dec\_out\_path);}
+\DoxyCodeLine{500                 \textcolor{keywordflow}{switch} (algorithmType)\{}
+\DoxyCodeLine{501                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"PPM"}:}
+\DoxyCodeLine{502                         \textcolor{keywordflow}{if} (!canvi) \{}
+\DoxyCodeLine{503                             canvi = \textcolor{keyword}{true};}
+\DoxyCodeLine{504                             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}{initializeBufferedReader}}();}
+\DoxyCodeLine{505                         \}}
+\DoxyCodeLine{506                         }
+\DoxyCodeLine{507                         algorithm = \textcolor{keyword}{new} JPEG();}
+\DoxyCodeLine{508                         }
+\DoxyCodeLine{509                         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{510                         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{511                         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}{flush\_outBuffer}}();}
+\DoxyCodeLine{512                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{513                         }
+\DoxyCodeLine{514                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"TXT"}:}
+\DoxyCodeLine{515                         algorithm = \textcolor{keyword}{new} LZW();}
+\DoxyCodeLine{516                         }
+\DoxyCodeLine{517                         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{518                         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{519                         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}{flush\_outBuffer}}();}
+\DoxyCodeLine{520                         \textcolor{keywordflow}{break};    }
+\DoxyCodeLine{521                 \}}
+\DoxyCodeLine{522             \}}
+\DoxyCodeLine{523             \textcolor{keywordflow}{if}(canvi) line = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0f3e60966cbd16e3579d73a323630d6e}{readLine}}();     }
+\DoxyCodeLine{524             \textcolor{keywordflow}{else} line = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}{readLine\_inBuffer}}();}
+\DoxyCodeLine{525         \}}
+\DoxyCodeLine{526         }
+\DoxyCodeLine{527         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a9fe81e7513e4ad659e191847fdcef1c0}{closeBufferedOutput}}();}
+\DoxyCodeLine{528         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_aa67abe8cbd125b61feaf8c5883042d26}{closeBufferedReader}}();}
+\DoxyCodeLine{529         }
+\DoxyCodeLine{530         \textcolor{keywordtype}{long} finishTime = System.nanoTime();}
+\DoxyCodeLine{531         \textcolor{keywordtype}{long} Time = finishTime -\/ startTime;}
+\DoxyCodeLine{532         totalTime = Float.toString(Math.round((Time/1000000000f)* 100) / 100f)+\textcolor{stringliteral}{"s"};}
+\DoxyCodeLine{533         }
+\DoxyCodeLine{534         \textcolor{keywordtype}{int} indexName = out\_path.lastIndexOf(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{535         String fileName = out\_path.substring(indexName + 1);}
+\DoxyCodeLine{536         }
+\DoxyCodeLine{537         String stadistics = \textcolor{stringliteral}{"Directori Descompressió "} + totalTime + \textcolor{stringliteral}{" -\/ "} + fileName;}
+\DoxyCodeLine{538         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{saveStatistics}}(stadistics);}
+\DoxyCodeLine{539     \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a779b83ee96dd360205554d009865dcc2}\label{class_domain_1_1_ctrl_domain_a779b83ee96dd360205554d009865dcc2}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!deleteFile@{deleteFile}}
+\index{deleteFile@{deleteFile}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{deleteFile()}{deleteFile()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+delete\+File (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Crida al controlador de persistencia perque elimini un fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol eliminar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque elimini un fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{896                                         \{}
+\DoxyCodeLine{897         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a35b696a4e8b12ab18fd9257067c57e6c}{deleteFile}}(path);}
+\DoxyCodeLine{898     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a73dd70734f4169e8c58e570d41adcf63}\label{class_domain_1_1_ctrl_domain_a73dd70734f4169e8c58e570d41adcf63}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!deleteTableContent@{deleteTableContent}}
+\index{deleteTableContent@{deleteTableContent}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{deleteTableContent()}{deleteTableContent()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+delete\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia perque borri tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque borri tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{843                                                         \{}
+\DoxyCodeLine{844         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_af211fae69252aa5025471d3b02e58167}{deleteTableContent}}();}
+\DoxyCodeLine{845     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}\label{class_domain_1_1_ctrl_domain_a4bccabd135515800d220fbfaad954e18}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!get\_ratio@{get\_ratio}}
+\index{get\_ratio@{get\_ratio}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{get\_ratio()}{get\_ratio()}}
+{\footnotesize\ttfamily double Domain.\+Ctrl\+Domain.\+get\+\_\+ratio (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Retorna el rati de la compressió. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer original. \\
+\hline
+{\em out\+\_\+path} & Path del fitxer comprimit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el rati de la compressió.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el rati de la compressió. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{569                                                             \{}
+\DoxyCodeLine{570         \textcolor{keywordtype}{double} outLength = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a898ca1c9b767e19e861ef5e624ab1c1b}{get\_fileLength}}(out\_path);}
+\DoxyCodeLine{571         \textcolor{keywordtype}{double} inLength = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a898ca1c9b767e19e861ef5e624ab1c1b}{get\_fileLength}}(in\_path);}
+\DoxyCodeLine{572         \textcolor{keywordtype}{double} rati = 100 -\/ ((outLength * 100)/inLength);}
+\DoxyCodeLine{573         \textcolor{keywordflow}{return} rati;}
+\DoxyCodeLine{574     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_af7b65c15dc0eb8f04b80e79b641c6579}\label{class_domain_1_1_ctrl_domain_af7b65c15dc0eb8f04b80e79b641c6579}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getCompressRatio@{getCompressRatio}}
+\index{getCompressRatio@{getCompressRatio}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getCompressRatio()}{getCompressRatio()}}
+{\footnotesize\ttfamily String Domain.\+Ctrl\+Domain.\+get\+Compress\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter per saber el valor de l\textquotesingle{}atribut {\itshape compress\+Ratio}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una String amb el valor de {\itshape compress\+Ratio}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el valor de {\itshape compress\+Ratio}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{606                                      \{}
+\DoxyCodeLine{607         \textcolor{keywordflow}{return} compressedRatio;}
+\DoxyCodeLine{608     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a18b4915591138df3fa84d672252abec4}\label{class_domain_1_1_ctrl_domain_a18b4915591138df3fa84d672252abec4}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getImage@{getImage}}
+\index{getImage@{getImage}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getImage()}{getImage()}}
+{\footnotesize\ttfamily Buffered\+Image Domain.\+Ctrl\+Domain.\+get\+Image (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia per obtenir el contingut d\textquotesingle{}una imatge i transformarla a una Buffered\+Image. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path de la imatge que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna una Buffered\+Image representant la imatge amb path {\itshape path}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una Buffered\+Image que representa l\textquotesingle{}imatge amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{869                                                                   \{}
+\DoxyCodeLine{870         ArrayList<Integer> image = ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0e5fab4b5a1bb84a576b20eb4110f63b}{getImage}}(path);}
+\DoxyCodeLine{871         \textcolor{keywordtype}{int} width = image.get(0);}
+\DoxyCodeLine{872         \textcolor{keywordtype}{int} height = image.get(1);}
+\DoxyCodeLine{873         BufferedImage bufferedImage = \textcolor{keyword}{new} BufferedImage(width, height, BufferedImage.TYPE\_INT\_RGB);}
+\DoxyCodeLine{874         }
+\DoxyCodeLine{875         \textcolor{keywordtype}{int} pixel, r, g, b, k = 2;}
+\DoxyCodeLine{876         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < height; i++) \{}
+\DoxyCodeLine{877             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < width; j++) \{}
+\DoxyCodeLine{878                 r = image.get(k++);}
+\DoxyCodeLine{879                 g = image.get(k++);}
+\DoxyCodeLine{880                 b = image.get(k++);}
+\DoxyCodeLine{881                 pixel = (r * 65536) + (g * 256) + b;}
+\DoxyCodeLine{882                 bufferedImage.setRGB(j, i, pixel);}
+\DoxyCodeLine{883             \}}
+\DoxyCodeLine{884         \}}
+\DoxyCodeLine{885         }
+\DoxyCodeLine{886         \textcolor{keywordflow}{return} bufferedImage; }
+\DoxyCodeLine{887     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a0152343e41fa9dcf03927ebc74ea2257}\label{class_domain_1_1_ctrl_domain_a0152343e41fa9dcf03927ebc74ea2257}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_domain_1_1_ctrl_domain}{Ctrl\+Domain}} Domain.\+Ctrl\+Domain.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obté l\textquotesingle{}ùnica instància del controlador de domini. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna la única instància del controlador de domini.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el controlador de domini. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                            \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{return} CtrlDomainHolder.INSTANCE;}
+\DoxyCodeLine{65     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_abb20bccbb4b2fd933df2c46038b46e3c}\label{class_domain_1_1_ctrl_domain_abb20bccbb4b2fd933df2c46038b46e3c}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getPath@{getPath}}
+\index{getPath@{getPath}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily String Domain.\+Ctrl\+Domain.\+get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter per saber el valor de l\textquotesingle{}atribut {\itshape out\+\_\+path}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una String amb el valor de {\itshape out\+\_\+path}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el valor de {\itshape out\+\_\+path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{617                             \{}
+\DoxyCodeLine{618         \textcolor{keywordflow}{return} out\_path;}
+\DoxyCodeLine{619     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a60668ae7ee10c7359d1214a136945f15}\label{class_domain_1_1_ctrl_domain_a60668ae7ee10c7359d1214a136945f15}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getTableContent@{getTableContent}}
+\index{getTableContent@{getTableContent}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getTableContent()}{getTableContent()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ Domain.\+Ctrl\+Domain.\+get\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Demana el contingut de la la base de dades d\textquotesingle{}estadístiques al controlador de persistencia. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List de String amb el contingut de la base de dades estadístiques.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un Array\+List de String amb el contingut de la base de dades estadístiques. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{584                                                                   \{}
+\DoxyCodeLine{585         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7340c1fb4e002ee0eca68a0be1c89a78}{getTableContent}}();}
+\DoxyCodeLine{586     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_aa2bd5327be2fda23fca45e99b2036dbe}\label{class_domain_1_1_ctrl_domain_aa2bd5327be2fda23fca45e99b2036dbe}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getText@{getText}}
+\index{getText@{getText}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily String Domain.\+Ctrl\+Domain.\+get\+Text (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia perque obtingui tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna tot el text del fitxer. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia per obtenir tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{856                                                           \{}
+\DoxyCodeLine{857         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_aaf3a1f8f37b7a7e2494b20cd43546065}{getText}}(path);}
+\DoxyCodeLine{858     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ae7fa80dc5109d528bbc96155b8f22518}\label{class_domain_1_1_ctrl_domain_ae7fa80dc5109d528bbc96155b8f22518}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getTotalTime@{getTotalTime}}
+\index{getTotalTime@{getTotalTime}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getTotalTime()}{getTotalTime()}}
+{\footnotesize\ttfamily String Domain.\+Ctrl\+Domain.\+get\+Total\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter per saber el valor de l\textquotesingle{}atribut {\itshape total\+Time}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una String amb el valor de {\itshape total\+Time}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el valor de {\itshape total\+Time}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{595                                  \{}
+\DoxyCodeLine{596         \textcolor{keywordflow}{return} totalTime;}
+\DoxyCodeLine{597     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}\label{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!getType@{getType}}
+\index{getType@{getType}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily String Domain.\+Ctrl\+Domain.\+get\+Type (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Retorna el tipus del fitxer. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el tipus del fitxer.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el tipus del fitxer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{550                                            \{}
+\DoxyCodeLine{551         \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".txt"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"TXT"};}
+\DoxyCodeLine{552         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".ppm"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"PPM"};}
+\DoxyCodeLine{553         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".lzss"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LZSS"};}
+\DoxyCodeLine{554         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".lz78"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LZ78"};}
+\DoxyCodeLine{555         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".lzw"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LZW"};}
+\DoxyCodeLine{556         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in\_path.endsWith(\textcolor{stringliteral}{".jpeg"})) \textcolor{keywordflow}{return} \textcolor{stringliteral}{"JPEG"};}
+\DoxyCodeLine{557         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"DIR"};}
+\DoxyCodeLine{558     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a5fbcc2fba89855f9e395976bae61382f}\label{class_domain_1_1_ctrl_domain_a5fbcc2fba89855f9e395976bae61382f}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!initializeBufferedReader@{initializeBufferedReader}}
+\index{initializeBufferedReader@{initializeBufferedReader}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReader()}{initializeBufferedReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+initialize\+Buffered\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque inicialitzi el buffered\+Reader. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat a persistencia perque inicialiti el buffered\+Reader. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{717                                                                      \{}
+\DoxyCodeLine{718         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}{initializeBufferedReader}}();}
+\DoxyCodeLine{719     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a983318d1359bf42316222595394cdfe8}\label{class_domain_1_1_ctrl_domain_a983318d1359bf42316222595394cdfe8}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!initializeBufferedReader@{initializeBufferedReader}}
+\index{initializeBufferedReader@{initializeBufferedReader}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReader()}{initializeBufferedReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+initialize\+Buffered\+Reader (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque inicialitzi el buffered\+Reader apuntant a un fitxer amb un cert path donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat a persistencia perque inicialiti el buffered\+Reader apuntant a un fitxer amb un cert path zem$>$path. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{694                                                                                 \{}
+\DoxyCodeLine{695         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}{initializeBufferedReader}}(path);}
+\DoxyCodeLine{696     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a851a591a43dcc985e50c0e7c70fdb961}\label{class_domain_1_1_ctrl_domain_a851a591a43dcc985e50c0e7c70fdb961}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!initializeBufferedReaderHuffman@{initializeBufferedReaderHuffman}}
+\index{initializeBufferedReaderHuffman@{initializeBufferedReaderHuffman}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReaderHuffman()}{initializeBufferedReaderHuffman()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+initialize\+Buffered\+Reader\+Huffman (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque inicialitzi el buffered\+Reader\+Huffman apuntant a un fitxer amb un cert path donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat a persistencia perque inicialiti el buffered\+Reader\+Huffman apuntant a un fitxer amb un cert path zem$>$path. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{706                                                                                        \{}
+\DoxyCodeLine{707         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a46849ff46e3a69997dce050e978dc76f}{initializeBufferedReaderHuffman}}(path);}
+\DoxyCodeLine{708     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a48386fda80094e3106c5c96796275d3f}\label{class_domain_1_1_ctrl_domain_a48386fda80094e3106c5c96796275d3f}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!initializeCompressionBitBuffer@{initializeCompressionBitBuffer}}
+\index{initializeCompressionBitBuffer@{initializeCompressionBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{initializeCompressionBitBuffer()}{initializeCompressionBitBuffer()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+initialize\+Compression\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque inicialitzi el Bit\+Buffer de compressió. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El controlador ha inicialitzat el Bit\+Buffer per poder comprimir. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{772                                                         \{}
+\DoxyCodeLine{773         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a306e868847422c043a8f9a9fa0c8ade5}{initializeCompressionBitBuffer}}();}
+\DoxyCodeLine{774     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_aec37bea68f0cb81707528fecdc5e144d}\label{class_domain_1_1_ctrl_domain_aec37bea68f0cb81707528fecdc5e144d}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!initializeDecompressionBitBuffer@{initializeDecompressionBitBuffer}}
+\index{initializeDecompressionBitBuffer@{initializeDecompressionBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{initializeDecompressionBitBuffer()}{initializeDecompressionBitBuffer()}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+initialize\+Decompression\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque inicialitzi el Bit\+Buffer de descompressió. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape Bit\+Buffer} per poder descomprimir. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{781                                                           \{}
+\DoxyCodeLine{782         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a850d1423903729bc25ce90b8d4cbef64}{initializeDecompressionBitBuffer}}();}
+\DoxyCodeLine{783     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ac2b15b2bdb159920be58904b56f821ab}\label{class_domain_1_1_ctrl_domain_ac2b15b2bdb159920be58904b56f821ab}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!read@{read}}
+\index{read@{read}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int Domain.\+Ctrl\+Domain.\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Demana a la capa de persistencia que llegeixi un byte. 
+
+Funcions de persistencia 
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Retorna}
+Retorna el següent byte de dades, o -\/1 si s’arriba al final del flux.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els atributs privats {\itshape in\+Buffer} i {\itshape out\+Buffer} es tanquen. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{633                                                 \{}
+\DoxyCodeLine{634         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab458a66ca8ec140b9959fa42c6febf34}{read}}();}
+\DoxyCodeLine{635     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ab8ece35e8ea91949a80528c5ad234990}\label{class_domain_1_1_ctrl_domain_ab8ece35e8ea91949a80528c5ad234990}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!read@{read}}
+\index{read@{read}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int Domain.\+Ctrl\+Domain.\+read (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia per llegir un nombre de bytes de dades i els guarda al vector de bytes que se li passa per parametre. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Vector on es guardaran els bytes llegits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el nombre de bytes que s\textquotesingle{}han pogut llegir. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El controlador de persistencia haura llegit el nombre de bytes indicat pel tamany del vector que se li passa si es pot. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{646                                                         \{}
+\DoxyCodeLine{647         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab458a66ca8ec140b9959fa42c6febf34}{read}}(b);}
+\DoxyCodeLine{648     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ab06536ed5820e08be20b4bc96abeb7ce}\label{class_domain_1_1_ctrl_domain_ab06536ed5820e08be20b4bc96abeb7ce}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!readAsciiInt@{readAsciiInt}}
+\index{readAsciiInt@{readAsciiInt}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{readAsciiInt()}{readAsciiInt()}}
+{\footnotesize\ttfamily static int Domain.\+Ctrl\+Domain.\+read\+Ascii\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque llegeixi un integer. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna l\textquotesingle{}integer llegit. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crida a la capa de persistencia perque llegeixi un integer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{682                                                         \{}
+\DoxyCodeLine{683         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}{readAsciiInt}}();}
+\DoxyCodeLine{684     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_affd18c12c8e6e87c0f8abfd643542c97}\label{class_domain_1_1_ctrl_domain_affd18c12c8e6e87c0f8abfd643542c97}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!readBitBuffer@{readBitBuffer}}
+\index{readBitBuffer@{readBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{readBitBuffer()}{readBitBuffer()}}
+{\footnotesize\ttfamily static int Domain.\+Ctrl\+Domain.\+read\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque llegeixi {\itshape i} bits del Bit\+Buffer. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em i} & Bits que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un integer. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque llegeixi {\itshape i} bits del Bit\+Buffer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{794                                                               \{}
+\DoxyCodeLine{795         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a8665e5962041ea94ed802730c580a8cc}{readBitBuffer}}(i);}
+\DoxyCodeLine{796     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a901a10d75ab2ae3554f994eb0b627724}\label{class_domain_1_1_ctrl_domain_a901a10d75ab2ae3554f994eb0b627724}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!readLine@{readLine}}
+\index{readLine@{readLine}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily static String Domain.\+Ctrl\+Domain.\+read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque llegeixi un linea de text. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna la linea de text que el controlador de persistencia ha llegit. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque llegeixi un linea de text. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{751                                                        \{}
+\DoxyCodeLine{752         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0f3e60966cbd16e3579d73a323630d6e}{readLine}}();}
+\DoxyCodeLine{753     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_aa10257111d9a85e5dff3e208311ca514}\label{class_domain_1_1_ctrl_domain_aa10257111d9a85e5dff3e208311ca514}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!readLine\_inBuffer@{readLine\_inBuffer}}
+\index{readLine\_inBuffer@{readLine\_inBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{readLine\_inBuffer()}{readLine\_inBuffer()}}
+{\footnotesize\ttfamily static String Domain.\+Ctrl\+Domain.\+read\+Line\+\_\+in\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Es crida al controlador de persistencia perque llegeixi un linea de text. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una linea de text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque llegeixi un linea de text. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{908                                                                 \{}
+\DoxyCodeLine{909         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}{readLine\_inBuffer}}();}
+\DoxyCodeLine{910     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ac0fb649bd1d2cf552b3e264145396c25}\label{class_domain_1_1_ctrl_domain_ac0fb649bd1d2cf552b3e264145396c25}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!readLineHuffman@{readLineHuffman}}
+\index{readLineHuffman@{readLineHuffman}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{readLineHuffman()}{readLineHuffman()}}
+{\footnotesize\ttfamily static String Domain.\+Ctrl\+Domain.\+read\+Line\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque llegeixi un linea de text del buffered\+Reader\+Huffman. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna la linea de text que el controlador de persistencia ha llegit del buffered\+Reader\+Huffman. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque llegeixi un linea de text del buffered\+Reader\+Huffman. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{763                                                               \{}
+\DoxyCodeLine{764         \textcolor{keywordflow}{return} ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a1d1ba45439aa696fc460546736e56fff}{readLineHuffman}}();}
+\DoxyCodeLine{765     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_afe601217980c38955dff0a80aef0229e}\label{class_domain_1_1_ctrl_domain_afe601217980c38955dff0a80aef0229e}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!write@{write}}
+\index{write@{write}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+write (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque escrigui {\itshape b.\+length} bytes del vector passat per parametres. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Dades que es volen escriure. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El controlador de persistencia ha escrit les dades indicades. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{670                                                           \{}
+\DoxyCodeLine{671         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(b);}
+\DoxyCodeLine{672     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ad3cd4a5e86a695dbbc3931e02de198a7}\label{class_domain_1_1_ctrl_domain_ad3cd4a5e86a695dbbc3931e02de198a7}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!write@{write}}
+\index{write@{write}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+write (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia per escriure el byte especificat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Byte que es vol escriure. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El controlador de persistencia ha escrit el byte indicat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{658                                                        \{}
+\DoxyCodeLine{659         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(b);}
+\DoxyCodeLine{660     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_ac3fe193af8ea9261338bacb81a06ade1}\label{class_domain_1_1_ctrl_domain_ac3fe193af8ea9261338bacb81a06ade1}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!writeBitBuffer@{writeBitBuffer}}
+\index{writeBitBuffer@{writeBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{writeBitBuffer()}{writeBitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+write\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{p }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em i} & Bits que es volen objecte que volem passar a binari. \\
+\hline
+{\em p} & Bits que quants bits tindrà el objecte a representar en binari. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{820                                                                        \{}
+\DoxyCodeLine{821         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_abecc430ee769bff5e25c5d1cf14d7584}{writeBitBuffer}}(i, p);}
+\DoxyCodeLine{822     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a4d8f8c2a98f499cadea80ad8793398b5}\label{class_domain_1_1_ctrl_domain_a4d8f8c2a98f499cadea80ad8793398b5}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!writeBitBuffer@{writeBitBuffer}}
+\index{writeBitBuffer@{writeBitBuffer}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{writeBitBuffer()}{writeBitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Domain.\+Ctrl\+Domain.\+write\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crida al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em s} & Bits que es volen escriure. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha cridat al controlador de persistencia perque escrigui {\itshape s} al Bit\+Buffer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{806                                                                    \{}
+\DoxyCodeLine{807         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_abecc430ee769bff5e25c5d1cf14d7584}{writeBitBuffer}}(s);}
+\DoxyCodeLine{808     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a1bc396413440f0f7139ba03d5293e6b9}\label{class_domain_1_1_ctrl_domain_a1bc396413440f0f7139ba03d5293e6b9}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!writeFolders@{writeFolders}}
+\index{writeFolders@{writeFolders}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{writeFolders()}{writeFolders()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+write\+Folders (\begin{DoxyParamCaption}\item[{Array\+List$<$ String $>$}]{folder\+List,  }\item[{Path}]{base\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia perque escrigui els paths de les carpetes que hi ha dins de la carpeta que volem comprimir. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em folder\+List} & Llista de paths de les carpetes que hi ha dins de la carpeta que es vol comprimir. \\
+\hline
+{\em base\+\_\+path} & Path base. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit al fitxer que representa la carpeta comprimida tots els paths de les possibles carpetes que hi ha dins. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{363                                                                                               \{}
+\DoxyCodeLine{364         \textcolor{keywordflow}{for} (String folderPath : folderList) \{}
+\DoxyCodeLine{365             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"0"}.getBytes());}
+\DoxyCodeLine{366             Path carpath = Paths.get(ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}{getFileAbsolutePath}}(folderPath));}
+\DoxyCodeLine{367             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(base\_path.relativize(carpath).toString().getBytes());}
+\DoxyCodeLine{368             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"\(\backslash\)n"}.getBytes()); }
+\DoxyCodeLine{369         \}}
+\DoxyCodeLine{370         }
+\DoxyCodeLine{371     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a16b561d58080714afc27fefb3b72be98}\label{class_domain_1_1_ctrl_domain_a16b561d58080714afc27fefb3b72be98}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!writeImageFiles@{writeImageFiles}}
+\index{writeImageFiles@{writeImageFiles}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{writeImageFiles()}{writeImageFiles()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+write\+Image\+Files (\begin{DoxyParamCaption}\item[{Array\+List$<$ String $>$}]{image\+List,  }\item[{Path}]{base\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia perque escrigui els paths de les imatges que hi ha dins de la carpeta que volem comprimir i les comprimeixi. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em image\+List} & Llista de paths de les imatges de text que hi ha dins de la carpeta que es vol comprimir. \\
+\hline
+{\em base\+\_\+path} & Path base. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit al fitxer que representa la carpeta comprimida tots els paths de les imatges que hi ha dins d\textquotesingle{}aquesta, amb la respectiva compressió del seu contingut. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{409                                                                                                 \{}
+\DoxyCodeLine{410         }
+\DoxyCodeLine{411         Path arcpath;}
+\DoxyCodeLine{412         }
+\DoxyCodeLine{413         \textcolor{keywordflow}{for} (String imagePath : imageList) \{}
+\DoxyCodeLine{414             arcpath = Paths.get(ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}{getFileAbsolutePath}}(imagePath));}
+\DoxyCodeLine{415             }
+\DoxyCodeLine{416             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}{set\_inBuffer}}(arcpath.toString());}
+\DoxyCodeLine{417             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"1"}.getBytes());}
+\DoxyCodeLine{418             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(base\_path.relativize(arcpath).toString().getBytes());}
+\DoxyCodeLine{419             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"\(\backslash\)n"}.getBytes());}
+\DoxyCodeLine{420             }
+\DoxyCodeLine{421             algorithm = \textcolor{keyword}{new} JPEG(50);}
+\DoxyCodeLine{422                         }
+\DoxyCodeLine{423             algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{424             algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{425             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"\(\backslash\)n"}.getBytes());}
+\DoxyCodeLine{426         \}}
+\DoxyCodeLine{427     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_ctrl_domain_a0bdfca6fdc446a149a8e03c063dd8f39}\label{class_domain_1_1_ctrl_domain_a0bdfca6fdc446a149a8e03c063dd8f39}} 
+\index{Domain.CtrlDomain@{Domain.CtrlDomain}!writeTextFiles@{writeTextFiles}}
+\index{writeTextFiles@{writeTextFiles}!Domain.CtrlDomain@{Domain.CtrlDomain}}
+\doxysubsubsection{\texorpdfstring{writeTextFiles()}{writeTextFiles()}}
+{\footnotesize\ttfamily void Domain.\+Ctrl\+Domain.\+write\+Text\+Files (\begin{DoxyParamCaption}\item[{Array\+List$<$ String $>$}]{text\+List,  }\item[{Path}]{base\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida al controlador de persistencia perque escrigui els paths de els arxius de text que hi ha dins de la carpeta que volem comprimir i els comprimeixi. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em text\+List} & Llista de paths dels fitxers de text que hi ha dins de la carpeta que es vol comprimir. \\
+\hline
+{\em base\+\_\+path} & Path base. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit al fitxer que representa la carpeta comprimida tots els paths dels fitxers de text que hi ha dins d\textquotesingle{}aquesta, amb la respectiva compressió del seu contingut. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{382                                                                                               \{}
+\DoxyCodeLine{383         Path arcpath;}
+\DoxyCodeLine{384         }
+\DoxyCodeLine{385         \textcolor{keywordflow}{for} (String textPath : textList) \{}
+\DoxyCodeLine{386             arcpath = Paths.get(ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}{getFileAbsolutePath}}(textPath));}
+\DoxyCodeLine{387             }
+\DoxyCodeLine{388             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}{set\_inBuffer}}(arcpath.toString());}
+\DoxyCodeLine{389             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"1"}.getBytes());}
+\DoxyCodeLine{390             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(base\_path.relativize(arcpath).toString().getBytes());}
+\DoxyCodeLine{391             ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}}(\textcolor{stringliteral}{"\(\backslash\)n"}.getBytes());}
+\DoxyCodeLine{392             }
+\DoxyCodeLine{393             algorithm = \textcolor{keyword}{new} LZW();}
+\DoxyCodeLine{394                         }
+\DoxyCodeLine{395             algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{396             algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{397         \}}
+\DoxyCodeLine{398     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_ctrl_domain_8java}{Ctrl\+Domain.\+java}}\end{DoxyCompactItemize}

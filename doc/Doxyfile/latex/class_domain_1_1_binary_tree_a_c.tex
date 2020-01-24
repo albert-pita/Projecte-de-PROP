@@ -1,0 +1,143 @@
+\hypertarget{class_domain_1_1_binary_tree_a_c}{}\doxysection{Referència de la Classe Domain.\+Binary\+Tree\+AC}
+\label{class_domain_1_1_binary_tree_a_c}\index{Domain.BinaryTreeAC@{Domain.BinaryTreeAC}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Node}
+\begin{DoxyCompactList}\small\item\em Classe que representa un node de l\textquotesingle{}arbre binari. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_a4ff17a2ad0cbb915c357ab9806ea7706}{Binary\+Tree\+AC}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_a4686a4670b5183ceef142b7d63094847}{get\+Code\+Word}} (int run, int size)
+\begin{DoxyCompactList}\small\item\em Busca el code\+Word que esta associat a una certa categoria. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_ada382394f2d3b37158bdd262fcf1098c}{get\+Run\+Size}} (String data, int index)
+\begin{DoxyCompactList}\small\item\em Busca el run i el size que esta associada a un cert code\+Word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta classe representa una taula AC de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} donada per l\textquotesingle{}estàndard del \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. La representa mitjançant arbres binaris.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_a_c_a4ff17a2ad0cbb915c357ab9806ea7706}\label{class_domain_1_1_binary_tree_a_c_a4ff17a2ad0cbb915c357ab9806ea7706}} 
+\index{Domain.BinaryTreeAC@{Domain.BinaryTreeAC}!BinaryTreeAC@{BinaryTreeAC}}
+\index{BinaryTreeAC@{BinaryTreeAC}!Domain.BinaryTreeAC@{Domain.BinaryTreeAC}}
+\doxysubsubsection{\texorpdfstring{BinaryTreeAC()}{BinaryTreeAC()}}
+{\footnotesize\ttfamily Domain.\+Binary\+Tree\+A\+C.\+Binary\+Tree\+AC (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Creadora per defecte. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path on esta ubicada la taula que volem inicialitzar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crea una nova instància de \mbox{\hyperlink{class_domain_1_1_binary_tree_a_c}{Binary\+Tree\+AC}} on {\itshape root} és un arbre binari que representa una taula AC de l\textquotesingle{}estàndard de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                                         \{}
+\DoxyCodeLine{80         CtrlDomain.initializeBufferedReaderHuffman(path);}
+\DoxyCodeLine{81         load\_tree();}
+\DoxyCodeLine{82         CtrlDomain.closeBufferedReaderHuffman();}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_a_c_a4686a4670b5183ceef142b7d63094847}\label{class_domain_1_1_binary_tree_a_c_a4686a4670b5183ceef142b7d63094847}} 
+\index{Domain.BinaryTreeAC@{Domain.BinaryTreeAC}!getCodeWord@{getCodeWord}}
+\index{getCodeWord@{getCodeWord}!Domain.BinaryTreeAC@{Domain.BinaryTreeAC}}
+\doxysubsubsection{\texorpdfstring{getCodeWord()}{getCodeWord()}}
+{\footnotesize\ttfamily String Domain.\+Binary\+Tree\+A\+C.\+get\+Code\+Word (\begin{DoxyParamCaption}\item[{int}]{run,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Busca el code\+Word que esta associat a una certa categoria. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em run} & Run del code\+Word que s\textquotesingle{}esta buscant. \\
+\hline
+{\em size} & Size del code\+Word que s\textquotesingle{}esta buscant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el code\+Word associat associat al run {\itshape run} i al size {\itshape size}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el code\+Word associat al run {\itshape run} i al size {\itshape size}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204                                                  \{}
+\DoxyCodeLine{205         \textcolor{keywordflow}{return} recursiveGetCodeWord(run, size, this.root);}
+\DoxyCodeLine{206     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_a_c_ada382394f2d3b37158bdd262fcf1098c}\label{class_domain_1_1_binary_tree_a_c_ada382394f2d3b37158bdd262fcf1098c}} 
+\index{Domain.BinaryTreeAC@{Domain.BinaryTreeAC}!getRunSize@{getRunSize}}
+\index{getRunSize@{getRunSize}!Domain.BinaryTreeAC@{Domain.BinaryTreeAC}}
+\doxysubsubsection{\texorpdfstring{getRunSize()}{getRunSize()}}
+{\footnotesize\ttfamily String Domain.\+Binary\+Tree\+A\+C.\+get\+Run\+Size (\begin{DoxyParamCaption}\item[{String}]{data,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Busca el run i el size que esta associada a un cert code\+Word. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em data} & Dades de la qual volem llegir el code\+Word i que retorni els respectius run i size que estem buscant. \\
+\hline
+{\em index} & Posició actual del iterador que marca quina posició de les dades s\textquotesingle{}està visitant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el run i el size del code\+Word llegit de {\itshape data}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el run i size associats al code\+Word llegit de {\itshape data}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247                                                      \{}
+\DoxyCodeLine{248         \textcolor{keywordflow}{return} recursiveGetRunSize(data, this.root, index);}
+\DoxyCodeLine{249     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_binary_tree_a_c_8java}{Binary\+Tree\+A\+C.\+java}}\end{DoxyCompactItemize}

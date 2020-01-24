@@ -1,0 +1,1569 @@
+\hypertarget{class_persistence_1_1_ctrl_persistence}{}\doxysection{Referència de la Classe Persistence.\+Ctrl\+Persistence}
+\label{class_persistence_1_1_ctrl_persistence}\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+
+
+Aquest és el controlador de persistencia.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab458a66ca8ec140b9959fa42c6febf34}{read}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Llegeix el pròxim byte de dades del {\itshape in\+Buffer} i el retorna com un integer en un rang de 0 a 255. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a3e985c9d7bc4aaf7844eca01573c6ff2}{read}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Llegeix un nombre de bytes de dades del {\itshape in\+Buffer} i els guarda al vector de bytes que se li passa per parametre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}{write}} (int b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Escriu el byte especificat al {\itshape out\+Buffer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a744abc06484cdac36ef5f854da845d8b}{write}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Escriu {\itshape b.\+length} bytes del vector passat per parametres al {\itshape out\+Buffer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a306e868847422c043a8f9a9fa0c8ade5}{initialize\+Compression\+Bit\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}} per comprimir fitxers de text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a850d1423903729bc25ce90b8d4cbef64}{initialize\+Decompression\+Bit\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}} per descomprimir fitxers de text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace8aa3652a9557289874a689418e1e9d}{close\+Bit\+Buffer}} (boolean \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a223f795f97004d9e483108312f264093}{is\+File}})  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol tancar el {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a8665e5962041ea94ed802730c580a8cc}{read\+Bit\+Buffer}} (int i)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol llegir de {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_abecc430ee769bff5e25c5d1cf14d7584}{write\+Bit\+Buffer}} (String s)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol escriure a {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a1f36b953df80cd6b2e4c4a159d6a3a74}{write\+Bit\+Buffer}} (int i, int p)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol escriure a {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}{read\+Ascii\+Int}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Llegeix un integer del {\itshape in\+Buffer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}{initialize\+Buffered\+Reader}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader} apuntant a un fitxer amb un cert path donat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a46849ff46e3a69997dce050e978dc76f}{initialize\+Buffered\+Reader\+Huffman}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman} apuntant a un fitxer amb un cert path donat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a36363836476437a61d169309a86c9334}{initialize\+Buffered\+Reader}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader} sobre l\textquotesingle{}{\itshape in\+Buffer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_aa67abe8cbd125b61feaf8c5883042d26}{close\+Buffered\+Reader}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Es tanca l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a8d621d98f47489c62776d0027d02ca7f}{close\+Buffered\+Reader\+Huffman}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Es tanca l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0f3e60966cbd16e3579d73a323630d6e}{read\+Line}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Es llegeix un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a1d1ba45439aa696fc460546736e56fff}{read\+Line\+Huffman}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Es llegeix un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7340c1fb4e002ee0eca68a0be1c89a78}{get\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Obté tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_af211fae69252aa5025471d3b02e58167}{delete\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Borra tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_aaf3a1f8f37b7a7e2494b20cd43546065}{get\+Text}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Obté tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0e5fab4b5a1bb84a576b20eb4110f63b}{get\+Image}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Obté tot el contingut d\textquotesingle{}una imatge amb path {\itshape paht}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence}{Ctrl\+Persistence}} \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0931c23b4faf9745793979bd80b29506}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Obté l\textquotesingle{}ùnica instància del controlador de persistència. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{open\+File}} (String in\+\_\+path, String out\+\_\+path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Obre un fitxer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}{close\+File}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Tanca un fitxer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a9fe81e7513e4ad659e191847fdcef1c0}{close\+Buffered\+Output}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Tanca el buffer de sortida. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a898ca1c9b767e19e861ef5e624ab1c1b}{get\+\_\+file\+Length}} (String path)
+\begin{DoxyCompactList}\small\item\em Retorna el tamany d\textquotesingle{}un cert fitxer amb path {\itshape path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}{save\+Statistics}} (String statistics)  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Guarda a la base de dades d\textquotesingle{}estadístiques les {\itshape statistics}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a35b696a4e8b12ab18fd9257067c57e6c}{delete\+File}} (String path)
+\begin{DoxyCompactList}\small\item\em Elimina un fitxer amb path {\itshape path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}{set\+\_\+in\+Buffer}} (String in\+\_\+path)  throws File\+Not\+Found\+Exception 
+\begin{DoxyCompactList}\small\item\em Fa que {\itshape in\+Buffer} apunti al fitxer amb path {\itshape in\+\_\+path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a33017605d21be00a28218d835ce2c058}{set\+\_\+out\+Buffer}} (String out\+\_\+path)  throws File\+Not\+Found\+Exception 
+\begin{DoxyCompactList}\small\item\em Fa que {\itshape out\+Buffer} apunti al fitxer amb path {\itshape out\+\_\+path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}{flush\+\_\+out\+Buffer}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Fa que {\itshape out\+Buffer} sigui buidat. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}{read\+Line\+\_\+in\+Buffer}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Es llegeix un linea del {\itshape in\+Buffer}. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a223f795f97004d9e483108312f264093}{is\+File}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Indica si es un fitxer o no. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a4ef6911f351e5226091a7eb4287fb883}{is\+Directory}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Indica si es un directori o no. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae29ffcf577fb4c1f72339f8a32cba8f8}{get\+File\+Parent}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Obté el pare del objecte fitxer donat. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}{get\+File\+Absolute\+Path}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Obté el path absolut del fitxer que te per path {\itshape path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae588ab28a359bf351c6e2ddf119eba00}{make\+Directory}} (String path)
+\begin{DoxyCompactList}\small\item\em Crea un nou directori amb path {\itshape path}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adb7af36b3ff38b826cdbfdde38f81cbc}{make\+File}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Crea un nou fitxer amb path {\itshape path}. \end{DoxyCompactList}\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a17f6fb5e0707d89236007838cfc5ea2c}{list\+Text\+Files}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Agafa tots els paths dels fitxers de text que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent els que estan dins d\textquotesingle{}altres carpetes. \end{DoxyCompactList}\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0281d1b36bc902f1140b26d3300cf0a7}{list\+Image\+Files}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Agafa tots els paths de les imatges que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent les que estan dins d\textquotesingle{}altres carpetes. \end{DoxyCompactList}\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a93b6496f0022851aed1c2d18487771a3}{list\+Folders}} (String in\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Agafa tots els paths dels directoris que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent-\/se a si mateix i els que estan dins d\textquotesingle{}altres carpetes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Aquest és el controlador de persistencia. 
+
+Controlador de Persistencia
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ace8aa3652a9557289874a689418e1e9d}\label{class_persistence_1_1_ctrl_persistence_ace8aa3652a9557289874a689418e1e9d}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!closeBitBuffer@{closeBitBuffer}}
+\index{closeBitBuffer@{closeBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{closeBitBuffer()}{closeBitBuffer()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+close\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{boolean}]{is\+File }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol tancar el {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+
+Depen de si el que es tracta es un fitxer o una carpeta tancara de forma diferent.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em is\+File} & Indica si el que s\textquotesingle{}esta tractant es un fitxer o una carpeta. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} per tancar el {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196                                                                   \{}
+\DoxyCodeLine{197         BitBuffer.\mbox{\hyperlink{class_persistence_1_1_bit_buffer_ae24f9a009801d5ab2b9283354a7a6615}{close}}(\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a223f795f97004d9e483108312f264093}{isFile}});}
+\DoxyCodeLine{198     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a9fe81e7513e4ad659e191847fdcef1c0}\label{class_persistence_1_1_ctrl_persistence_a9fe81e7513e4ad659e191847fdcef1c0}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!closeBufferedOutput@{closeBufferedOutput}}
+\index{closeBufferedOutput@{closeBufferedOutput}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{closeBufferedOutput()}{closeBufferedOutput()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+close\+Buffered\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tanca el buffer de sortida. 
+
+Tanca el buffer de sortida.
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+L\textquotesingle{}atribut privat {\itshape out\+Buffer} es tanca. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                                                 \{}
+\DoxyCodeLine{112         outBuffer.close();}
+\DoxyCodeLine{113     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_aa67abe8cbd125b61feaf8c5883042d26}\label{class_persistence_1_1_ctrl_persistence_aa67abe8cbd125b61feaf8c5883042d26}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!closeBufferedReader@{closeBufferedReader}}
+\index{closeBufferedReader@{closeBufferedReader}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{closeBufferedReader()}{closeBufferedReader()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+close\+Buffered\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Es tanca l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha tancat l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{323                                                          \{}
+\DoxyCodeLine{324         bufferedReader.close();}
+\DoxyCodeLine{325     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a8d621d98f47489c62776d0027d02ca7f}\label{class_persistence_1_1_ctrl_persistence_a8d621d98f47489c62776d0027d02ca7f}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!closeBufferedReaderHuffman@{closeBufferedReaderHuffman}}
+\index{closeBufferedReaderHuffman@{closeBufferedReaderHuffman}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{closeBufferedReaderHuffman()}{closeBufferedReaderHuffman()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+close\+Buffered\+Reader\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Es tanca l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha tancat l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334                                                                 \{}
+\DoxyCodeLine{335         bufferedReaderHuffman.close();}
+\DoxyCodeLine{336     \}    }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}\label{class_persistence_1_1_ctrl_persistence_a7a411e1336334c511539fe64c3c33834}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!closeFile@{closeFile}}
+\index{closeFile@{closeFile}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{closeFile()}{closeFile()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+close\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tanca un fitxer. 
+
+Tanca el buffer d\textquotesingle{}entrada i de sortida.
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els atributs privats {\itshape in\+Buffer} i {\itshape out\+Buffer} es tanquen. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                                       \{}
+\DoxyCodeLine{98         inBuffer.close();}
+\DoxyCodeLine{99         outBuffer.close();}
+\DoxyCodeLine{100     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a35b696a4e8b12ab18fd9257067c57e6c}\label{class_persistence_1_1_ctrl_persistence_a35b696a4e8b12ab18fd9257067c57e6c}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!deleteFile@{deleteFile}}
+\index{deleteFile@{deleteFile}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{deleteFile()}{deleteFile()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+delete\+File (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Elimina un fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol eliminar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha eliminat el fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{477                                                \{}
+\DoxyCodeLine{478         File file = \textcolor{keyword}{new} File(path);}
+\DoxyCodeLine{479         file.delete();}
+\DoxyCodeLine{480     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_af211fae69252aa5025471d3b02e58167}\label{class_persistence_1_1_ctrl_persistence_af211fae69252aa5025471d3b02e58167}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!deleteTableContent@{deleteTableContent}}
+\index{deleteTableContent@{deleteTableContent}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{deleteTableContent()}{deleteTableContent()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+delete\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Borra tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la base de dades per borrar totes les estadístiques fins al moment. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{407                                                         \{}
+\DoxyCodeLine{408         statisticsDataBase.\mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a43cc8f4a50fa7874c9a20da4cb13e49d}{deleteTableContent}}();}
+\DoxyCodeLine{409     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}\label{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!flush\_outBuffer@{flush\_outBuffer}}
+\index{flush\_outBuffer@{flush\_outBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{flush\_outBuffer()}{flush\_outBuffer()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+flush\+\_\+out\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fa que {\itshape out\+Buffer} sigui buidat. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\itshape out\+Buffer} es buidat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{513                                                             \{}
+\DoxyCodeLine{514         outBuffer.flush();}
+\DoxyCodeLine{515     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a898ca1c9b767e19e861ef5e624ab1c1b}\label{class_persistence_1_1_ctrl_persistence_a898ca1c9b767e19e861ef5e624ab1c1b}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!get\_fileLength@{get\_fileLength}}
+\index{get\_fileLength@{get\_fileLength}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{get\_fileLength()}{get\_fileLength()}}
+{\footnotesize\ttfamily static double Persistence.\+Ctrl\+Persistence.\+get\+\_\+file\+Length (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retorna el tamany d\textquotesingle{}un cert fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer del que volem saber el seu tamany. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el tamany del fitxer.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el tamany del fitxer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{370                                                      \{}
+\DoxyCodeLine{371         File file = \textcolor{keyword}{new} File(path);}
+\DoxyCodeLine{372         \textcolor{keywordtype}{double} fileLenght =  ((double) file.length()) * 100;}
+\DoxyCodeLine{373         \textcolor{keywordflow}{return} fileLenght;}
+\DoxyCodeLine{374     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}\label{class_persistence_1_1_ctrl_persistence_ae53547eef973fbbed714a91c37c1815c}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getFileAbsolutePath@{getFileAbsolutePath}}
+\index{getFileAbsolutePath@{getFileAbsolutePath}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getFileAbsolutePath()}{getFileAbsolutePath()}}
+{\footnotesize\ttfamily static String Persistence.\+Ctrl\+Persistence.\+get\+File\+Absolute\+Path (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obté el path absolut del fitxer que te per path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer del qual es vol obtenir el seu path absolut. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna una String amb el path absolut del fitxer que te per path {\itshape path}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Ha retornat una String amb el path absolut del fitxer que te per path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{583                                                             \{}
+\DoxyCodeLine{584         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{585         \textcolor{keywordflow}{return} f.getAbsolutePath();}
+\DoxyCodeLine{586     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ae29ffcf577fb4c1f72339f8a32cba8f8}\label{class_persistence_1_1_ctrl_persistence_ae29ffcf577fb4c1f72339f8a32cba8f8}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getFileParent@{getFileParent}}
+\index{getFileParent@{getFileParent}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getFileParent()}{getFileParent()}}
+{\footnotesize\ttfamily static String Persistence.\+Ctrl\+Persistence.\+get\+File\+Parent (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obté el pare del objecte fitxer donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer del qual es vol obtenir el seu pare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna una String el valor el qual es el pare del fitxer objecte donat.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Ha retornat una String el valor el qual es el pare del fitxer objecte donat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{570                                                       \{}
+\DoxyCodeLine{571         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{572         \textcolor{keywordflow}{return} f.getParent();}
+\DoxyCodeLine{573     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a0e5fab4b5a1bb84a576b20eb4110f63b}\label{class_persistence_1_1_ctrl_persistence_a0e5fab4b5a1bb84a576b20eb4110f63b}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getImage@{getImage}}
+\index{getImage@{getImage}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getImage()}{getImage()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ Persistence.\+Ctrl\+Persistence.\+get\+Image (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Obté tot el contingut d\textquotesingle{}una imatge amb path {\itshape paht}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path de la imatge que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List de la qual els dos primers valors son el tamany de l\textquotesingle{}imatge i la resta son els pixels d\textquotesingle{}aquesta. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Ha retornat un Array\+List de la qual els dos primers valors son el tamany de l\textquotesingle{}imatge i la resta son els pixels d\textquotesingle{}aquesta. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{440                                                                        \{}
+\DoxyCodeLine{441         ArrayList<Integer> image = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{442         }
+\DoxyCodeLine{443         inBuffer = \textcolor{keyword}{new} BufferedInputStream (\textcolor{keyword}{new} FileInputStream (path));}
+\DoxyCodeLine{444         }
+\DoxyCodeLine{445         inBuffer.read(\textcolor{keyword}{new} \textcolor{keywordtype}{byte}[2]);}
+\DoxyCodeLine{446         \textcolor{keywordtype}{int} width = \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}{readAsciiInt}}();}
+\DoxyCodeLine{447         \textcolor{keywordtype}{int} height = \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}{readAsciiInt}}();}
+\DoxyCodeLine{448         \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}{readAsciiInt}}();}
+\DoxyCodeLine{449 }
+\DoxyCodeLine{450         image.add(width);}
+\DoxyCodeLine{451         image.add(height);}
+\DoxyCodeLine{452         }
+\DoxyCodeLine{453         \textcolor{keywordtype}{int} r, g, b;}
+\DoxyCodeLine{454         }
+\DoxyCodeLine{455         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < height; i++) \{}
+\DoxyCodeLine{456             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < width; j++) \{}
+\DoxyCodeLine{457                 r = inBuffer.read();}
+\DoxyCodeLine{458                 image.add(r);}
+\DoxyCodeLine{459                 g = inBuffer.read();}
+\DoxyCodeLine{460                 image.add(g);}
+\DoxyCodeLine{461                 b = inBuffer.read();}
+\DoxyCodeLine{462                 image.add(b);}
+\DoxyCodeLine{463             \}}
+\DoxyCodeLine{464         \}}
+\DoxyCodeLine{465         }
+\DoxyCodeLine{466         inBuffer.close();}
+\DoxyCodeLine{467         \textcolor{keywordflow}{return} image;}
+\DoxyCodeLine{468     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a0931c23b4faf9745793979bd80b29506}\label{class_persistence_1_1_ctrl_persistence_a0931c23b4faf9745793979bd80b29506}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence}{Ctrl\+Persistence}} Persistence.\+Ctrl\+Persistence.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obté l\textquotesingle{}ùnica instància del controlador de persistència. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna la única instància del controlador de persistència.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el controlador de persistència. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                \{}
+\DoxyCodeLine{65         \textcolor{keywordflow}{return} CtrlPersistenceHolder.INSTANCE;}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a7340c1fb4e002ee0eca68a0be1c89a78}\label{class_persistence_1_1_ctrl_persistence_a7340c1fb4e002ee0eca68a0be1c89a78}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getTableContent@{getTableContent}}
+\index{getTableContent@{getTableContent}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getTableContent()}{getTableContent()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ Persistence.\+Ctrl\+Persistence.\+get\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Obté tot el contingut que tingui la base de dades d\textquotesingle{}estadístiques. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una Array\+List amb tot el contingut de la base de dades de d\textquotesingle{}estadístiques. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la base de dades per obtenir totes les estadístiques fins al moment. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{396                                                                   \{}
+\DoxyCodeLine{397         \textcolor{keywordflow}{return} statisticsDataBase.\mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a172f1f0708baddfa26256c7e0b2bf597}{getTableContent}}();}
+\DoxyCodeLine{398     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_aaf3a1f8f37b7a7e2494b20cd43546065}\label{class_persistence_1_1_ctrl_persistence_aaf3a1f8f37b7a7e2494b20cd43546065}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!getText@{getText}}
+\index{getText@{getText}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily String Persistence.\+Ctrl\+Persistence.\+get\+Text (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Obté tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna tot el text del fitxer. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Ha retornat tot el text d\textquotesingle{}un fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{420                                                           \{}
+\DoxyCodeLine{421         StringBuilder sB = \textcolor{keyword}{new} StringBuilder(512);}
+\DoxyCodeLine{422         \textcolor{keywordflow}{try} (Reader r = \textcolor{keyword}{new} InputStreamReader(\textcolor{keyword}{new} FileInputStream(\textcolor{keyword}{new} File(path)))) \{}
+\DoxyCodeLine{423             \textcolor{keywordtype}{int} c = 0;}
+\DoxyCodeLine{424             \textcolor{keywordflow}{while} ((c = r.read()) != -\/1) \{}
+\DoxyCodeLine{425                 sB.append((\textcolor{keywordtype}{char}) c);}
+\DoxyCodeLine{426             \}}
+\DoxyCodeLine{427         \}}
+\DoxyCodeLine{428         \textcolor{keywordflow}{return} sB.toString();}
+\DoxyCodeLine{429     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a36363836476437a61d169309a86c9334}\label{class_persistence_1_1_ctrl_persistence_a36363836476437a61d169309a86c9334}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!initializeBufferedReader@{initializeBufferedReader}}
+\index{initializeBufferedReader@{initializeBufferedReader}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReader()}{initializeBufferedReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+initialize\+Buffered\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader} sobre l\textquotesingle{}{\itshape in\+Buffer}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape buffered\+Reader} sobre l\textquotesingle{}{\itshape in\+Buffer}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{312                                                               \{}
+\DoxyCodeLine{313         bufferedReader = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(inBuffer));}
+\DoxyCodeLine{314     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}\label{class_persistence_1_1_ctrl_persistence_acd42f1c2353c597f74e42fe7e95b71ff}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!initializeBufferedReader@{initializeBufferedReader}}
+\index{initializeBufferedReader@{initializeBufferedReader}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReader()}{initializeBufferedReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+initialize\+Buffered\+Reader (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader} apuntant a un fitxer amb un cert path donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape buffered\+Reader} apuntant al fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{289                                                                          \{}
+\DoxyCodeLine{290         bufferedReader = \textcolor{keyword}{new} BufferedReader (\textcolor{keyword}{new} FileReader (path));}
+\DoxyCodeLine{291     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a46849ff46e3a69997dce050e978dc76f}\label{class_persistence_1_1_ctrl_persistence_a46849ff46e3a69997dce050e978dc76f}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!initializeBufferedReaderHuffman@{initializeBufferedReaderHuffman}}
+\index{initializeBufferedReaderHuffman@{initializeBufferedReaderHuffman}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{initializeBufferedReaderHuffman()}{initializeBufferedReaderHuffman()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+initialize\+Buffered\+Reader\+Huffman (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Inicialitza l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman} apuntant a un fitxer amb un cert path donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del fitxer que es vol llegir. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman} apuntant al fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{301                                                                                 \{}
+\DoxyCodeLine{302         bufferedReaderHuffman = \textcolor{keyword}{new} BufferedReader (\textcolor{keyword}{new} FileReader (path));}
+\DoxyCodeLine{303     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a306e868847422c043a8f9a9fa0c8ade5}\label{class_persistence_1_1_ctrl_persistence_a306e868847422c043a8f9a9fa0c8ade5}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!initializeCompressionBitBuffer@{initializeCompressionBitBuffer}}
+\index{initializeCompressionBitBuffer@{initializeCompressionBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{initializeCompressionBitBuffer()}{initializeCompressionBitBuffer()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+initialize\+Compression\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicialitza l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}} per comprimir fitxers de text. 
+
+Ho fa passant per parametres ({\itshape out\+Buffer}, null).
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                                                  \{}
+\DoxyCodeLine{172         BitBuffer = \textcolor{keyword}{new} BitBuffer(outBuffer, \textcolor{keyword}{null});}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a850d1423903729bc25ce90b8d4cbef64}\label{class_persistence_1_1_ctrl_persistence_a850d1423903729bc25ce90b8d4cbef64}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!initializeDecompressionBitBuffer@{initializeDecompressionBitBuffer}}
+\index{initializeDecompressionBitBuffer@{initializeDecompressionBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{initializeDecompressionBitBuffer()}{initializeDecompressionBitBuffer()}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+initialize\+Decompression\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicialitza l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}} per descomprimir fitxers de text. 
+
+Ho fa passant per parametres (null, {\itshape in\+Buffer}).
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat l\textquotesingle{}atribut privat {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                                                    \{}
+\DoxyCodeLine{183         BitBuffer = \textcolor{keyword}{new} BitBuffer(\textcolor{keyword}{null}, inBuffer);}
+\DoxyCodeLine{184     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a4ef6911f351e5226091a7eb4287fb883}\label{class_persistence_1_1_ctrl_persistence_a4ef6911f351e5226091a7eb4287fb883}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!isDirectory@{isDirectory}}
+\index{isDirectory@{isDirectory}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{isDirectory()}{isDirectory()}}
+{\footnotesize\ttfamily static boolean Persistence.\+Ctrl\+Persistence.\+is\+Directory (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Indica si es un directori o no. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del directori que es vol comprovar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Boolea que indica si es un directori o no.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un boolea que indica si es un directori o no. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{557                                                      \{}
+\DoxyCodeLine{558         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{559         \textcolor{keywordflow}{return} f.isDirectory();}
+\DoxyCodeLine{560     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a223f795f97004d9e483108312f264093}\label{class_persistence_1_1_ctrl_persistence_a223f795f97004d9e483108312f264093}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!isFile@{isFile}}
+\index{isFile@{isFile}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{isFile()}{isFile()}}
+{\footnotesize\ttfamily static boolean Persistence.\+Ctrl\+Persistence.\+is\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Indica si es un fitxer o no. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer que es vol comprovar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Boolea que indica si es un fitxer o no.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un boolea que indica si es un fitxer o no. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{544                                                 \{}
+\DoxyCodeLine{545         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{546         \textcolor{keywordflow}{return} f.isFile();}
+\DoxyCodeLine{547     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a93b6496f0022851aed1c2d18487771a3}\label{class_persistence_1_1_ctrl_persistence_a93b6496f0022851aed1c2d18487771a3}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!listFolders@{listFolders}}
+\index{listFolders@{listFolders}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{listFolders()}{listFolders()}}
+{\footnotesize\ttfamily static Array\+List$<$String$>$ Persistence.\+Ctrl\+Persistence.\+list\+Folders (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Agafa tots els paths dels directoris que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent-\/se a si mateix i els que estan dins d\textquotesingle{}altres carpetes. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path de la carpeta de la qual volem obtenir tots els paths dels directoris que hi hagin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List amb tots els paths dels directoris, incloent l\textquotesingle{}actual, que hi hagin.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han retornat tots els paths dels directoris que hi hagin a la carpeta amb path {\itshape in\+\_\+path}, incloent aquesta, i als possibles subdirectoris d\textquotesingle{}aquesta. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{711                                                                  \{}
+\DoxyCodeLine{712         ArrayList<String> folderspaths = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{713         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{714         }
+\DoxyCodeLine{715         \textcolor{keywordflow}{if} (f.isDirectory()) folderspaths.add(in\_path);}
+\DoxyCodeLine{716         }
+\DoxyCodeLine{717         File[] foldersFiles = f.listFiles();}
+\DoxyCodeLine{718         \textcolor{keywordflow}{if} (foldersFiles != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{719             \textcolor{keywordflow}{for} (File fF : foldersFiles) \{}
+\DoxyCodeLine{720                 ArrayList<String> folderFoldersFiles = \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a93b6496f0022851aed1c2d18487771a3}{listFolders}}(fF.getAbsolutePath());}
+\DoxyCodeLine{721                 \textcolor{keywordflow}{for}(String folderPath: folderFoldersFiles)\{}
+\DoxyCodeLine{722                     folderspaths.add(folderPath);}
+\DoxyCodeLine{723                 \}}
+\DoxyCodeLine{724             \}}
+\DoxyCodeLine{725         \}}
+\DoxyCodeLine{726         \textcolor{keywordflow}{return} folderspaths;}
+\DoxyCodeLine{727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a0281d1b36bc902f1140b26d3300cf0a7}\label{class_persistence_1_1_ctrl_persistence_a0281d1b36bc902f1140b26d3300cf0a7}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!listImageFiles@{listImageFiles}}
+\index{listImageFiles@{listImageFiles}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{listImageFiles()}{listImageFiles()}}
+{\footnotesize\ttfamily static Array\+List$<$String$>$ Persistence.\+Ctrl\+Persistence.\+list\+Image\+Files (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Agafa tots els paths de les imatges que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent les que estan dins d\textquotesingle{}altres carpetes. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path de la carpeta de la qual volem obtenir tots els paths de les imatges. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List amb tots els paths de les imatges que hi hagin.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han retornat tots els paths de les imatges que hi hagin a la carpeta amb path {\itshape in\+\_\+path} i als possibles subdirectoris d\textquotesingle{}aquesta. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{665                                                                     \{}
+\DoxyCodeLine{666         ArrayList<String> imagepaths = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{667         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{668         }
+\DoxyCodeLine{669         File[] imageFiles = f.listFiles(\textcolor{keyword}{new} FileFilter() \{}
+\DoxyCodeLine{670             @Override}
+\DoxyCodeLine{671             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File file) \{}
+\DoxyCodeLine{672                 String name = file.getAbsolutePath();}
+\DoxyCodeLine{673                 \textcolor{keywordflow}{return} name.endsWith(\textcolor{stringliteral}{".ppm"});}
+\DoxyCodeLine{674             \}}
+\DoxyCodeLine{675         \});}
+\DoxyCodeLine{676         }
+\DoxyCodeLine{677         }
+\DoxyCodeLine{678         \textcolor{keywordflow}{if} (imageFiles != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{679             \textcolor{keywordflow}{for} (File fI : imageFiles) \{}
+\DoxyCodeLine{680                 imagepaths.add(fI.getAbsolutePath());}
+\DoxyCodeLine{681             \}}
+\DoxyCodeLine{682         \}}
+\DoxyCodeLine{683         }
+\DoxyCodeLine{684         File[] foldersFiles = f.listFiles(\textcolor{keyword}{new} FileFilter() \{}
+\DoxyCodeLine{685             @Override}
+\DoxyCodeLine{686             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File file) \{}
+\DoxyCodeLine{687                 \textcolor{keywordflow}{return} file.isDirectory();}
+\DoxyCodeLine{688             \}}
+\DoxyCodeLine{689         \});}
+\DoxyCodeLine{690         }
+\DoxyCodeLine{691         }
+\DoxyCodeLine{692         \textcolor{keywordflow}{if} (foldersFiles != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{693             \textcolor{keywordflow}{for} (File fF : foldersFiles) \{}
+\DoxyCodeLine{694                 ArrayList<String> folderImagesFiles = \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a0281d1b36bc902f1140b26d3300cf0a7}{listImageFiles}}(fF.getAbsolutePath());}
+\DoxyCodeLine{695                 \textcolor{keywordflow}{for}(String imagePath: folderImagesFiles)\{}
+\DoxyCodeLine{696                     imagepaths.add(imagePath);}
+\DoxyCodeLine{697                 \}}
+\DoxyCodeLine{698             \}}
+\DoxyCodeLine{699         \}}
+\DoxyCodeLine{700         \textcolor{keywordflow}{return} imagepaths;}
+\DoxyCodeLine{701     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a17f6fb5e0707d89236007838cfc5ea2c}\label{class_persistence_1_1_ctrl_persistence_a17f6fb5e0707d89236007838cfc5ea2c}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!listTextFiles@{listTextFiles}}
+\index{listTextFiles@{listTextFiles}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{listTextFiles()}{listTextFiles()}}
+{\footnotesize\ttfamily static Array\+List$<$String$>$ Persistence.\+Ctrl\+Persistence.\+list\+Text\+Files (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Agafa tots els paths dels fitxers de text que tingui la carpeta amb path {\itshape in\+\_\+path}. Incloent els que estan dins d\textquotesingle{}altres carpetes. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path de la carpeta de la qual volem obtenir tots paths dels fitxers de text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List amb tots els paths dels fitxers de text que hi hagin.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han retornat tots els paths dels fitxers de text que hi hagin a la carpeta amb path {\itshape in\+\_\+path} i als possibles subdirectoris d\textquotesingle{}aquesta. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{621                                                                    \{}
+\DoxyCodeLine{622         ArrayList<String> filepaths = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{623         File f = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{624         }
+\DoxyCodeLine{625         File[] textFiles = f.listFiles(\textcolor{keyword}{new} FileFilter() \{}
+\DoxyCodeLine{626             @Override}
+\DoxyCodeLine{627             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File file) \{}
+\DoxyCodeLine{628                 String name = file.getAbsolutePath();}
+\DoxyCodeLine{629                 \textcolor{keywordflow}{return} name.endsWith(\textcolor{stringliteral}{".txt"});}
+\DoxyCodeLine{630             \}}
+\DoxyCodeLine{631         \});}
+\DoxyCodeLine{632         }
+\DoxyCodeLine{633         \textcolor{keywordflow}{if} (textFiles != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{634             \textcolor{keywordflow}{for} (File fI : textFiles) \{}
+\DoxyCodeLine{635                 filepaths.add(fI.getAbsolutePath());}
+\DoxyCodeLine{636             \}}
+\DoxyCodeLine{637         \}}
+\DoxyCodeLine{638         }
+\DoxyCodeLine{639         File[] foldersFiles = f.listFiles(\textcolor{keyword}{new} FileFilter() \{}
+\DoxyCodeLine{640             @Override}
+\DoxyCodeLine{641             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File file) \{}
+\DoxyCodeLine{642                 \textcolor{keywordflow}{return} file.isDirectory();}
+\DoxyCodeLine{643             \}}
+\DoxyCodeLine{644         \});}
+\DoxyCodeLine{645         }
+\DoxyCodeLine{646         \textcolor{keywordflow}{if} (foldersFiles != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{647             \textcolor{keywordflow}{for} (File fF : foldersFiles) \{}
+\DoxyCodeLine{648                 ArrayList<String> folderTextFiles = \mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_a17f6fb5e0707d89236007838cfc5ea2c}{listTextFiles}}(fF.getAbsolutePath());}
+\DoxyCodeLine{649                 \textcolor{keywordflow}{for}(String textPath: folderTextFiles)\{}
+\DoxyCodeLine{650                     filepaths.add(textPath);}
+\DoxyCodeLine{651                 \}}
+\DoxyCodeLine{652             \}}
+\DoxyCodeLine{653         \}}
+\DoxyCodeLine{654         \textcolor{keywordflow}{return} filepaths;}
+\DoxyCodeLine{655     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ae588ab28a359bf351c6e2ddf119eba00}\label{class_persistence_1_1_ctrl_persistence_ae588ab28a359bf351c6e2ddf119eba00}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!makeDirectory@{makeDirectory}}
+\index{makeDirectory@{makeDirectory}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{makeDirectory()}{makeDirectory()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+make\+Directory (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea un nou directori amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del nou directori.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat un nou directori amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{595                                                   \{}
+\DoxyCodeLine{596         File f = \textcolor{keyword}{new} File(path);}
+\DoxyCodeLine{597         f.mkdirs();}
+\DoxyCodeLine{598     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_adb7af36b3ff38b826cdbfdde38f81cbc}\label{class_persistence_1_1_ctrl_persistence_adb7af36b3ff38b826cdbfdde38f81cbc}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!makeFile@{makeFile}}
+\index{makeFile@{makeFile}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{makeFile()}{makeFile()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+make\+File (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea un nou fitxer amb path {\itshape path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path del nou fitxer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat un nou fitxer amb path {\itshape path}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{608                                                                 \{}
+\DoxyCodeLine{609         File f = \textcolor{keyword}{new} File(path);}
+\DoxyCodeLine{610         f.createNewFile();}
+\DoxyCodeLine{611     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}\label{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!openFile@{openFile}}
+\index{openFile@{openFile}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+open\+File (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path,  }\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obre un fitxer. 
+
+Inicialitza el buffer d\textquotesingle{}entrada i de sortida amb els paràmetres passats.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path d\textquotesingle{}entrada. \\
+\hline
+{\em out\+\_\+path} & Path de sortida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Els atributs privats {\itshape in\+Buffer} i {\itshape out\+Buffer} apunten als fitxer d\textquotesingle{}entrada i sortida. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                                                     \{}
+\DoxyCodeLine{84         inBuffer = \textcolor{keyword}{new} BufferedInputStream (\textcolor{keyword}{new} FileInputStream (in\_path));}
+\DoxyCodeLine{85         outBuffer = \textcolor{keyword}{new} BufferedOutputStream (\textcolor{keyword}{new} FileOutputStream (out\_path));}
+\DoxyCodeLine{86     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ab458a66ca8ec140b9959fa42c6febf34}\label{class_persistence_1_1_ctrl_persistence_ab458a66ca8ec140b9959fa42c6febf34}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!read@{read}}
+\index{read@{read}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Persistence.\+Ctrl\+Persistence.\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Llegeix el pròxim byte de dades del {\itshape in\+Buffer} i el retorna com un integer en un rang de 0 a 255. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Retorna}
+Retorna el pròxim byte de dades del {\itshape in\+Buffer} i el retorna com un integer en un rang de 0 a 255.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el pròxim byte de dades del {\itshape in\+Buffer} i el retorna com un integer en un rang de 0 a 255. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                          \{}
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} inBuffer.read();}
+\DoxyCodeLine{125     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a3e985c9d7bc4aaf7844eca01573c6ff2}\label{class_persistence_1_1_ctrl_persistence_a3e985c9d7bc4aaf7844eca01573c6ff2}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!read@{read}}
+\index{read@{read}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Persistence.\+Ctrl\+Persistence.\+read (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Llegeix un nombre de bytes de dades del {\itshape in\+Buffer} i els guarda al vector de bytes que se li passa per parametre. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Vector on es guardaran els bytes llegits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el nombre de bytes que s\textquotesingle{}han pogut llegir. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}haura llegit del {\itshape in\+Buffer} el nombre de bytes indicat pel tamany del vector que se li passa si es pot. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                                                  \{}
+\DoxyCodeLine{137         \textcolor{keywordflow}{return} inBuffer.read(b);}
+\DoxyCodeLine{138     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}\label{class_persistence_1_1_ctrl_persistence_ae7081db817191a22b0aafab9e512a251}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!readAsciiInt@{readAsciiInt}}
+\index{readAsciiInt@{readAsciiInt}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{readAsciiInt()}{readAsciiInt()}}
+{\footnotesize\ttfamily int Persistence.\+Ctrl\+Persistence.\+read\+Ascii\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Llegeix un integer del {\itshape in\+Buffer}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna un integer. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el integer llegit del {\itshape in\+Buffer}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246                                                  \{}
+\DoxyCodeLine{247         \textcolor{keywordtype}{char} c = readAsciiChar();}
+\DoxyCodeLine{248         \textcolor{keywordflow}{if} ((c < \textcolor{charliteral}{'0'}) || (\textcolor{charliteral}{'9'} < c)) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException (getClass().getName() + \textcolor{stringliteral}{".readAsciiInt: Expected Ascii Integer"});}
+\DoxyCodeLine{249         }
+\DoxyCodeLine{250         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{251         \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{252             i = i * 10 + c -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{253             c = (char) inBuffer.read();}
+\DoxyCodeLine{254         \} \textcolor{keywordflow}{while} ((\textcolor{charliteral}{'0'} <= c) \&\& (c <= \textcolor{charliteral}{'9'}));}
+\DoxyCodeLine{255         }
+\DoxyCodeLine{256         \textcolor{keywordflow}{return} i; }
+\DoxyCodeLine{257     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a8665e5962041ea94ed802730c580a8cc}\label{class_persistence_1_1_ctrl_persistence_a8665e5962041ea94ed802730c580a8cc}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!readBitBuffer@{readBitBuffer}}
+\index{readBitBuffer@{readBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{readBitBuffer()}{readBitBuffer()}}
+{\footnotesize\ttfamily int Persistence.\+Ctrl\+Persistence.\+read\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol llegir de {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em i} & Bits que es vol llegir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el valor sencer de la suma de bits llegits. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} per llegir {\itshape i} bits del {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209                                                        \{}
+\DoxyCodeLine{210         \textcolor{keywordflow}{return} BitBuffer.\mbox{\hyperlink{class_persistence_1_1_bit_buffer_a6265c9beb5b90c6fe03d6357363e5630}{read}}(i);}
+\DoxyCodeLine{211     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a0f3e60966cbd16e3579d73a323630d6e}\label{class_persistence_1_1_ctrl_persistence_a0f3e60966cbd16e3579d73a323630d6e}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!readLine@{readLine}}
+\index{readLine@{readLine}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily String Persistence.\+Ctrl\+Persistence.\+read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Es llegeix un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una linea de text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha llegeix i retornat un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{346                                                 \{}
+\DoxyCodeLine{347         \textcolor{keywordflow}{return} bufferedReader.readLine();}
+\DoxyCodeLine{348     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}\label{class_persistence_1_1_ctrl_persistence_ac3ed480d7a25e66c80c73fefd9d4563c}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!readLine\_inBuffer@{readLine\_inBuffer}}
+\index{readLine\_inBuffer@{readLine\_inBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{readLine\_inBuffer()}{readLine\_inBuffer()}}
+{\footnotesize\ttfamily static String Persistence.\+Ctrl\+Persistence.\+read\+Line\+\_\+in\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Es llegeix un linea del {\itshape in\+Buffer}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una linea de text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha llegeix i retornat un linea del {\itshape in\+Buffer}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{525                                                                \{}
+\DoxyCodeLine{526         String res = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{527         \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{528         \textcolor{keywordtype}{char} c;}
+\DoxyCodeLine{529         \textcolor{keywordflow}{while}((x = inBuffer.read()) != 10)\{}
+\DoxyCodeLine{530             c = (char) x;}
+\DoxyCodeLine{531             res += c;}
+\DoxyCodeLine{532         \}}
+\DoxyCodeLine{533         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{534     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a1d1ba45439aa696fc460546736e56fff}\label{class_persistence_1_1_ctrl_persistence_a1d1ba45439aa696fc460546736e56fff}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!readLineHuffman@{readLineHuffman}}
+\index{readLineHuffman@{readLineHuffman}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{readLineHuffman()}{readLineHuffman()}}
+{\footnotesize\ttfamily String Persistence.\+Ctrl\+Persistence.\+read\+Line\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Es llegeix un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna una linea de text. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha llegeix i retornat un linea de l\textquotesingle{}atribut privat {\itshape buffered\+Reader\+Huffman}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{358                                                        \{}
+\DoxyCodeLine{359         \textcolor{keywordflow}{return} bufferedReaderHuffman.readLine();}
+\DoxyCodeLine{360     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}\label{class_persistence_1_1_ctrl_persistence_ace9328670db9a42e3fb1ca5900bd16bb}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!saveStatistics@{saveStatistics}}
+\index{saveStatistics@{saveStatistics}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{saveStatistics()}{saveStatistics()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+save\+Statistics (\begin{DoxyParamCaption}\item[{String}]{statistics }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Guarda a la base de dades d\textquotesingle{}estadístiques les {\itshape statistics}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em statistics} & Estadístiques que s\textquotesingle{}han de guardar. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la base de dades perque guardi les {\itshape statistics}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{384                                                                            \{}
+\DoxyCodeLine{385         statisticsDataBase.\mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a5fec3534a75f93d955629d0172787e03}{saveStatistics}}(statistics);}
+\DoxyCodeLine{386     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}\label{class_persistence_1_1_ctrl_persistence_afe3b9b50121fb341d24e5879934ca0bd}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!set\_inBuffer@{set\_inBuffer}}
+\index{set\_inBuffer@{set\_inBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{set\_inBuffer()}{set\_inBuffer()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+set\+\_\+in\+Buffer (\begin{DoxyParamCaption}\item[{String}]{in\+\_\+path }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fa que {\itshape in\+Buffer} apunti al fitxer amb path {\itshape in\+\_\+path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em in\+\_\+path} & Path del fitxer del que es vol llegir. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\itshape in\+Buffer} apunta al fitxer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{490                                                                                  \{}
+\DoxyCodeLine{491         inBuffer = \textcolor{keyword}{new} BufferedInputStream (\textcolor{keyword}{new} FileInputStream (in\_path));}
+\DoxyCodeLine{492     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a33017605d21be00a28218d835ce2c058}\label{class_persistence_1_1_ctrl_persistence_a33017605d21be00a28218d835ce2c058}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!set\_outBuffer@{set\_outBuffer}}
+\index{set\_outBuffer@{set\_outBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{set\_outBuffer()}{set\_outBuffer()}}
+{\footnotesize\ttfamily static void Persistence.\+Ctrl\+Persistence.\+set\+\_\+out\+Buffer (\begin{DoxyParamCaption}\item[{String}]{out\+\_\+path }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fa que {\itshape out\+Buffer} apunti al fitxer amb path {\itshape out\+\_\+path}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em out\+\_\+path} & Path del fitxer al que es vol escriure. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\itshape out\+Buffer} apunta al fitxer. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{502                                                                                    \{}
+\DoxyCodeLine{503         outBuffer = \textcolor{keyword}{new} BufferedOutputStream (\textcolor{keyword}{new} FileOutputStream (out\_path));}
+\DoxyCodeLine{504     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a744abc06484cdac36ef5f854da845d8b}\label{class_persistence_1_1_ctrl_persistence_a744abc06484cdac36ef5f854da845d8b}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!write@{write}}
+\index{write@{write}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+write (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Escriu {\itshape b.\+length} bytes del vector passat per parametres al {\itshape out\+Buffer}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Dades que es volen escriure per l\textquotesingle{}{\itshape out\+Buffer}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit pel {\itshape out\+Buffer} les dades indicades. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160                                                    \{}
+\DoxyCodeLine{161         outBuffer.write(b);}
+\DoxyCodeLine{162     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}\label{class_persistence_1_1_ctrl_persistence_a180c9e3ab782a700bb590a1528dac3ab}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!write@{write}}
+\index{write@{write}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+write (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Escriu el byte especificat al {\itshape out\+Buffer}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Byte que es vol escriure per l\textquotesingle{}{\itshape out\+Buffer}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit pel {\itshape out\+Buffer} el byte indicat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148                                                 \{}
+\DoxyCodeLine{149         outBuffer.write(b);}
+\DoxyCodeLine{150     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_a1f36b953df80cd6b2e4c4a159d6a3a74}\label{class_persistence_1_1_ctrl_persistence_a1f36b953df80cd6b2e4c4a159d6a3a74}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!writeBitBuffer@{writeBitBuffer}}
+\index{writeBitBuffer@{writeBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{writeBitBuffer()}{writeBitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+write\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{p }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol escriure a {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em i} & objecte que volem passar a binari. \\
+\hline
+{\em p} & quants bits tindrà el objecte a representar en binari. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol escriure a {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234                                                                 \{}
+\DoxyCodeLine{235         BitBuffer.\mbox{\hyperlink{class_persistence_1_1_bit_buffer_a49ed7f39c45c88b06af633f757c8a8df}{write}}(i, p);}
+\DoxyCodeLine{236     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_ctrl_persistence_abecc430ee769bff5e25c5d1cf14d7584}\label{class_persistence_1_1_ctrl_persistence_abecc430ee769bff5e25c5d1cf14d7584}} 
+\index{Persistence.CtrlPersistence@{Persistence.CtrlPersistence}!writeBitBuffer@{writeBitBuffer}}
+\index{writeBitBuffer@{writeBitBuffer}!Persistence.CtrlPersistence@{Persistence.CtrlPersistence}}
+\doxysubsubsection{\texorpdfstring{writeBitBuffer()}{writeBitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Persistence.\+Ctrl\+Persistence.\+write\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} perque es vol escriure a {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em s} & Cadena binaria a passar a binari. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crida a la classe \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}} per escriure {\itshape s} bits al {\itshape \mbox{\hyperlink{class_persistence_1_1_bit_buffer}{Bit\+Buffer}}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221                                                             \{}
+\DoxyCodeLine{222         BitBuffer.\mbox{\hyperlink{class_persistence_1_1_bit_buffer_a49ed7f39c45c88b06af633f757c8a8df}{write}}(s);}
+\DoxyCodeLine{223     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Persistence/\mbox{\hyperlink{_ctrl_persistence_8java}{Ctrl\+Persistence.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,249 @@
+\hypertarget{class_domain_1_1_l_z_s_s}{}\doxysection{Referència de la Classe Domain.\+L\+Z\+SS}
+\label{class_domain_1_1_l_z_s_s}\index{Domain.LZSS@{Domain.LZSS}}
+
+
+Classe que representa l\textquotesingle{}algoritme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Domain.\+L\+Z\+SS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_domain_1_1_l_z_s_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_l_z_s_s_aa7313d9ecdfdfd94f0989ad3900bfb87}{L\+Z\+SS}} (int win\+Size, int max\+Match, int min\+Match)
+\begin{DoxyCompactList}\small\item\em Constructora pel cas de voler tindre opcions a l\textquotesingle{}hora de comprimir. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_domain_1_1_l_z_s_s_ac744ebe51f7beede74515fb7bde0bcc2}{L\+Z\+SS}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte al mode automàtic de compressió. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_l_z_s_s_a62f82c5e3504a6644a74af5e28aefc94}{compress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Comprimeix un arxiu .txt fent servir l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_l_z_s_s_a970078d73a993c8189860b770fd767ff}{decompress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Descomprimeix un arxiu .lzss fent servir l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa l\textquotesingle{}algoritme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. 
+
+Classe que hereda de \mbox{\hyperlink{class_domain_1_1_algorithm}{Algorithm}}. Consta de dues operacions, {\itshape compress} i {\itshape decompress}.
+
+\begin{DoxyAuthor}{Autor}
+Adrià Ventura i Herce 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_l_z_s_s_aa7313d9ecdfdfd94f0989ad3900bfb87}\label{class_domain_1_1_l_z_s_s_aa7313d9ecdfdfd94f0989ad3900bfb87}} 
+\index{Domain.LZSS@{Domain.LZSS}!LZSS@{LZSS}}
+\index{LZSS@{LZSS}!Domain.LZSS@{Domain.LZSS}}
+\doxysubsubsection{\texorpdfstring{LZSS()}{LZSS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Domain.\+L\+Z\+S\+S.\+L\+Z\+SS (\begin{DoxyParamCaption}\item[{int}]{win\+Size,  }\item[{int}]{max\+Match,  }\item[{int}]{min\+Match }\end{DoxyParamCaption})}
+
+
+
+Constructora pel cas de voler tindre opcions a l\textquotesingle{}hora de comprimir. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em win\+Size} & és el tamany de la finestra. \\
+\hline
+{\em max\+Match} & és tamany màxim de coincidència. \\
+\hline
+{\em min\+Match} & és tamany mínim de coincidència. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                          \{}
+\DoxyCodeLine{38         this.WINDOW\_SIZE = winSize;}
+\DoxyCodeLine{39         this.MAX\_MATCH\_SIZE = maxMatch;}
+\DoxyCodeLine{40         this.MIN\_MATCH\_SIZE = minMatch;}
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_l_z_s_s_ac744ebe51f7beede74515fb7bde0bcc2}\label{class_domain_1_1_l_z_s_s_ac744ebe51f7beede74515fb7bde0bcc2}} 
+\index{Domain.LZSS@{Domain.LZSS}!LZSS@{LZSS}}
+\index{LZSS@{LZSS}!Domain.LZSS@{Domain.LZSS}}
+\doxysubsubsection{\texorpdfstring{LZSS()}{LZSS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Domain.\+L\+Z\+S\+S.\+L\+Z\+SS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte al mode automàtic de compressió. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                   \{}
+\DoxyCodeLine{47         WINDOW\_SIZE = 12;}
+\DoxyCodeLine{48         MAX\_MATCH\_SIZE = 5;}
+\DoxyCodeLine{49         MIN\_MATCH\_SIZE = 3;}
+\DoxyCodeLine{50     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_l_z_s_s_a62f82c5e3504a6644a74af5e28aefc94}\label{class_domain_1_1_l_z_s_s_a62f82c5e3504a6644a74af5e28aefc94}} 
+\index{Domain.LZSS@{Domain.LZSS}!compress@{compress}}
+\index{compress@{compress}!Domain.LZSS@{Domain.LZSS}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void Domain.\+L\+Z\+S\+S.\+compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix un arxiu .txt fent servir l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+Entren valors vàlids per comprimir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Surt un arxiu compres amb l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                               \{}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61         CtrlDomain.initializeCompressionBitBuffer();}
+\DoxyCodeLine{62                 }
+\DoxyCodeLine{63         CtrlDomain.writeBitBuffer(WINDOW\_SIZE, 8);}
+\DoxyCodeLine{64         CtrlDomain.writeBitBuffer(MAX\_MATCH\_SIZE, 8);}
+\DoxyCodeLine{65         }
+\DoxyCodeLine{66         \textcolor{keywordtype}{int} winBytes = (int)Math.pow(2, WINDOW\_SIZE);}
+\DoxyCodeLine{67         System.out.println(winBytes);}
+\DoxyCodeLine{68         \textcolor{keywordtype}{int} maxMatch = (int)Math.pow(2, MAX\_MATCH\_SIZE);}
+\DoxyCodeLine{69         System.out.println(maxMatch);}
+\DoxyCodeLine{70         StringBuffer winBuffer = \textcolor{keyword}{new} StringBuffer(winBytes);}
+\DoxyCodeLine{71     }
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} nextByte;}
+\DoxyCodeLine{73         String bestMatch = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{74         \textcolor{keywordtype}{int} index = -\/1;}
+\DoxyCodeLine{75         \textcolor{keywordtype}{int} tmpIndex = -\/1;  }
+\DoxyCodeLine{76         }
+\DoxyCodeLine{77         \textcolor{keywordflow}{while}((nextByte = CtrlDomain.read()) != -\/1) \{}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{if}(nextByte < 0 ) }
+\DoxyCodeLine{79                     nextByte+=256;}
+\DoxyCodeLine{80                 tmpIndex = winBuffer.indexOf(bestMatch + (\textcolor{keywordtype}{char})nextByte);}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if}(tmpIndex != -\/1 \&\& bestMatch.length() + 1 < maxMatch ) \{}
+\DoxyCodeLine{82                     bestMatch+=(char)nextByte;}
+\DoxyCodeLine{83                     index = tmpIndex;}
+\DoxyCodeLine{84                 \}}
+\DoxyCodeLine{85                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{86                         \textcolor{keywordflow}{if}(bestMatch.length() >= MIN\_MATCH\_SIZE) \{}
+\DoxyCodeLine{87                             CtrlDomain.writeBitBuffer(\textcolor{stringliteral}{"1"});}
+\DoxyCodeLine{88                             CtrlDomain.writeBitBuffer(index, WINDOW\_SIZE);}
+\DoxyCodeLine{89                             CtrlDomain.writeBitBuffer(bestMatch.length(), MAX\_MATCH\_SIZE);}
+\DoxyCodeLine{90                             tmpIndex = -\/1;}
+\DoxyCodeLine{91                             index = -\/1;}
+\DoxyCodeLine{92                             winBuffer.append(bestMatch);}
+\DoxyCodeLine{93                             bestMatch = \textcolor{stringliteral}{""} + (char)(nextByte);}
+\DoxyCodeLine{94                         \}}
+\DoxyCodeLine{95                         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{96                                 bestMatch+=(char)(nextByte);}
+\DoxyCodeLine{97                                 \textcolor{keywordflow}{while}((tmpIndex = winBuffer.indexOf(bestMatch)) == -\/1 \&\& bestMatch != \textcolor{stringliteral}{""}) \{}
+\DoxyCodeLine{98                                     CtrlDomain.writeBitBuffer(\textcolor{stringliteral}{"0"});}
+\DoxyCodeLine{99                                     CtrlDomain.writeBitBuffer((bestMatch.charAt(0)), 8);}
+\DoxyCodeLine{100                                     winBuffer.append(bestMatch.charAt(0));}
+\DoxyCodeLine{101                                     bestMatch = bestMatch.substring(1);}
+\DoxyCodeLine{102                                 \}                   }
+\DoxyCodeLine{103                         \}}
+\DoxyCodeLine{104                 \}}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{if} (winBuffer.length() > winBytes)}
+\DoxyCodeLine{106             winBuffer = winBuffer.delete(0, winBuffer.length() -\/ winBytes);}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108         \textcolor{keywordflow}{while}(bestMatch.length() > 0 \&\& bestMatch != \textcolor{stringliteral}{""}) \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{if}(index != -\/1 \&\& bestMatch.length() > MIN\_MATCH\_SIZE) \{}
+\DoxyCodeLine{110                     CtrlDomain.writeBitBuffer(\textcolor{stringliteral}{"1"});}
+\DoxyCodeLine{111                     CtrlDomain.writeBitBuffer(index, WINDOW\_SIZE);}
+\DoxyCodeLine{112                     CtrlDomain.writeBitBuffer(bestMatch.length(), MAX\_MATCH\_SIZE);}
+\DoxyCodeLine{113                     bestMatch = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{114                 \}}
+\DoxyCodeLine{115                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{116                     CtrlDomain.writeBitBuffer(\textcolor{stringliteral}{"0"});}
+\DoxyCodeLine{117                     CtrlDomain.writeBitBuffer((\textcolor{keywordtype}{byte})(bestMatch.charAt(0)), 8);}
+\DoxyCodeLine{118                     bestMatch = bestMatch.substring(1);}
+\DoxyCodeLine{119                 \}}
+\DoxyCodeLine{120         \}}
+\DoxyCodeLine{121         CtrlDomain.closeBitBuffer(this.\mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\_isFile}}());}
+\DoxyCodeLine{122     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_l_z_s_s_a970078d73a993c8189860b770fd767ff}\label{class_domain_1_1_l_z_s_s_a970078d73a993c8189860b770fd767ff}} 
+\index{Domain.LZSS@{Domain.LZSS}!decompress@{decompress}}
+\index{decompress@{decompress}!Domain.LZSS@{Domain.LZSS}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily void Domain.\+L\+Z\+S\+S.\+decompress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Descomprimeix un arxiu .lzss fent servir l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+Entren valors vàlids per descomprimir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Surt un arxiu compres amb l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z_s_s}{L\+Z\+SS}}. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132                                                 \{}
+\DoxyCodeLine{133         }
+\DoxyCodeLine{134         CtrlDomain.initializeDecompressionBitBuffer();}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136         \textcolor{keyword}{final} \textcolor{keywordtype}{int} WINDOW = CtrlDomain.read();}
+\DoxyCodeLine{137         \textcolor{keyword}{final} \textcolor{keywordtype}{int} MAX\_MATCH = CtrlDomain.read();}
+\DoxyCodeLine{138         \textcolor{keywordtype}{int} winBytes = (int)Math.pow(2, WINDOW);}
+\DoxyCodeLine{139         StringBuffer winBuffer = \textcolor{keyword}{new} StringBuffer(winBytes);}
+\DoxyCodeLine{140         }
+\DoxyCodeLine{141         \textcolor{keywordtype}{int} nextIndex;}
+\DoxyCodeLine{142         \textcolor{keywordtype}{int} nextLen;}
+\DoxyCodeLine{143         \textcolor{keywordtype}{int} nextBit;}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145         \textcolor{keywordflow}{while}((nextBit = CtrlDomain.readBitBuffer(1)) != -\/1) \{}
+\DoxyCodeLine{146                 \textcolor{keywordflow}{if}(nextBit == 1) \{}
+\DoxyCodeLine{147                     nextIndex = CtrlDomain.readBitBuffer(WINDOW);}
+\DoxyCodeLine{148                     nextLen = CtrlDomain.readBitBuffer(MAX\_MATCH);}
+\DoxyCodeLine{149                     String toAdd = winBuffer.substring(nextIndex, nextIndex + nextLen);}
+\DoxyCodeLine{150                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < toAdd.length(); i++) \{}
+\DoxyCodeLine{151                             CtrlDomain.write(toAdd.charAt(i));}
+\DoxyCodeLine{152                             winBuffer.append(toAdd.charAt(i));}
+\DoxyCodeLine{153                     \}}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{else} \{  }
+\DoxyCodeLine{156                     nextIndex = CtrlDomain.readBitBuffer(8);}
+\DoxyCodeLine{157                     \textcolor{keywordflow}{if}(nextIndex != -\/1)}
+\DoxyCodeLine{158                             CtrlDomain.write(nextIndex);}
+\DoxyCodeLine{159                     winBuffer.append((\textcolor{keywordtype}{char})nextIndex);}
+\DoxyCodeLine{160                 \}}
+\DoxyCodeLine{161                 \textcolor{keywordflow}{if} (winBuffer.length() > winBytes)}
+\DoxyCodeLine{162                     winBuffer = winBuffer.delete(0, winBuffer.length() -\/ winBytes); }
+\DoxyCodeLine{163         \}}
+\DoxyCodeLine{164         }
+\DoxyCodeLine{165         CtrlDomain.closeBitBuffer(this.\mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\_isFile}}());}
+\DoxyCodeLine{166     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_l_z_s_s_8java}{L\+Z\+S\+S.\+java}}\end{DoxyCompactItemize}

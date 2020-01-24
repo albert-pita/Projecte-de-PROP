@@ -1,0 +1,114 @@
+\hypertarget{class_domain_1_1_tests_1_1_l_z78_test}{}\doxysection{Referència de la Classe Domain.\+Tests.\+L\+Z78\+Test}
+\label{class_domain_1_1_tests_1_1_l_z78_test}\index{Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}}
+
+
+Aquest és el test unitari de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_tests_1_1_l_z78_test_ad40cdb78932236e07a26b9e7fa4fd247}{L\+Z78\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_tests_1_1_l_z78_test_a6d3a428fca68f25fc80eca5298f1283c}{test\+Compress}} ()  throws Exception 
+\begin{DoxyCompactList}\small\item\em Test del mètode de compressió de la classe \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_tests_1_1_l_z78_test_a69bed1e9d7bc104a459ab84b062a4c61}{test\+Decompress}} ()  throws Exception 
+\begin{DoxyCompactList}\small\item\em Test del mètode de descompressió de la classe \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Aquest és el test unitari de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}. 
+
+\begin{DoxyAuthor}{Autor}
+Carlos Gascón Dominguez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_tests_1_1_l_z78_test_ad40cdb78932236e07a26b9e7fa4fd247}\label{class_domain_1_1_tests_1_1_l_z78_test_ad40cdb78932236e07a26b9e7fa4fd247}} 
+\index{Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}!LZ78Test@{LZ78Test}}
+\index{LZ78Test@{LZ78Test}!Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}}
+\doxysubsubsection{\texorpdfstring{LZ78Test()}{LZ78Test()}}
+{\footnotesize\ttfamily Domain.\+Tests.\+L\+Z78\+Test.\+L\+Z78\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una instància de la classe \mbox{\hyperlink{class_domain_1_1_tests_1_1_l_z78_test}{L\+Z78\+Test}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_tests_1_1_l_z78_test_a6d3a428fca68f25fc80eca5298f1283c}\label{class_domain_1_1_tests_1_1_l_z78_test_a6d3a428fca68f25fc80eca5298f1283c}} 
+\index{Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}!testCompress@{testCompress}}
+\index{testCompress@{testCompress}!Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}}
+\doxysubsubsection{\texorpdfstring{testCompress()}{testCompress()}}
+{\footnotesize\ttfamily void Domain.\+Tests.\+L\+Z78\+Test.\+test\+Compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+
+
+Test del mètode de compressió de la classe \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+lang.\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                 \{}
+\DoxyCodeLine{61         }
+\DoxyCodeLine{62         System.out.println(\textcolor{stringliteral}{"**Testing compress**"});}
+\DoxyCodeLine{63         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path, out\_path);}
+\DoxyCodeLine{64         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{65         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}}();}
+\DoxyCodeLine{66         File expected = \textcolor{keyword}{new} File(in\_path2);}
+\DoxyCodeLine{67         File output = \textcolor{keyword}{new} File(out\_path);}
+\DoxyCodeLine{68         Assert.assertTrue(\textcolor{stringliteral}{"Són diferents !"}, FileUtils.contentEquals(expected,output));}
+\DoxyCodeLine{69     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_tests_1_1_l_z78_test_a69bed1e9d7bc104a459ab84b062a4c61}\label{class_domain_1_1_tests_1_1_l_z78_test_a69bed1e9d7bc104a459ab84b062a4c61}} 
+\index{Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}!testDecompress@{testDecompress}}
+\index{testDecompress@{testDecompress}!Domain.Tests.LZ78Test@{Domain.Tests.LZ78Test}}
+\doxysubsubsection{\texorpdfstring{testDecompress()}{testDecompress()}}
+{\footnotesize\ttfamily void Domain.\+Tests.\+L\+Z78\+Test.\+test\+Decompress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+
+
+Test del mètode de descompressió de la classe \mbox{\hyperlink{class_domain_1_1_l_z78}{L\+Z78}}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+lang.\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                   \{}
+\DoxyCodeLine{77         System.out.println(\textcolor{stringliteral}{"**Testing decompress**"});}
+\DoxyCodeLine{78         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_ab0084bfb099ce5d522666c9f1139bec9}{openFile}}(in\_path2, out\_path2);}
+\DoxyCodeLine{79         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\_isFile}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{80         algorithm.\mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}}();}
+\DoxyCodeLine{81         ctrlPersistence.\mbox{\hyperlink{class_persistence_1_1_ctrl_persistence_adea85fa6b53b11a2dcb8c31a5535f42d}{flush\_outBuffer}}();}
+\DoxyCodeLine{82         File expected = \textcolor{keyword}{new} File(in\_path);}
+\DoxyCodeLine{83         File output = \textcolor{keyword}{new} File(out\_path2);}
+\DoxyCodeLine{84         Assert.assertTrue(\textcolor{stringliteral}{"Són diferents !"}, FileUtils.contentEquals(expected,output));}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\+Tests/\mbox{\hyperlink{_l_z78_test_8java}{L\+Z78\+Test.\+java}}\end{DoxyCompactItemize}

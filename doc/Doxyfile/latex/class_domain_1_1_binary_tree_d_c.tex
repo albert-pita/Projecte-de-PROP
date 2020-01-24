@@ -1,0 +1,141 @@
+\hypertarget{class_domain_1_1_binary_tree_d_c}{}\doxysection{Referència de la Classe Domain.\+Binary\+Tree\+DC}
+\label{class_domain_1_1_binary_tree_d_c}\index{Domain.BinaryTreeDC@{Domain.BinaryTreeDC}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Node}
+\begin{DoxyCompactList}\small\item\em Classe que representa un node de l\textquotesingle{}arbre binari. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a13015920cd66697f7055099710549570}{Binary\+Tree\+DC}} (String path)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a9e5a893a97254d9eb90f469d89fa4301}{get\+Code\+Word}} (int category)
+\begin{DoxyCompactList}\small\item\em Busca el code\+Word que esta associat a una certa categoria. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a1aa2da9ac92b83bcc496e673cc5f7e73}{get\+Category}} (String data, int index)
+\begin{DoxyCompactList}\small\item\em Busca la categoria que esta associada a un cert code\+Word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta classe representa una taula DC de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} donada per l\textquotesingle{}estàndard del \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. La representa mitjançant arbres binaris.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_d_c_a13015920cd66697f7055099710549570}\label{class_domain_1_1_binary_tree_d_c_a13015920cd66697f7055099710549570}} 
+\index{Domain.BinaryTreeDC@{Domain.BinaryTreeDC}!BinaryTreeDC@{BinaryTreeDC}}
+\index{BinaryTreeDC@{BinaryTreeDC}!Domain.BinaryTreeDC@{Domain.BinaryTreeDC}}
+\doxysubsubsection{\texorpdfstring{BinaryTreeDC()}{BinaryTreeDC()}}
+{\footnotesize\ttfamily Domain.\+Binary\+Tree\+D\+C.\+Binary\+Tree\+DC (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Creadora per defecte. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em path} & Path on esta ubicada la taula que volem inicialitzar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crea una nova instància de \mbox{\hyperlink{class_domain_1_1_binary_tree_d_c}{Binary\+Tree\+DC}} on {\itshape root} és un arbre binari que representa una taula DC de l\textquotesingle{}estàndard de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                                         \{}
+\DoxyCodeLine{80         CtrlDomain.initializeBufferedReaderHuffman(path);}
+\DoxyCodeLine{81         load\_tree();}
+\DoxyCodeLine{82         CtrlDomain.closeBufferedReaderHuffman();}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_d_c_a1aa2da9ac92b83bcc496e673cc5f7e73}\label{class_domain_1_1_binary_tree_d_c_a1aa2da9ac92b83bcc496e673cc5f7e73}} 
+\index{Domain.BinaryTreeDC@{Domain.BinaryTreeDC}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Domain.BinaryTreeDC@{Domain.BinaryTreeDC}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily String Domain.\+Binary\+Tree\+D\+C.\+get\+Category (\begin{DoxyParamCaption}\item[{String}]{data,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Busca la categoria que esta associada a un cert code\+Word. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em data} & Dades de la qual volem llegir el code\+Word i que retorni la respectiva categoria que estem buscant. \\
+\hline
+{\em index} & Posició actual del iterador que marca quina posició de les dades s\textquotesingle{}està visitant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna la categoria del code\+Word llegit de {\itshape data}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb la categoria associada al code\+Word llegit de {\itshape data}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{238                                                       \{}
+\DoxyCodeLine{239         \textcolor{keywordflow}{return} recursiveGetCategory(data, this.root, index);}
+\DoxyCodeLine{240     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_binary_tree_d_c_a9e5a893a97254d9eb90f469d89fa4301}\label{class_domain_1_1_binary_tree_d_c_a9e5a893a97254d9eb90f469d89fa4301}} 
+\index{Domain.BinaryTreeDC@{Domain.BinaryTreeDC}!getCodeWord@{getCodeWord}}
+\index{getCodeWord@{getCodeWord}!Domain.BinaryTreeDC@{Domain.BinaryTreeDC}}
+\doxysubsubsection{\texorpdfstring{getCodeWord()}{getCodeWord()}}
+{\footnotesize\ttfamily String Domain.\+Binary\+Tree\+D\+C.\+get\+Code\+Word (\begin{DoxyParamCaption}\item[{int}]{category }\end{DoxyParamCaption})}
+
+
+
+Busca el code\+Word que esta associat a una certa categoria. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em category} & Categoria del code\+Word que estem buscant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el code\+Word associat a la categoria {\itshape category}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el code\+Word associat a la categoria {\itshape category}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195                                             \{}
+\DoxyCodeLine{196         \textcolor{keywordflow}{return} recursiveGetCodeWord(category, this.root);}
+\DoxyCodeLine{197     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_binary_tree_d_c_8java}{Binary\+Tree\+D\+C.\+java}}\end{DoxyCompactItemize}

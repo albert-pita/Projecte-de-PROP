@@ -1,0 +1,142 @@
+\hypertarget{class_domain_1_1_d_c_t}{}\doxysection{Referència de la Classe Domain.\+D\+CT}
+\label{class_domain_1_1_d_c_t}\index{Domain.DCT@{Domain.DCT}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_d_c_t_aba4ca73100b9b5da3babf76bb4faf7c0}{D\+CT}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. S\textquotesingle{}exectua al declarar una nova \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}}. Inicialitza la {\itshape dct} i la {\itshape t\+\_\+dct} a dues matrius 8x8 de doubles. Després aplica la 2D \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a {\itshape dct}. I finalment aplica la inversa a la {\itshape dct} per formar la {\itshape t\+\_\+dct}. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_d_c_t_a0c24a5e45a5ddb44a41536fd004ad81e}{two\+Dimensional\+D\+CT}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} M)
+\begin{DoxyCompactList}\small\item\em Aplica la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a un cert bloc donat. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_d_c_t_ad85ab5c85373fab0c88dd53eacedeebf}{inverse\+Two\+Dimensional\+D\+CT}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} M)
+\begin{DoxyCompactList}\small\item\em Aplica la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inversa a un cert bloc donat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta classe representa les matrius de \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} i totes les operacions necessaries que es necessiten d\textquotesingle{}aquesta en el procés de realitzar l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_d_c_t_aba4ca73100b9b5da3babf76bb4faf7c0}\label{class_domain_1_1_d_c_t_aba4ca73100b9b5da3babf76bb4faf7c0}} 
+\index{Domain.DCT@{Domain.DCT}!DCT@{DCT}}
+\index{DCT@{DCT}!Domain.DCT@{Domain.DCT}}
+\doxysubsubsection{\texorpdfstring{DCT()}{DCT()}}
+{\footnotesize\ttfamily Domain.\+D\+C\+T.\+D\+CT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. S\textquotesingle{}exectua al declarar una nova \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}}. Inicialitza la {\itshape dct} i la {\itshape t\+\_\+dct} a dues matrius 8x8 de doubles. Després aplica la 2D \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a {\itshape dct}. I finalment aplica la inversa a la {\itshape dct} per formar la {\itshape t\+\_\+dct}. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un nova instància de \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inicialitzant les respectives matrius amb els valors adients. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                  \{}
+\DoxyCodeLine{41         dct = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[8][8];}
+\DoxyCodeLine{42         t\_dct = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[8][8];}
+\DoxyCodeLine{43         }
+\DoxyCodeLine{44         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{45             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{46                 \textcolor{keywordflow}{if} (i == 0) dct[i][j] = (1/sqrt(8));}
+\DoxyCodeLine{47                 \textcolor{keywordflow}{else} dct[i][j] = cos((PI*i*(2*j + 1))/16)/2;}
+\DoxyCodeLine{48             \}}
+\DoxyCodeLine{49         \}}
+\DoxyCodeLine{50         }
+\DoxyCodeLine{51         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{52             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{53                 t\_dct[i][j] = dct[j][i];}
+\DoxyCodeLine{54             \}}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_d_c_t_ad85ab5c85373fab0c88dd53eacedeebf}\label{class_domain_1_1_d_c_t_ad85ab5c85373fab0c88dd53eacedeebf}} 
+\index{Domain.DCT@{Domain.DCT}!inverseTwoDimensionalDCT@{inverseTwoDimensionalDCT}}
+\index{inverseTwoDimensionalDCT@{inverseTwoDimensionalDCT}!Domain.DCT@{Domain.DCT}}
+\doxysubsubsection{\texorpdfstring{inverseTwoDimensionalDCT()}{inverseTwoDimensionalDCT()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+D\+C\+T.\+inverse\+Two\+Dimensional\+D\+CT (\begin{DoxyParamCaption}\item[{double}]{M\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Aplica la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inversa a un cert bloc donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em M} & Block que va ser tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Matriu de doubles resultant d\textquotesingle{}aplicar la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inversa a {\itshape M}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la matriu resultant d\textquotesingle{}aplicar la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inversa a {\itshape M}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                               \{}
+\DoxyCodeLine{82         \textcolor{keywordtype}{double}[][] resultM = matrixMult(t\_dct, M);}
+\DoxyCodeLine{83         resultM = matrixMult(resultM, dct);}
+\DoxyCodeLine{84         }
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} resultM;}
+\DoxyCodeLine{86     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_d_c_t_a0c24a5e45a5ddb44a41536fd004ad81e}\label{class_domain_1_1_d_c_t_a0c24a5e45a5ddb44a41536fd004ad81e}} 
+\index{Domain.DCT@{Domain.DCT}!twoDimensionalDCT@{twoDimensionalDCT}}
+\index{twoDimensionalDCT@{twoDimensionalDCT}!Domain.DCT@{Domain.DCT}}
+\doxysubsubsection{\texorpdfstring{twoDimensionalDCT()}{twoDimensionalDCT()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+D\+C\+T.\+two\+Dimensional\+D\+CT (\begin{DoxyParamCaption}\item[{double}]{M\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Aplica la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a un cert bloc donat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em M} & Block que va ser tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Matriu de doubles resultant d\textquotesingle{}aplicar la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a {\itshape M}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la matriu resultant d\textquotesingle{}aplicar la \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} a {\itshape M}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                        \{}
+\DoxyCodeLine{67         \textcolor{keywordtype}{double}[][] resultM = matrixMult(dct, M);}
+\DoxyCodeLine{68         resultM = matrixMult(resultM, t\_dct);}
+\DoxyCodeLine{69         }
+\DoxyCodeLine{70         \textcolor{keywordflow}{return} resultM;}
+\DoxyCodeLine{71     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_d_c_t_8java}{D\+C\+T.\+java}}\end{DoxyCompactItemize}

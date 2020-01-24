@@ -1,0 +1,459 @@
+\hypertarget{class_domain_1_1_p_p_m}{}\doxysection{Referència de la Classe Domain.\+P\+PM}
+\label{class_domain_1_1_p_p_m}\index{Domain.PPM@{Domain.PPM}}
+
+
+Classe que representa una imatge \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}}.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_p_p_m_a4cc75e5fa9bc1b7e1602c62c811c5c09}{P\+PM}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_domain_1_1_p_p_m_a9aa459d36621c47fa1824551ed09044b}{P\+PM}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} y, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} cb, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} cr, int i\+\_\+height, int i\+\_\+width)
+\begin{DoxyCompactList}\small\item\em Constructora que incialitza la imatge amb uns certs valors de Y, Cb, Cr, height i width. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_p_p_m_a7472008f21031f6bb5e69e2fe609a388}{R\+G\+Bto\+Y\+Cb\+Cr}} ()
+\begin{DoxyCompactList}\small\item\em Transforma les components R\+GB a Y\+Cb\+Cr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_p_p_m_a78f842de6845b6d5290309c89928e4b4}{Y\+Cb\+Crto\+R\+GB}} ()
+\begin{DoxyCompactList}\small\item\em Transforma les components Y\+Cb\+Cr a R\+GB. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_p_p_m_a4bd3bbf393ea878c1d5b4441dbcb5785}{write}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Escriu l\textquotesingle{}imatge. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_domain_1_1_p_p_m_acaec42cc4d518d471c84f41abab59115}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Afaga l\textquotesingle{}altura. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_domain_1_1_p_p_m_af3264ecc89975fcfee13cc6b12daa699}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Afaga l\textquotesingle{}amplada. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_a0a2b0261127ff6f00d688250c9487735}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component Y. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_a3c907b94c2fe7238941b422e2b43ff87}{get\+Cb}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component Cb. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_aaa65ed64e3cc118a3f5634bb84416696}{get\+Cr}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component Cr. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_a38de96fd6b63bac1cc050f8f1a958f0a}{getR}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component R. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_a58577d336e142888505319b1cbbccf82}{getG}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component G. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_p_p_m_a308343f3d738402dbc89772db052e8e0}{getB}} ()
+\begin{DoxyCompactList}\small\item\em Afaga la component B. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa una imatge \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}}. 
+
+Aquesta classe representa una imatge \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}} amb les respectives operacions que es poden aplicar en ella.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a4cc75e5fa9bc1b7e1602c62c811c5c09}\label{class_domain_1_1_p_p_m_a4cc75e5fa9bc1b7e1602c62c811c5c09}} 
+\index{Domain.PPM@{Domain.PPM}!PPM@{PPM}}
+\index{PPM@{PPM}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{PPM()}{PPM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Domain.\+P\+P\+M.\+P\+PM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Constructora per defecte. 
+
+Llegeix de {\itshape in\+Buffer} la imatge.
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un nova instància de \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}} inicialitzant els components R, G, B, max\+Val, height, width i magic\+\_\+number. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                      \{}
+\DoxyCodeLine{61         readHeader();}
+\DoxyCodeLine{62         readContent();}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a9aa459d36621c47fa1824551ed09044b}\label{class_domain_1_1_p_p_m_a9aa459d36621c47fa1824551ed09044b}} 
+\index{Domain.PPM@{Domain.PPM}!PPM@{PPM}}
+\index{PPM@{PPM}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{PPM()}{PPM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Domain.\+P\+P\+M.\+P\+PM (\begin{DoxyParamCaption}\item[{double}]{y\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{double}]{cb\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{double}]{cr\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{i\+\_\+height,  }\item[{int}]{i\+\_\+width }\end{DoxyParamCaption})}
+
+
+
+Constructora que incialitza la imatge amb uns certs valors de Y, Cb, Cr, height i width. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em y} & Component Y. \\
+\hline
+{\em cb} & Component Cb. \\
+\hline
+{\em cr} & Component Cr. \\
+\hline
+{\em i\+\_\+height} & Altura de l\textquotesingle{}imatge. \\
+\hline
+{\em i\+\_\+width} & Amplada de l\textquotesingle{}imatge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un nova instància de \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}} inicialitzant els components Y, Cb, Cr, height i width amb els valors donats, i max\+Val i magic\+\_\+number amb els per defecte. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                                                        \{}
+\DoxyCodeLine{77         Y = y;}
+\DoxyCodeLine{78         Cb = cb;}
+\DoxyCodeLine{79         Cr = cr;}
+\DoxyCodeLine{80         height = i\_height;}
+\DoxyCodeLine{81         width = i\_width;}
+\DoxyCodeLine{82         maxVal = 255;}
+\DoxyCodeLine{83         magic\_number = \textcolor{keyword}{new} \textcolor{keywordtype}{byte}[2];}
+\DoxyCodeLine{84         magic\_number[0] = (byte) \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{85         magic\_number[1] = (byte) \textcolor{charliteral}{'6'};}
+\DoxyCodeLine{86     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a308343f3d738402dbc89772db052e8e0}\label{class_domain_1_1_p_p_m_a308343f3d738402dbc89772db052e8e0}} 
+\index{Domain.PPM@{Domain.PPM}!getB@{getB}}
+\index{getB@{getB}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getB()}{getB()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+getB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component B. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de integers de la component B.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna B. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291                           \{}
+\DoxyCodeLine{292         \textcolor{keywordflow}{return} B.clone();}
+\DoxyCodeLine{293     \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a3c907b94c2fe7238941b422e2b43ff87}\label{class_domain_1_1_p_p_m_a3c907b94c2fe7238941b422e2b43ff87}} 
+\index{Domain.PPM@{Domain.PPM}!getCb@{getCb}}
+\index{getCb@{getCb}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getCb()}{getCb()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+get\+Cb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component Cb. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de doubles de la component Cb.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna Cb. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247                               \{}
+\DoxyCodeLine{248         \textcolor{keywordflow}{return} Cb.clone();}
+\DoxyCodeLine{249     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_aaa65ed64e3cc118a3f5634bb84416696}\label{class_domain_1_1_p_p_m_aaa65ed64e3cc118a3f5634bb84416696}} 
+\index{Domain.PPM@{Domain.PPM}!getCr@{getCr}}
+\index{getCr@{getCr}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getCr()}{getCr()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+get\+Cr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component Cr. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de doubles de la component Cr.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna Cr. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{258                               \{}
+\DoxyCodeLine{259         \textcolor{keywordflow}{return} Cr.clone();}
+\DoxyCodeLine{260     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a58577d336e142888505319b1cbbccf82}\label{class_domain_1_1_p_p_m_a58577d336e142888505319b1cbbccf82}} 
+\index{Domain.PPM@{Domain.PPM}!getG@{getG}}
+\index{getG@{getG}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getG()}{getG()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+getG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component G. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de integers de la component G.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna G. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{280                           \{}
+\DoxyCodeLine{281         \textcolor{keywordflow}{return} G.clone();}
+\DoxyCodeLine{282     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_acaec42cc4d518d471c84f41abab59115}\label{class_domain_1_1_p_p_m_acaec42cc4d518d471c84f41abab59115}} 
+\index{Domain.PPM@{Domain.PPM}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Domain.\+P\+P\+M.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga l\textquotesingle{}altura. 
+
+\begin{DoxyReturn}{Retorna}
+int height
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l\textquotesingle{}altura. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214                            \{}
+\DoxyCodeLine{215         \textcolor{keywordflow}{return} height;}
+\DoxyCodeLine{216     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a38de96fd6b63bac1cc050f8f1a958f0a}\label{class_domain_1_1_p_p_m_a38de96fd6b63bac1cc050f8f1a958f0a}} 
+\index{Domain.PPM@{Domain.PPM}!getR@{getR}}
+\index{getR@{getR}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getR()}{getR()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+getR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component R. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de integers de la component R.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna R. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{269                           \{}
+\DoxyCodeLine{270         \textcolor{keywordflow}{return} R.clone();}
+\DoxyCodeLine{271     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_af3264ecc89975fcfee13cc6b12daa699}\label{class_domain_1_1_p_p_m_af3264ecc89975fcfee13cc6b12daa699}} 
+\index{Domain.PPM@{Domain.PPM}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Domain.\+P\+P\+M.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga l\textquotesingle{}amplada. 
+
+\begin{DoxyReturn}{Retorna}
+int width
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l\textquotesingle{}amplada. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{225                           \{}
+\DoxyCodeLine{226         \textcolor{keywordflow}{return} width;}
+\DoxyCodeLine{227     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a0a2b0261127ff6f00d688250c9487735}\label{class_domain_1_1_p_p_m_a0a2b0261127ff6f00d688250c9487735}} 
+\index{Domain.PPM@{Domain.PPM}!getY@{getY}}
+\index{getY@{getY}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+P\+P\+M.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afaga la component Y. 
+
+\begin{DoxyReturn}{Retorna}
+Matriu de doubles de la component Y.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna Y. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{236                              \{}
+\DoxyCodeLine{237         \textcolor{keywordflow}{return} Y.clone();}
+\DoxyCodeLine{238     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a7472008f21031f6bb5e69e2fe609a388}\label{class_domain_1_1_p_p_m_a7472008f21031f6bb5e69e2fe609a388}} 
+\index{Domain.PPM@{Domain.PPM}!RGBtoYCbCr@{RGBtoYCbCr}}
+\index{RGBtoYCbCr@{RGBtoYCbCr}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{RGBtoYCbCr()}{RGBtoYCbCr()}}
+{\footnotesize\ttfamily void Domain.\+P\+P\+M.\+R\+G\+Bto\+Y\+Cb\+Cr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transforma les components R\+GB a Y\+Cb\+Cr. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Les component R\+GB han estat transformades i guardades a Y\+Cb\+Cr respectivament. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                              \{}
+\DoxyCodeLine{137         Y = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[height][width];}
+\DoxyCodeLine{138         Cb = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[height][width];}
+\DoxyCodeLine{139         Cr = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[height][width];}
+\DoxyCodeLine{140         }
+\DoxyCodeLine{141         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < height; i++) \{}
+\DoxyCodeLine{142             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < width; j++) \{}
+\DoxyCodeLine{143                 Y[i][j] = 0.299 * R[i][j] + 0.587 * G[i][j] + 0.114 * B[i][j];}
+\DoxyCodeLine{144                 Cb[i][j] = -\/0.1687 * R[i][j] -\/ 0.3313 * G[i][j] + 0.5 * B[i][j] + 128;}
+\DoxyCodeLine{145                 Cr[i][j] = 0.5 * R[i][j] -\/ 0.4187 * G[i][j] -\/ 0.0813 * B[i][j] + 128;}
+\DoxyCodeLine{146             \}}
+\DoxyCodeLine{147         \}}
+\DoxyCodeLine{148     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a4bd3bbf393ea878c1d5b4441dbcb5785}\label{class_domain_1_1_p_p_m_a4bd3bbf393ea878c1d5b4441dbcb5785}} 
+\index{Domain.PPM@{Domain.PPM}!write@{write}}
+\index{write@{write}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Domain.\+P\+P\+M.\+write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Escriu l\textquotesingle{}imatge. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+L\textquotesingle{}imatge ha estat escrita a través del Controlador de Domini que ho envia a la capa de Persistencia. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184                                            \{}
+\DoxyCodeLine{185         }
+\DoxyCodeLine{186         CtrlDomain.write(\textcolor{charliteral}{'P'});}
+\DoxyCodeLine{187         CtrlDomain.write(\textcolor{charliteral}{'6'});}
+\DoxyCodeLine{188         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{189         CtrlDomain.write(String.valueOf(width).getBytes());}
+\DoxyCodeLine{190         CtrlDomain.write(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{191         CtrlDomain.write(String.valueOf(height).getBytes());}
+\DoxyCodeLine{192         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{193         CtrlDomain.write(String.valueOf(255).getBytes()); }
+\DoxyCodeLine{194         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{195         }
+\DoxyCodeLine{196         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < height; i++) \{}
+\DoxyCodeLine{197             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < width; j++) \{}
+\DoxyCodeLine{198                 CtrlDomain.write(R[i][j]);}
+\DoxyCodeLine{199                 CtrlDomain.write(G[i][j]);}
+\DoxyCodeLine{200                 CtrlDomain.write(B[i][j]);}
+\DoxyCodeLine{201             \}}
+\DoxyCodeLine{202         \}}
+\DoxyCodeLine{203     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_p_p_m_a78f842de6845b6d5290309c89928e4b4}\label{class_domain_1_1_p_p_m_a78f842de6845b6d5290309c89928e4b4}} 
+\index{Domain.PPM@{Domain.PPM}!YCbCrtoRGB@{YCbCrtoRGB}}
+\index{YCbCrtoRGB@{YCbCrtoRGB}!Domain.PPM@{Domain.PPM}}
+\doxysubsubsection{\texorpdfstring{YCbCrtoRGB()}{YCbCrtoRGB()}}
+{\footnotesize\ttfamily void Domain.\+P\+P\+M.\+Y\+Cb\+Crto\+R\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transforma les components Y\+Cb\+Cr a R\+GB. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Les component Y\+Cb\+Cr han estat transformades i guardades a R\+GB respectivament. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155                              \{  }
+\DoxyCodeLine{156         R = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[height][width];}
+\DoxyCodeLine{157         G = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[height][width];}
+\DoxyCodeLine{158         B = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[height][width];}
+\DoxyCodeLine{159         }
+\DoxyCodeLine{160         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < height; i++) \{}
+\DoxyCodeLine{161             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < width; j++) \{}
+\DoxyCodeLine{162                 R[i][j] = (int) (Y[i][j] + 1.402*(Cr[i][j] -\/ 128));}
+\DoxyCodeLine{163                 G[i][j] = (int) (Y[i][j] -\/ 0.34414*(Cb[i][j] -\/ 128) -\/ 0.71414*(Cr[i][j]-\/128));}
+\DoxyCodeLine{164                 B[i][j] = (int) (Y[i][j] + 1.772*(Cb[i][j] -\/ 128));}
+\DoxyCodeLine{165                 }
+\DoxyCodeLine{166                 \textcolor{keywordflow}{if} (R[i][j] > 255) R[i][j] = 255;}
+\DoxyCodeLine{167                 \textcolor{keywordflow}{if} (R[i][j] < 0) R[i][j] = 0;}
+\DoxyCodeLine{168                 \textcolor{keywordflow}{if} (G[i][j] > 255) G[i][j] = 255;}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{if} (G[i][j] < 0) G[i][j] = 0;}
+\DoxyCodeLine{170                 \textcolor{keywordflow}{if} (B[i][j] > 255) B[i][j] = 255;}
+\DoxyCodeLine{171                 \textcolor{keywordflow}{if} (B[i][j] < 0) B[i][j] = 0;}
+\DoxyCodeLine{172                 }
+\DoxyCodeLine{173             \}}
+\DoxyCodeLine{174         \}}
+\DoxyCodeLine{175     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_p_p_m_8java}{P\+P\+M.\+java}}\end{DoxyCompactItemize}

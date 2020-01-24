@@ -1,0 +1,256 @@
+\hypertarget{class_domain_1_1_j_p_e_g___utils}{}\doxysection{Referència de la Classe Domain.\+J\+P\+E\+G\+\_\+\+Utils}
+\label{class_domain_1_1_j_p_e_g___utils}\index{Domain.JPEG\_Utils@{Domain.JPEG\_Utils}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_j_p_e_g___utils_a45202d1bc56e20c7e6ab21f77aadac8c}{treat\+Component}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} component, int checked\+\_\+height, int checked\+\_\+width, int height, int width, int quality, boolean Y)
+\begin{DoxyCompactList}\small\item\em Tracta un component de l\textquotesingle{}imatge. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_j_p_e_g___utils_ab924309e3f591f4a34ee37d98d50a552}{untreat\+Component}} (Array\+List$<$ int\mbox{[}$\,$\mbox{]}$>$ component, int height, int width, int quality, boolean Y)
+\begin{DoxyCompactList}\small\item\em Aplica el procés invers a tractar un component de l\textquotesingle{}imatge. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_j_p_e_g___utils_a042412e027b1c72f0edccfbb94903550}{check\+Height}} (int height)
+\begin{DoxyCompactList}\small\item\em Comprova que l\textquotesingle{}altura sigui divisible per 8 i si no ho és li suma el necessari. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_domain_1_1_j_p_e_g___utils_a3031f3d3b4e303f163dbb2f31b2dce04}{check\+Width}} (int width)
+\begin{DoxyCompactList}\small\item\em Comprova que l\textquotesingle{}amplada sigui divisible per 8 i si no ho és li suma el necessari. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Consta de varies funcions utilitzades per poder aplicar l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g___utils_a042412e027b1c72f0edccfbb94903550}\label{class_domain_1_1_j_p_e_g___utils_a042412e027b1c72f0edccfbb94903550}} 
+\index{Domain.JPEG\_Utils@{Domain.JPEG\_Utils}!checkHeight@{checkHeight}}
+\index{checkHeight@{checkHeight}!Domain.JPEG\_Utils@{Domain.JPEG\_Utils}}
+\doxysubsubsection{\texorpdfstring{checkHeight()}{checkHeight()}}
+{\footnotesize\ttfamily static int Domain.\+J\+P\+E\+G\+\_\+\+Utils.\+check\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Comprova que l\textquotesingle{}altura sigui divisible per 8 i si no ho és li suma el necessari. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em height} & Altura ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int checked\+\_\+height
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l\textquotesingle{}altura ja comprovada. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{211                                               \{}
+\DoxyCodeLine{212         \textcolor{keywordtype}{int} modHeight = height \% 8;}
+\DoxyCodeLine{213         }
+\DoxyCodeLine{214         \textcolor{keywordflow}{if} (modHeight != 0) \textcolor{keywordflow}{return} height + (8 -\/ modHeight);}
+\DoxyCodeLine{215         \textcolor{keywordflow}{return} height;}
+\DoxyCodeLine{216     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g___utils_a3031f3d3b4e303f163dbb2f31b2dce04}\label{class_domain_1_1_j_p_e_g___utils_a3031f3d3b4e303f163dbb2f31b2dce04}} 
+\index{Domain.JPEG\_Utils@{Domain.JPEG\_Utils}!checkWidth@{checkWidth}}
+\index{checkWidth@{checkWidth}!Domain.JPEG\_Utils@{Domain.JPEG\_Utils}}
+\doxysubsubsection{\texorpdfstring{checkWidth()}{checkWidth()}}
+{\footnotesize\ttfamily static int Domain.\+J\+P\+E\+G\+\_\+\+Utils.\+check\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Comprova que l\textquotesingle{}amplada sigui divisible per 8 i si no ho és li suma el necessari. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em width} & Amplada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int checked\+\_\+width
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l\textquotesingle{}amplada ja comprovada. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{226                                             \{}
+\DoxyCodeLine{227         \textcolor{keywordtype}{int} modWidth = width \% 8;}
+\DoxyCodeLine{228         }
+\DoxyCodeLine{229         \textcolor{keywordflow}{if} (modWidth != 0) \textcolor{keywordflow}{return} width + (8 -\/ modWidth);}
+\DoxyCodeLine{230         \textcolor{keywordflow}{return} width;}
+\DoxyCodeLine{231     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g___utils_a45202d1bc56e20c7e6ab21f77aadac8c}\label{class_domain_1_1_j_p_e_g___utils_a45202d1bc56e20c7e6ab21f77aadac8c}} 
+\index{Domain.JPEG\_Utils@{Domain.JPEG\_Utils}!treatComponent@{treatComponent}}
+\index{treatComponent@{treatComponent}!Domain.JPEG\_Utils@{Domain.JPEG\_Utils}}
+\doxysubsubsection{\texorpdfstring{treatComponent()}{treatComponent()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+J\+P\+E\+G\+\_\+\+Utils.\+treat\+Component (\begin{DoxyParamCaption}\item[{double}]{component\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{checked\+\_\+height,  }\item[{int}]{checked\+\_\+width,  }\item[{int}]{height,  }\item[{int}]{width,  }\item[{int}]{quality,  }\item[{boolean}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tracta un component de l\textquotesingle{}imatge. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em quality} & $\ast$\+Divideix el component en blocks de 8x8. Per cada block resta als seus valors 128, li aplica la 2D \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}}, segons si es el component de luminància o cromanància, li aplica la respectiva Quantificació i finalment se li aplica l\textquotesingle{}ordenació en zig zag.\\
+\hline
+{\em component} & Component Y, Cb o Cr de l\textquotesingle{}imatge. \\
+\hline
+{\em checked\+\_\+height} & Altura divisible entre 8. \\
+\hline
+{\em checked\+\_\+width} & Amplada divisible entre 8. \\
+\hline
+{\em height} & Altura real de l\textquotesingle{}imatge. \\
+\hline
+{\em width} & Amplada real de l\textquotesingle{}imatge. \\
+\hline
+{\em Y} & Indica si el component és la luminància o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna un vector de vectors de ints els segons del qual són els blocks 8x8 de la {\itshape component} ja tractats.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+El {\itshape component} és o Y o Cb o Cr, {\itshape checked\+\_\+height}, {\itshape checked\+\_\+width}, {\itshape height} i {\itshape width} són vàlids. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna una matriu de ints, de tamany {\itshape checked\+\_\+height}x{\itshape checked\+\_\+width}, amb tots els blocks 8x8 del component tractats. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                                                                                                                       \{      }
+\DoxyCodeLine{77         q = \textcolor{keyword}{new} Q(quality);}
+\DoxyCodeLine{78         }
+\DoxyCodeLine{79         \textcolor{keywordtype}{int}[][] result = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[(checked\_height/8)*(checked\_width/8)][64];}
+\DoxyCodeLine{80         }
+\DoxyCodeLine{81         \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{82         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{83         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{84         }
+\DoxyCodeLine{85         \textcolor{keywordtype}{double}[][] treatedMatrix = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[8][8];}
+\DoxyCodeLine{86         }
+\DoxyCodeLine{87         \textcolor{keywordflow}{while} (i < checked\_height) \{}
+\DoxyCodeLine{88             }
+\DoxyCodeLine{89             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} h = 0; h < 8; h++) \{}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w = 0; w < 8; w++) \{}
+\DoxyCodeLine{91                     \textcolor{keywordflow}{if} (i+h >= height) treatedMatrix[h][w] = treatedMatrix[h-\/1][w];}
+\DoxyCodeLine{92                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (j+w >= width) treatedMatrix[h][w] = treatedMatrix[h][w-\/1];}
+\DoxyCodeLine{93                     \textcolor{keywordflow}{else} treatedMatrix[h][w] = component[i+h][w+j] -\/ 128;}
+\DoxyCodeLine{94                 \}}
+\DoxyCodeLine{95             \}}
+\DoxyCodeLine{96             }
+\DoxyCodeLine{97             treatedMatrix = dct.\mbox{\hyperlink{class_domain_1_1_d_c_t_a0c24a5e45a5ddb44a41536fd004ad81e}{twoDimensionalDCT}}(treatedMatrix);}
+\DoxyCodeLine{98             }
+\DoxyCodeLine{99             \textcolor{keywordtype}{int}[] treatedArray;}
+\DoxyCodeLine{100             \textcolor{keywordflow}{if} (Y) treatedArray = q.\mbox{\hyperlink{class_domain_1_1_q_aa10fc483796c1e5096d2a65ef465864b}{luminanceQuantization}}(treatedMatrix);}
+\DoxyCodeLine{101             \textcolor{keywordflow}{else} treatedArray = q.\mbox{\hyperlink{class_domain_1_1_q_a4ce78a93c43aea10c198c6fa9716b15f}{chrominanceQuantization}}(treatedMatrix);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103             result[index] = ZZSort(treatedArray);}
+\DoxyCodeLine{104             }
+\DoxyCodeLine{105             index++;}
+\DoxyCodeLine{106             j += 8;}
+\DoxyCodeLine{107             \textcolor{keywordflow}{if} (j >= checked\_width) \{}
+\DoxyCodeLine{108                 j = 0;}
+\DoxyCodeLine{109                 i += 8;}
+\DoxyCodeLine{110             \}   }
+\DoxyCodeLine{111         \}}
+\DoxyCodeLine{112         }
+\DoxyCodeLine{113         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{114     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g___utils_ab924309e3f591f4a34ee37d98d50a552}\label{class_domain_1_1_j_p_e_g___utils_ab924309e3f591f4a34ee37d98d50a552}} 
+\index{Domain.JPEG\_Utils@{Domain.JPEG\_Utils}!untreatComponent@{untreatComponent}}
+\index{untreatComponent@{untreatComponent}!Domain.JPEG\_Utils@{Domain.JPEG\_Utils}}
+\doxysubsubsection{\texorpdfstring{untreatComponent()}{untreatComponent()}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+J\+P\+E\+G\+\_\+\+Utils.\+untreat\+Component (\begin{DoxyParamCaption}\item[{Array\+List$<$ int\mbox{[}$\,$\mbox{]}$>$}]{component,  }\item[{int}]{height,  }\item[{int}]{width,  }\item[{int}]{quality,  }\item[{boolean}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Aplica el procés invers a tractar un component de l\textquotesingle{}imatge. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em quality} & $\ast$\+Inicialment se li passen tots el blocks de 8x8. Per cada block se li aplica l\textquotesingle{}ordenació inversa en zig zag, depèn de si és el component de luminància o cromanància se li aplica la respectiva Quantificació inversa, després se li aplica la 2D \mbox{\hyperlink{class_domain_1_1_d_c_t}{D\+CT}} inversa i finalment se li suma 128 als seus valors i es guarden a la seva posició dins de la component.\\
+\hline
+{\em component} & Array\+List amb tots els blocks 8x8 de la component. \\
+\hline
+{\em height} & Altura de l\textquotesingle{}imatge final descomprimida. \\
+\hline
+{\em width} & Amplada de l\textquotesingle{}imatge final descomprimida. \\
+\hline
+{\em Y} & Indica si el component és la luminància o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna una matriu de doubles la qual respresenta la totalitat de la respectiva component.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape component} respresenta tots els blocks 8x8 de les components Y, Cb o Cr, {\itshape height} i {\itshape width} mides vàlides de la nova imatge. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna una matriu de doubles, de tamany {\itshape height}x{\itshape width}, representant la unió de tots els blocks 8x8 ja tractats. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                                                                                                                           \{}
+\DoxyCodeLine{134         q = \textcolor{keyword}{new} Q(quality);}
+\DoxyCodeLine{135         }
+\DoxyCodeLine{136         \textcolor{keywordtype}{double}[][] result = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[height][width];}
+\DoxyCodeLine{137         }
+\DoxyCodeLine{138         \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{139         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{140         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{141         }
+\DoxyCodeLine{142         \textcolor{keywordflow}{while} (i < height) \{}
+\DoxyCodeLine{143             }
+\DoxyCodeLine{144             \textcolor{keywordtype}{int}[] untreatedArray = component.get(index);}
+\DoxyCodeLine{145             untreatedArray = inverseZZSort(untreatedArray);}
+\DoxyCodeLine{146             }
+\DoxyCodeLine{147             \textcolor{keywordtype}{double}[][] untreatedMatrix;}
+\DoxyCodeLine{148             \textcolor{keywordflow}{if}(Y) untreatedMatrix = q.\mbox{\hyperlink{class_domain_1_1_q_a3e8ca00fec53fd84ca326422b138a01d}{inverseLuminanceQuantization}}(untreatedArray);}
+\DoxyCodeLine{149             \textcolor{keywordflow}{else} untreatedMatrix = q.\mbox{\hyperlink{class_domain_1_1_q_af7559a8c2904c7f98002931801a266e9}{inverseChrominanceQuantization}}(untreatedArray);}
+\DoxyCodeLine{150             }
+\DoxyCodeLine{151             untreatedMatrix = dct.\mbox{\hyperlink{class_domain_1_1_d_c_t_ad85ab5c85373fab0c88dd53eacedeebf}{inverseTwoDimensionalDCT}}(untreatedMatrix);}
+\DoxyCodeLine{152             }
+\DoxyCodeLine{153             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} h = 0; h < 8; h++) \{}
+\DoxyCodeLine{154                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w = 0; w < 8; w++) \{}
+\DoxyCodeLine{155                     result[h+i][w+j] = untreatedMatrix[h][w] + 128;}
+\DoxyCodeLine{156                 \}}
+\DoxyCodeLine{157             \}}
+\DoxyCodeLine{158             }
+\DoxyCodeLine{159             index++;}
+\DoxyCodeLine{160             j += 8;}
+\DoxyCodeLine{161             \textcolor{keywordflow}{if} (j >= width) \{}
+\DoxyCodeLine{162                 j = 0;}
+\DoxyCodeLine{163                 i += 8;}
+\DoxyCodeLine{164             \}}
+\DoxyCodeLine{165         \}}
+\DoxyCodeLine{166         }
+\DoxyCodeLine{167         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{168     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_j_p_e_g___utils_8java}{J\+P\+E\+G\+\_\+\+Utils.\+java}}\end{DoxyCompactItemize}

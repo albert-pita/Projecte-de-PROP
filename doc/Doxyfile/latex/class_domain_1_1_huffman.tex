@@ -1,0 +1,356 @@
+\hypertarget{class_domain_1_1_huffman}{}\doxysection{Referència de la Classe Domain.\+Huffman}
+\label{class_domain_1_1_huffman}\index{Domain.Huffman@{Domain.Huffman}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_huffman_ab96d86728a9eea63010cd0381332c638}{Huffman}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. S\textquotesingle{}exectua al declarar un nou \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_huffman_a7288477370c4b1306c207c46fb8f30ef}{luminance\+Compression}} (int\mbox{[}$\,$\mbox{]} array)
+\begin{DoxyCompactList}\small\item\em Fa la compressió d\textquotesingle{}un bloc de la luminància. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_domain_1_1_huffman_aeee3f89c71f75608c25204176f58473b}{luminance\+Decompression}} (String data, int\mbox{[}$\,$\mbox{]} block, int index)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em fa la descompressió d\textquotesingle{}un bloc de la luminància. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_domain_1_1_huffman_ae0b7de022d096c99e8318b038941a18b}{chrominance\+Compression}} (int\mbox{[}$\,$\mbox{]} array)
+\begin{DoxyCompactList}\small\item\em Fa la compressió d\textquotesingle{}un block de la cromanància. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_domain_1_1_huffman_ab882b2c2c98e1afe0e180e26760bbe58}{chrominance\+Decompression}} (String data, int\mbox{[}$\,$\mbox{]} block, int index)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em fa la descompressió d\textquotesingle{}un bloc de la cromanància. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta classe representa les taules de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} i totes les operacions necessaries que es necessiten d\textquotesingle{}aquesta en el procés de realitzar l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_huffman_ab96d86728a9eea63010cd0381332c638}\label{class_domain_1_1_huffman_ab96d86728a9eea63010cd0381332c638}} 
+\index{Domain.Huffman@{Domain.Huffman}!Huffman@{Huffman}}
+\index{Huffman@{Huffman}!Domain.Huffman@{Domain.Huffman}}
+\doxysubsubsection{\texorpdfstring{Huffman()}{Huffman()}}
+{\footnotesize\ttfamily Domain.\+Huffman.\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Constructora per defecte. S\textquotesingle{}exectua al declarar un nou \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un nova instància de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} inicialitzant les respectives taules als seus valors pertinents, tots ells obtinguts de quatre arxius de text ubicats a la carpeta {\itshape Huffman\+Tables}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                         \{}
+\DoxyCodeLine{48         DCluminance = \textcolor{keyword}{new} BinaryTreeDC (\textcolor{stringliteral}{"../data/HuffmanTables/DC\_luminance.txt"});}
+\DoxyCodeLine{49         DCchrominance = \textcolor{keyword}{new} BinaryTreeDC (\textcolor{stringliteral}{"../data/HuffmanTables/DC\_chrominance.txt"});}
+\DoxyCodeLine{50         ACluminance = \textcolor{keyword}{new} BinaryTreeAC (\textcolor{stringliteral}{"../data/HuffmanTables/AC\_luminance.txt"});}
+\DoxyCodeLine{51         ACchrominance = \textcolor{keyword}{new} BinaryTreeAC(\textcolor{stringliteral}{"../data/HuffmanTables/AC\_chrominance.txt"});}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_huffman_ae0b7de022d096c99e8318b038941a18b}\label{class_domain_1_1_huffman_ae0b7de022d096c99e8318b038941a18b}} 
+\index{Domain.Huffman@{Domain.Huffman}!chrominanceCompression@{chrominanceCompression}}
+\index{chrominanceCompression@{chrominanceCompression}!Domain.Huffman@{Domain.Huffman}}
+\doxysubsubsection{\texorpdfstring{chrominanceCompression()}{chrominanceCompression()}}
+{\footnotesize\ttfamily String Domain.\+Huffman.\+chrominance\+Compression (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})}
+
+
+
+Fa la compressió d\textquotesingle{}un block de la cromanància. 
+
+Inicialment aplica al block que li passen la codificació Run-\/\+Length. Després fa l\textquotesingle{}entropy coding. I finalment obté de les taules de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} previament inicialitzades els valors codificats.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em array} & Block 8x8 ja transformat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String amb el block ja comprimit i codificat.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el block ja comprimit i codificat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165                                                       \{}
+\DoxyCodeLine{166         ArrayList<int[]> data = RLE(array);}
+\DoxyCodeLine{167         data = EC(data);}
+\DoxyCodeLine{168         }
+\DoxyCodeLine{169         String compressed = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{170         }
+\DoxyCodeLine{171         \textcolor{keywordtype}{int} size = data.size();}
+\DoxyCodeLine{172         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{173             \textcolor{keywordtype}{int} x = data.get(i)[0];}
+\DoxyCodeLine{174             \textcolor{keywordtype}{int} y = data.get(i)[1];}
+\DoxyCodeLine{175             \textcolor{keywordtype}{int} z = data.get(i)[2];}
+\DoxyCodeLine{176             }
+\DoxyCodeLine{177             \textcolor{keywordflow}{if} (i == 0) \{}
+\DoxyCodeLine{178                 compressed += DCchrominance.\mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a9e5a893a97254d9eb90f469d89fa4301}{getCodeWord}}(x);}
+\DoxyCodeLine{179                 compressed += NumbertoBinary(y);}
+\DoxyCodeLine{180             \}}
+\DoxyCodeLine{181             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{182                 compressed += ACchrominance.\mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_a4686a4670b5183ceef142b7d63094847}{getCodeWord}}(x, y);}
+\DoxyCodeLine{183                 compressed += NumbertoBinary(z);}
+\DoxyCodeLine{184             \}}
+\DoxyCodeLine{185         \}}
+\DoxyCodeLine{186         }
+\DoxyCodeLine{187         \textcolor{keywordflow}{return} compressed;}
+\DoxyCodeLine{188     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_huffman_ab882b2c2c98e1afe0e180e26760bbe58}\label{class_domain_1_1_huffman_ab882b2c2c98e1afe0e180e26760bbe58}} 
+\index{Domain.Huffman@{Domain.Huffman}!chrominanceDecompression@{chrominanceDecompression}}
+\index{chrominanceDecompression@{chrominanceDecompression}!Domain.Huffman@{Domain.Huffman}}
+\doxysubsubsection{\texorpdfstring{chrominanceDecompression()}{chrominanceDecompression()}}
+{\footnotesize\ttfamily int Domain.\+Huffman.\+chrominance\+Decompression (\begin{DoxyParamCaption}\item[{String}]{data,  }\item[{int\mbox{[}$\,$\mbox{]}}]{block,  }\item[{int}]{index }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+fa la descompressió d\textquotesingle{}un bloc de la cromanància. 
+
+Inicialment obté els valors decodificats de les taules de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. Aplica la inversa de l\textquotesingle{}entropy coding. I finalment aplica al block resultant la codificació inversa de Run-\/\+Length.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em data} & String amb la codificació comprimida d\textquotesingle{}una de les componentsde cromanància. \\
+\hline
+{\em block} & Block 8x8 obtingut de la descompressió de data. \\
+\hline
+{\em index} & Index que apunta a la primera posició del bloc dins de {\itshape data}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Posició dins de {\itshape data} on acaba el bloc. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape index} no apunta al final de {\itshape data}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la posició final del bloc, on teóricament comença el següent. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204                                                                                                 \{}
+\DoxyCodeLine{205         }
+\DoxyCodeLine{206         \textcolor{keywordtype}{int} aux\_index = index;}
+\DoxyCodeLine{207         }
+\DoxyCodeLine{208         String content = DCchrominance.\mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a1aa2da9ac92b83bcc496e673cc5f7e73}{getCategory}}(data, aux\_index);}
+\DoxyCodeLine{209         String[] categoryLength = content.split(\textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{210         }
+\DoxyCodeLine{211         \textcolor{keywordtype}{int} DCHLen = Integer.parseInt(categoryLength[0]);}
+\DoxyCodeLine{212         \textcolor{keywordtype}{int} length = Integer.parseInt(categoryLength[1]);}
+\DoxyCodeLine{213         }
+\DoxyCodeLine{214         aux\_index += length;}
+\DoxyCodeLine{215         }
+\DoxyCodeLine{216         \textcolor{keywordflow}{if} (DCHLen == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException (getClass().getName() + \textcolor{stringliteral}{".luminanceDecompressión: Error DCHLen -\/1"});}
+\DoxyCodeLine{217         }
+\DoxyCodeLine{218         block[0] = getNum(data.substring(aux\_index, aux\_index + DCHLen));}
+\DoxyCodeLine{219         }
+\DoxyCodeLine{220         aux\_index += DCHLen;}
+\DoxyCodeLine{221         }
+\DoxyCodeLine{222         \textcolor{keywordtype}{int} blockSize = 1;}
+\DoxyCodeLine{223         \textcolor{keywordflow}{while} (blockSize < 64) \{}
+\DoxyCodeLine{224             }
+\DoxyCodeLine{225             String actualPoint = ACchrominance.\mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_ada382394f2d3b37158bdd262fcf1098c}{getRunSize}}(data, aux\_index);}
+\DoxyCodeLine{226             String[] runSize = actualPoint.split(\textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{227             }
+\DoxyCodeLine{228             length = Integer.parseInt(runSize[2]);}
+\DoxyCodeLine{229             }
+\DoxyCodeLine{230             aux\_index += length;}
+\DoxyCodeLine{231             }
+\DoxyCodeLine{232             \textcolor{keywordtype}{int} x = Integer.parseInt(runSize[0]);}
+\DoxyCodeLine{233             \textcolor{keywordtype}{int} y = getNum(data.substring(aux\_index, aux\_index + Integer.parseInt(runSize[1])));}
+\DoxyCodeLine{234             }
+\DoxyCodeLine{235             \textcolor{keywordflow}{if} (x == -\/1 \&\& y == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException (getClass().getName() + \textcolor{stringliteral}{".luminanceDecompressión: actualPoint.x -\/1, actualPoint.y -\/1"});}
+\DoxyCodeLine{236             }
+\DoxyCodeLine{237             aux\_index += Integer.parseInt(runSize[1]);}
+\DoxyCodeLine{238             }
+\DoxyCodeLine{239             \textcolor{keywordflow}{if} (x == y \&\& y == 0) \{}
+\DoxyCodeLine{240                 \textcolor{keywordflow}{while} (blockSize < 64) \{}
+\DoxyCodeLine{241                     block[blockSize++] = 0;}
+\DoxyCodeLine{242                 \}}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{244             \}}
+\DoxyCodeLine{245             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < x; i++) \{}
+\DoxyCodeLine{246                 block[blockSize++] = 0;}
+\DoxyCodeLine{247             \}}
+\DoxyCodeLine{248             block[blockSize++] = y;}
+\DoxyCodeLine{249         \}}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251         \textcolor{keywordflow}{return} aux\_index;}
+\DoxyCodeLine{252     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_huffman_a7288477370c4b1306c207c46fb8f30ef}\label{class_domain_1_1_huffman_a7288477370c4b1306c207c46fb8f30ef}} 
+\index{Domain.Huffman@{Domain.Huffman}!luminanceCompression@{luminanceCompression}}
+\index{luminanceCompression@{luminanceCompression}!Domain.Huffman@{Domain.Huffman}}
+\doxysubsubsection{\texorpdfstring{luminanceCompression()}{luminanceCompression()}}
+{\footnotesize\ttfamily String Domain.\+Huffman.\+luminance\+Compression (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})}
+
+
+
+Fa la compressió d\textquotesingle{}un bloc de la luminància. 
+
+Inicialment aplica al block que li passen la codificació Run-\/\+Length. Després fa l\textquotesingle{}entropy coding. I finalment obté de les taules de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}} previament inicialitzades els valors codificats.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em array} & Block 8x8 ja transformat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String amb el block ja comprimit i codificat.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una String amb el block ja comprimit i codificat. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                     \{}
+\DoxyCodeLine{66         ArrayList<int[]> data = RLE(array);}
+\DoxyCodeLine{67         data = EC(data);}
+\DoxyCodeLine{68         }
+\DoxyCodeLine{69         String compressed = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{70         }
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} size = data.size();}
+\DoxyCodeLine{72         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{73             \textcolor{keywordtype}{int} x = data.get(i)[0];}
+\DoxyCodeLine{74             \textcolor{keywordtype}{int} y = data.get(i)[1];}
+\DoxyCodeLine{75             \textcolor{keywordtype}{int} z = data.get(i)[2];}
+\DoxyCodeLine{76             }
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (i == 0) \{}
+\DoxyCodeLine{78                 compressed += DCluminance.\mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a9e5a893a97254d9eb90f469d89fa4301}{getCodeWord}}(x);}
+\DoxyCodeLine{79                 compressed += NumbertoBinary(y);}
+\DoxyCodeLine{80             \}}
+\DoxyCodeLine{81             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{82                 compressed += ACluminance.\mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_a4686a4670b5183ceef142b7d63094847}{getCodeWord}}(x, y);}
+\DoxyCodeLine{83                 compressed += NumbertoBinary(z);}
+\DoxyCodeLine{84             \}}
+\DoxyCodeLine{85         \}}
+\DoxyCodeLine{86         }
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} compressed;}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_huffman_aeee3f89c71f75608c25204176f58473b}\label{class_domain_1_1_huffman_aeee3f89c71f75608c25204176f58473b}} 
+\index{Domain.Huffman@{Domain.Huffman}!luminanceDecompression@{luminanceDecompression}}
+\index{luminanceDecompression@{luminanceDecompression}!Domain.Huffman@{Domain.Huffman}}
+\doxysubsubsection{\texorpdfstring{luminanceDecompression()}{luminanceDecompression()}}
+{\footnotesize\ttfamily int Domain.\+Huffman.\+luminance\+Decompression (\begin{DoxyParamCaption}\item[{String}]{data,  }\item[{int\mbox{[}$\,$\mbox{]}}]{block,  }\item[{int}]{index }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+fa la descompressió d\textquotesingle{}un bloc de la luminància. 
+
+Inicialment obté els valors decodificats de les taules de \mbox{\hyperlink{class_domain_1_1_huffman}{Huffman}}. Aplica la inversa de l\textquotesingle{}entropy coding. I finalment aplica al block resultant la codificació inversa de Run-\/\+Length.
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em data} & String amb la codificació comprimida del component de luminància. \\
+\hline
+{\em block} & Block 8x8 obtingut de la descompressió de data. \\
+\hline
+{\em index} & Index que apunta a la primera posició del bloc dins de {\itshape data}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Posició dins de {\itshape data} on acaba el bloc. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape index} no apunta al final de {\itshape data}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna la posició final del bloc, on teóricament comença el següent. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104                                                                                                \{}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106         \textcolor{keywordtype}{int} aux\_index = index;}
+\DoxyCodeLine{107         }
+\DoxyCodeLine{108         String content = DCluminance.\mbox{\hyperlink{class_domain_1_1_binary_tree_d_c_a1aa2da9ac92b83bcc496e673cc5f7e73}{getCategory}}(data, aux\_index);}
+\DoxyCodeLine{109         String[] categoryLength = content.split(\textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{110         }
+\DoxyCodeLine{111         \textcolor{keywordtype}{int} DCHLen = Integer.parseInt(categoryLength[0]);}
+\DoxyCodeLine{112         \textcolor{keywordtype}{int} length = Integer.parseInt(categoryLength[1]);}
+\DoxyCodeLine{113         }
+\DoxyCodeLine{114         aux\_index += length;}
+\DoxyCodeLine{115         }
+\DoxyCodeLine{116         \textcolor{keywordflow}{if} (DCHLen == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException (getClass().getName() + \textcolor{stringliteral}{".luminanceDecompressión: Error DCHLen -\/1"});}
+\DoxyCodeLine{117         }
+\DoxyCodeLine{118         block[0] = getNum(data.substring(aux\_index, aux\_index + DCHLen));}
+\DoxyCodeLine{119         }
+\DoxyCodeLine{120         aux\_index += DCHLen;}
+\DoxyCodeLine{121         }
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} blockSize = 1;}
+\DoxyCodeLine{123         \textcolor{keywordflow}{while} (blockSize < 64) \{}
+\DoxyCodeLine{124             }
+\DoxyCodeLine{125             String actualPoint = ACluminance.\mbox{\hyperlink{class_domain_1_1_binary_tree_a_c_ada382394f2d3b37158bdd262fcf1098c}{getRunSize}}(data, aux\_index);}
+\DoxyCodeLine{126             String[] runSize = actualPoint.split(\textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{127             }
+\DoxyCodeLine{128             length = Integer.parseInt(runSize[2]);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130             aux\_index += length;}
+\DoxyCodeLine{131             }
+\DoxyCodeLine{132             \textcolor{keywordtype}{int} x = Integer.parseInt(runSize[0]);}
+\DoxyCodeLine{133             \textcolor{keywordtype}{int} y = getNum(data.substring(aux\_index, aux\_index + Integer.parseInt(runSize[1])));}
+\DoxyCodeLine{134             }
+\DoxyCodeLine{135             \textcolor{keywordflow}{if} (x == -\/1 \&\& y == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException (getClass().getName() + \textcolor{stringliteral}{".luminanceDecompressión: actualPoint.x -\/1, actualPoint.y -\/1"});}
+\DoxyCodeLine{136             }
+\DoxyCodeLine{137             aux\_index += Integer.parseInt(runSize[1]);}
+\DoxyCodeLine{138             }
+\DoxyCodeLine{139             \textcolor{keywordflow}{if} (x == y \&\& y == 0) \{}
+\DoxyCodeLine{140                 \textcolor{keywordflow}{while} (blockSize < 64) \{}
+\DoxyCodeLine{141                     block[blockSize++] = 0;}
+\DoxyCodeLine{142                 \}}
+\DoxyCodeLine{143                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{144             \}}
+\DoxyCodeLine{145             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < x; i++) \{}
+\DoxyCodeLine{146                 block[blockSize++] = 0;}
+\DoxyCodeLine{147             \}}
+\DoxyCodeLine{148             block[blockSize++] = y;}
+\DoxyCodeLine{149         \}}
+\DoxyCodeLine{150         }
+\DoxyCodeLine{151         \textcolor{keywordflow}{return} aux\_index;}
+\DoxyCodeLine{152     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_huffman_8java}{Huffman.\+java}}\end{DoxyCompactItemize}

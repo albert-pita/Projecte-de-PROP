@@ -1,0 +1,173 @@
+\hypertarget{class_domain_1_1_drivers_1_1_main_driver}{}\doxysection{Referència de la Classe Domain.\+Drivers.\+Main\+Driver}
+\label{class_domain_1_1_drivers_1_1_main_driver}\index{Domain.Drivers.MainDriver@{Domain.Drivers.MainDriver}}
+
+
+Aquest és el driver principal. Utilitzant-\/lo es poden provar tots els algorismes i totes les funcions.  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_domain_1_1_drivers_1_1_main_driver_a0be093a5603d75b8349013811bb04c5d}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_domain_1_1_drivers_1_1_main_driver}{Main\+Driver}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Aquest és el driver principal. Utilitzant-\/lo es poden provar tots els algorismes i totes les funcions. 
+
+\begin{DoxyAuthor}{Autor}
+Carlos Gascón Dominguez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_drivers_1_1_main_driver_a0be093a5603d75b8349013811bb04c5d}\label{class_domain_1_1_drivers_1_1_main_driver_a0be093a5603d75b8349013811bb04c5d}} 
+\index{Domain.Drivers.MainDriver@{Domain.Drivers.MainDriver}!main@{main}}
+\index{main@{main}!Domain.Drivers.MainDriver@{Domain.Drivers.MainDriver}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Domain.\+Drivers.\+Main\+Driver.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_domain_1_1_drivers_1_1_main_driver}{Main\+Driver}}. 
+
+Llegeix de l\textquotesingle{}entrada estàndard i escull l\textquotesingle{}opció que es vol provar. 
+\begin{DoxyParams}{Paràmetres}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+{\itshape Cert.} 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                                                \{}
+\DoxyCodeLine{80         Scanner in = \textcolor{keyword}{new} Scanner(System.in);}
+\DoxyCodeLine{81         }
+\DoxyCodeLine{82         String in\_path;}
+\DoxyCodeLine{83         String out\_path;}
+\DoxyCodeLine{84         String algorithm;}
+\DoxyCodeLine{85         }
+\DoxyCodeLine{86         System.out.println(\textcolor{stringliteral}{"o-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/o"});}
+\DoxyCodeLine{87         System.out.println(\textcolor{stringliteral}{"|     EL COMPRESSOR    |"});}
+\DoxyCodeLine{88         System.out.println(\textcolor{stringliteral}{"o-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/o"});}
+\DoxyCodeLine{89         }
+\DoxyCodeLine{90         showMenu();}
+\DoxyCodeLine{91         }
+\DoxyCodeLine{92         String choosen\_opt = in.nextLine();}
+\DoxyCodeLine{93         String choosen\_mode, choosen\_algorithm;}
+\DoxyCodeLine{94         \textcolor{keywordtype}{boolean} end = \textcolor{keyword}{false};}
+\DoxyCodeLine{95         }
+\DoxyCodeLine{96         \textcolor{keywordflow}{while}(!end) \{}
+\DoxyCodeLine{97             \textcolor{keywordflow}{switch} (choosen\_opt) \{}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{99                     System.out.println(\textcolor{stringliteral}{"Has seleccionat: Compressió"});}
+\DoxyCodeLine{100                     showMenuAutoMan();}
+\DoxyCodeLine{101                     choosen\_mode = in.nextLine();}
+\DoxyCodeLine{102                     \textcolor{keywordflow}{switch} (choosen\_mode) \{}
+\DoxyCodeLine{103                         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{104                             System.out.println(\textcolor{stringliteral}{"Has seleccionat el mode Automàtic"});}
+\DoxyCodeLine{105                             System.out.println(\textcolor{stringliteral}{"Introdueix el path al fitxer que vols descomprimir: "});}
+\DoxyCodeLine{106                             in\_path = in.nextLine();}
+\DoxyCodeLine{107                             System.out.println(\textcolor{stringliteral}{"Introdueix el path on vols que el teu fitxer descomprimit es guardi: "});}
+\DoxyCodeLine{108                             out\_path = in.nextLine();}
+\DoxyCodeLine{109                             algorithm = ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{getType}}(in\_path);}
+\DoxyCodeLine{110                             \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"DIR"}.equals(algorithm)) \{}
+\DoxyCodeLine{111                                 System.out.println(\textcolor{stringliteral}{"Descomprimint..."});}
+\DoxyCodeLine{112                                 ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a06d45f52040a7afa612a7617e7fcdf56}{decompressFolder}}(in\_path, out\_path);}
+\DoxyCodeLine{113                                 System.out.println(\textcolor{stringliteral}{"Descompressió finalitzada"});}
+\DoxyCodeLine{114                             \}       }
+\DoxyCodeLine{115                             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{116                                 System.out.println(\textcolor{stringliteral}{"Descomprimint..."});}
+\DoxyCodeLine{117                                 ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a94a087d9eeb3fa67c42074652409d6b0}{decompressFile}}(in\_path, out\_path);}
+\DoxyCodeLine{118                                 System.out.println(\textcolor{stringliteral}{"Descompressió finalitzada"});}
+\DoxyCodeLine{119                             \}}
+\DoxyCodeLine{120                             showMenu();}
+\DoxyCodeLine{121                             choosen\_opt = in.nextLine();}
+\DoxyCodeLine{122                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{123                         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:}
+\DoxyCodeLine{124                             showMenuSelAlg();}
+\DoxyCodeLine{125                             choosen\_algorithm = in.nextLine();}
+\DoxyCodeLine{126                             System.out.println(\textcolor{stringliteral}{"Introdueix el path al fitxer que vols comprimir: "});}
+\DoxyCodeLine{127                             in\_path = in.nextLine();}
+\DoxyCodeLine{128                             System.out.println(\textcolor{stringliteral}{"Introdueix el path on vols que el teu fitxer comprimit es guardi: "});}
+\DoxyCodeLine{129                             out\_path = in.nextLine();}
+\DoxyCodeLine{130                             \textcolor{keywordflow}{switch} (choosen\_algorithm)\{}
+\DoxyCodeLine{131                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{132                                     algorithm = \textcolor{stringliteral}{"LZ78"};}
+\DoxyCodeLine{133                                     ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}{compressFile}}(in\_path, out\_path, algorithm);}
+\DoxyCodeLine{134                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{135                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:}
+\DoxyCodeLine{136                                     algorithm = \textcolor{stringliteral}{"LZW"};}
+\DoxyCodeLine{137                                     ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}{compressFile}}(in\_path, out\_path, algorithm);}
+\DoxyCodeLine{138                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{139                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:}
+\DoxyCodeLine{140                                     algorithm = \textcolor{stringliteral}{"LZSS"};}
+\DoxyCodeLine{141                                     ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}{compressFile}}(in\_path, out\_path, algorithm);}
+\DoxyCodeLine{142                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{143                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"4"}:}
+\DoxyCodeLine{144                                     algorithm = \textcolor{stringliteral}{"JPEG"};}
+\DoxyCodeLine{145                                     ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a79c453b3853dac31ae9f8b1dea769c59}{compressFile}}(in\_path, out\_path, algorithm);}
+\DoxyCodeLine{146                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{147                             \}}
+\DoxyCodeLine{148                             showMenu();}
+\DoxyCodeLine{149                             choosen\_opt = in.nextLine();}
+\DoxyCodeLine{150                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{151                     \}}
+\DoxyCodeLine{152                     showMenu();}
+\DoxyCodeLine{153                     choosen\_opt = in.nextLine();}
+\DoxyCodeLine{154                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{155                 }
+\DoxyCodeLine{156                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:}
+\DoxyCodeLine{157                     System.out.println(\textcolor{stringliteral}{"Has seleccionat: Descompressió"});}
+\DoxyCodeLine{158                     System.out.println(\textcolor{stringliteral}{"Introdueix el path al fitxer que vols descomprimir: "});}
+\DoxyCodeLine{159                     }
+\DoxyCodeLine{160                     in\_path = in.nextLine();}
+\DoxyCodeLine{161                     }
+\DoxyCodeLine{162                     System.out.println(\textcolor{stringliteral}{"Introdueix el path on vols que el teu fitxer descomprimit es guardi: "});}
+\DoxyCodeLine{163                     }
+\DoxyCodeLine{164                     out\_path = in.nextLine();}
+\DoxyCodeLine{165                     }
+\DoxyCodeLine{166                     algorithm = ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a4e70116ec44a3456a9c58ff0e0c9f9a9}{getType}}(in\_path);}
+\DoxyCodeLine{167                     \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"DIR"}.equals(algorithm)) \{}
+\DoxyCodeLine{168                         System.out.println(\textcolor{stringliteral}{"Descomprimint..."});}
+\DoxyCodeLine{169                         ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a06d45f52040a7afa612a7617e7fcdf56}{decompressFolder}}(in\_path, out\_path);}
+\DoxyCodeLine{170                         System.out.println(\textcolor{stringliteral}{"Descompressió finalitzada"});}
+\DoxyCodeLine{171                     \}}
+\DoxyCodeLine{172                     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{173                         System.out.println(\textcolor{stringliteral}{"Descomprimint..."});}
+\DoxyCodeLine{174                         ctrlDomain.\mbox{\hyperlink{class_domain_1_1_ctrl_domain_a94a087d9eeb3fa67c42074652409d6b0}{decompressFile}}(in\_path, out\_path);}
+\DoxyCodeLine{175                         System.out.println(\textcolor{stringliteral}{"Descompressió finalitzada"});}
+\DoxyCodeLine{176                     \}}
+\DoxyCodeLine{177                     }
+\DoxyCodeLine{178                     showMenu();}
+\DoxyCodeLine{179                     choosen\_opt = in.nextLine();}
+\DoxyCodeLine{180                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{181                 }
+\DoxyCodeLine{182                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:}
+\DoxyCodeLine{183                     System.out.println(\textcolor{stringliteral}{"Sortida"});}
+\DoxyCodeLine{184                     end = \textcolor{keyword}{true};}
+\DoxyCodeLine{185                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{186                     }
+\DoxyCodeLine{187                 \textcolor{keywordflow}{default}: }
+\DoxyCodeLine{188                     System.out.println(\textcolor{stringliteral}{"Acció invàlida"});}
+\DoxyCodeLine{189                     showMenu();}
+\DoxyCodeLine{190                     choosen\_opt = in.nextLine();}
+\DoxyCodeLine{191             \}}
+\DoxyCodeLine{192         \}}
+\DoxyCodeLine{193     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\+Drivers/\mbox{\hyperlink{_main_driver_8java}{Main\+Driver.\+java}}\end{DoxyCompactItemize}

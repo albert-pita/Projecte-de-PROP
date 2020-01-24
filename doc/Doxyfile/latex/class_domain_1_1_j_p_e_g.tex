@@ -1,0 +1,269 @@
+\hypertarget{class_domain_1_1_j_p_e_g}{}\doxysection{Referència de la Classe Domain.\+J\+P\+EG}
+\label{class_domain_1_1_j_p_e_g}\index{Domain.JPEG@{Domain.JPEG}}
+
+
+Classe que respresenta l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Domain.\+J\+P\+EG\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_domain_1_1_j_p_e_g}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_j_p_e_g_a29f54d79c8afbb14442eb84f86b6b045}{J\+P\+EG}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_domain_1_1_j_p_e_g_a8696192e3b5720dd3358bc81d5323c7f}{J\+P\+EG}} (int quality)
+\begin{DoxyCompactList}\small\item\em Constructora donada una certa qualitat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_j_p_e_g_a48265494908b63f4aea8f4b84d088855}{compress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Comprimeix una imatge .ppm a un ficher .jpeg utilitzant l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} de compressió. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_domain_1_1_j_p_e_g_aff41cd2d6305ae404ce4d9e665fd29de}{decompress}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Descomprimeix una ficher .jpeg a una imatge .ppm utilitzant l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} de descompressió. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que respresenta l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta hereda de la classe abstracta \mbox{\hyperlink{class_domain_1_1_algorithm}{Algorithm}}. Consta de dues operacions. La primera és comprimir imatges \mbox{\hyperlink{class_domain_1_1_p_p_m}{P\+PM}} a .jpeg i la segona al revés, descomprimir imatges \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} a .ppm. Aquest algorisme està desarrollat en base a l\textquotesingle{}estàndard de \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g_a29f54d79c8afbb14442eb84f86b6b045}\label{class_domain_1_1_j_p_e_g_a29f54d79c8afbb14442eb84f86b6b045}} 
+\index{Domain.JPEG@{Domain.JPEG}!JPEG@{JPEG}}
+\index{JPEG@{JPEG}!Domain.JPEG@{Domain.JPEG}}
+\doxysubsubsection{\texorpdfstring{JPEG()}{JPEG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Domain.\+J\+P\+E\+G.\+J\+P\+EG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}exectua al declarar un nou \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. \begin{DoxyPrecond}{Precondició}
+{\itshape  Cert. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} buit. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g_a8696192e3b5720dd3358bc81d5323c7f}\label{class_domain_1_1_j_p_e_g_a8696192e3b5720dd3358bc81d5323c7f}} 
+\index{Domain.JPEG@{Domain.JPEG}!JPEG@{JPEG}}
+\index{JPEG@{JPEG}!Domain.JPEG@{Domain.JPEG}}
+\doxysubsubsection{\texorpdfstring{JPEG()}{JPEG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Domain.\+J\+P\+E\+G.\+J\+P\+EG (\begin{DoxyParamCaption}\item[{int}]{quality }\end{DoxyParamCaption})}
+
+
+
+Constructora donada una certa qualitat. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em quality} & Qualitat de la compressió \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape quality} esta entre 0 i 100. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una nova instància de \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} amb la qualitat igual a {\itshape quality}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                              \{}
+\DoxyCodeLine{55         this.quality = quality;}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g_a48265494908b63f4aea8f4b84d088855}\label{class_domain_1_1_j_p_e_g_a48265494908b63f4aea8f4b84d088855}} 
+\index{Domain.JPEG@{Domain.JPEG}!compress@{compress}}
+\index{compress@{compress}!Domain.JPEG@{Domain.JPEG}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void Domain.\+J\+P\+E\+G.\+compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Comprimeix una imatge .ppm a un ficher .jpeg utilitzant l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} de compressió. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}enviarà l\textquotesingle{}imatge comprimida a la capa de Persistencia a través del controlador de Domini perque la guardi en un fitxer amb la corresponent extensió .jpeg. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                \{  }
+\DoxyCodeLine{67         }
+\DoxyCodeLine{68         image = \textcolor{keyword}{new} PPM();}
+\DoxyCodeLine{69         image.\mbox{\hyperlink{class_domain_1_1_p_p_m_a7472008f21031f6bb5e69e2fe609a388}{RGBtoYCbCr}}();}
+\DoxyCodeLine{70         }
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} height = image.\mbox{\hyperlink{class_domain_1_1_p_p_m_acaec42cc4d518d471c84f41abab59115}{getHeight}}();}
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} width = image.\mbox{\hyperlink{class_domain_1_1_p_p_m_af3264ecc89975fcfee13cc6b12daa699}{getWidth}}();}
+\DoxyCodeLine{73         }
+\DoxyCodeLine{74         \textcolor{keywordtype}{int} checked\_height = JPEG\_Utils.checkHeight(height);}
+\DoxyCodeLine{75         \textcolor{keywordtype}{int} checked\_width = JPEG\_Utils.checkWidth(width);}
+\DoxyCodeLine{76         }
+\DoxyCodeLine{77         CtrlDomain.write(Integer.toBinaryString(height).getBytes());}
+\DoxyCodeLine{78         CtrlDomain.write(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{79         CtrlDomain.write(Integer.toBinaryString(width).getBytes());}
+\DoxyCodeLine{80         CtrlDomain.write(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{81         CtrlDomain.write(Integer.toBinaryString(quality).getBytes());}
+\DoxyCodeLine{82         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{83         }
+\DoxyCodeLine{84         \textcolor{keywordtype}{double}[][] treatedComponent = image.\mbox{\hyperlink{class_domain_1_1_p_p_m_a0a2b0261127ff6f00d688250c9487735}{getY}}();}
+\DoxyCodeLine{85         \textcolor{keywordtype}{int}[][] SQY = JPEG\_Utils.treatComponent(treatedComponent, checked\_height, checked\_width, height, width, quality, \textcolor{keyword}{true});}
+\DoxyCodeLine{86         }
+\DoxyCodeLine{87         treatedComponent = image.\mbox{\hyperlink{class_domain_1_1_p_p_m_a3c907b94c2fe7238941b422e2b43ff87}{getCb}}();}
+\DoxyCodeLine{88         \textcolor{keywordtype}{int}[][] SQCb = JPEG\_Utils.treatComponent(treatedComponent, checked\_height, checked\_width, height, width, quality, \textcolor{keyword}{false});}
+\DoxyCodeLine{89         }
+\DoxyCodeLine{90         treatedComponent = image.\mbox{\hyperlink{class_domain_1_1_p_p_m_aaa65ed64e3cc118a3f5634bb84416696}{getCr}}();}
+\DoxyCodeLine{91         \textcolor{keywordtype}{int}[][] SQCr = JPEG\_Utils.treatComponent(treatedComponent, checked\_height, checked\_width, height, width, quality, \textcolor{keyword}{false});}
+\DoxyCodeLine{92         }
+\DoxyCodeLine{93         huffman = \textcolor{keyword}{new} Huffman();}
+\DoxyCodeLine{94         }
+\DoxyCodeLine{95         \textcolor{keywordtype}{int} size = SQY.length;}
+\DoxyCodeLine{96         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{97             CtrlDomain.write((huffman.\mbox{\hyperlink{class_domain_1_1_huffman_a7288477370c4b1306c207c46fb8f30ef}{luminanceCompression}}(SQY[i])).getBytes());}
+\DoxyCodeLine{98         \}}
+\DoxyCodeLine{99         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{100         }
+\DoxyCodeLine{101         size = SQCb.length;}
+\DoxyCodeLine{102         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{103             CtrlDomain.write((huffman.\mbox{\hyperlink{class_domain_1_1_huffman_ae0b7de022d096c99e8318b038941a18b}{chrominanceCompression}}(SQCb[i])).getBytes());}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105         CtrlDomain.write(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{106         }
+\DoxyCodeLine{107         size = SQCr.length;}
+\DoxyCodeLine{108         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++) \{}
+\DoxyCodeLine{109             CtrlDomain.write((huffman.\mbox{\hyperlink{class_domain_1_1_huffman_ae0b7de022d096c99e8318b038941a18b}{chrominanceCompression}}(SQCr[i])).getBytes());}
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_j_p_e_g_aff41cd2d6305ae404ce4d9e665fd29de}\label{class_domain_1_1_j_p_e_g_aff41cd2d6305ae404ce4d9e665fd29de}} 
+\index{Domain.JPEG@{Domain.JPEG}!decompress@{decompress}}
+\index{decompress@{decompress}!Domain.JPEG@{Domain.JPEG}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily void Domain.\+J\+P\+E\+G.\+decompress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Descomprimeix una ficher .jpeg a una imatge .ppm utilitzant l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}} de descompressió. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}enviarà l\textquotesingle{}imatge descomprimida a la capa de Persistencia a través del controlador de Domini perque la guardi en un fitxer amb la corresponent extensió .ppm. 
+\end{DoxyPostcond}
+
+
+Reimplementat de \mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{Domain.\+Algorithm}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121                                                  \{}
+\DoxyCodeLine{122         String measurements, sY, sCb, sCr;}
+\DoxyCodeLine{123         }
+\DoxyCodeLine{124         \textcolor{keywordflow}{if} (this.\mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\_isFile}}()) \{}
+\DoxyCodeLine{125             CtrlDomain.initializeBufferedReader();}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127             measurements = CtrlDomain.readLine();}
+\DoxyCodeLine{128             sY = CtrlDomain.readLine();}
+\DoxyCodeLine{129             sCb = CtrlDomain.readLine();}
+\DoxyCodeLine{130             sCr = CtrlDomain.readLine();}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132             CtrlDomain.closeBufferedReader();}
+\DoxyCodeLine{133         \}}
+\DoxyCodeLine{134         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{135             measurements = CtrlDomain.readLine();}
+\DoxyCodeLine{136             sY = CtrlDomain.readLine();}
+\DoxyCodeLine{137             sCb = CtrlDomain.readLine();}
+\DoxyCodeLine{138             sCr = CtrlDomain.readLine();}
+\DoxyCodeLine{139         \}}
+\DoxyCodeLine{140         }
+\DoxyCodeLine{141         \textcolor{keywordtype}{int} height, width, comp\_quality;}
+\DoxyCodeLine{142         String[] split\_measurements = measurements.split(\textcolor{stringliteral}{" "});}
+\DoxyCodeLine{143         }
+\DoxyCodeLine{144         height = Integer.parseInt(split\_measurements[0], 2);}
+\DoxyCodeLine{145         width = Integer.parseInt(split\_measurements[1], 2);}
+\DoxyCodeLine{146         comp\_quality = Integer.parseInt(split\_measurements[2], 2);}
+\DoxyCodeLine{147         }
+\DoxyCodeLine{148         this.quality = comp\_quality;}
+\DoxyCodeLine{149         }
+\DoxyCodeLine{150         \textcolor{keywordtype}{int} checked\_height, checked\_width;}
+\DoxyCodeLine{151         checked\_height = JPEG\_Utils.checkHeight(height);}
+\DoxyCodeLine{152         checked\_width = JPEG\_Utils.checkWidth(width);}
+\DoxyCodeLine{153         }
+\DoxyCodeLine{154         ArrayList<int[]> SQY = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{155         ArrayList<int[]> SQCb = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{156         ArrayList<int[]> SQCr = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{157         }
+\DoxyCodeLine{158         huffman = \textcolor{keyword}{new} Huffman();}
+\DoxyCodeLine{159         }
+\DoxyCodeLine{160         \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{161         }
+\DoxyCodeLine{162         \textcolor{keywordflow}{while} (index < sY.length()) \{}
+\DoxyCodeLine{163             \textcolor{keywordtype}{int}[] block = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[64];}
+\DoxyCodeLine{164             index = huffman.\mbox{\hyperlink{class_domain_1_1_huffman_aeee3f89c71f75608c25204176f58473b}{luminanceDecompression}}(sY, block, index);}
+\DoxyCodeLine{165             SQY.add(block);}
+\DoxyCodeLine{166         \}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168         index = 0;}
+\DoxyCodeLine{169         }
+\DoxyCodeLine{170         \textcolor{keywordflow}{while} (index < sCb.length()) \{}
+\DoxyCodeLine{171             \textcolor{keywordtype}{int}[] block = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[64];}
+\DoxyCodeLine{172             index = huffman.\mbox{\hyperlink{class_domain_1_1_huffman_ab882b2c2c98e1afe0e180e26760bbe58}{chrominanceDecompression}}(sCb, block, index);}
+\DoxyCodeLine{173             SQCb.add(block);}
+\DoxyCodeLine{174         \}}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176         index = 0;}
+\DoxyCodeLine{177         }
+\DoxyCodeLine{178         \textcolor{keywordflow}{while} (index < sCr.length()) \{}
+\DoxyCodeLine{179             \textcolor{keywordtype}{int}[] block = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[64];}
+\DoxyCodeLine{180             index = huffman.\mbox{\hyperlink{class_domain_1_1_huffman_ab882b2c2c98e1afe0e180e26760bbe58}{chrominanceDecompression}}(sCr, block, index);}
+\DoxyCodeLine{181             SQCr.add(block);}
+\DoxyCodeLine{182         \}}
+\DoxyCodeLine{183         }
+\DoxyCodeLine{184         \textcolor{keywordtype}{double}[][] Y = JPEG\_Utils.untreatComponent(SQY, checked\_height, checked\_width, quality, \textcolor{keyword}{true});}
+\DoxyCodeLine{185         \textcolor{keywordtype}{double}[][] Cb = JPEG\_Utils.untreatComponent(SQCb, checked\_height, checked\_width, quality, \textcolor{keyword}{false});}
+\DoxyCodeLine{186         \textcolor{keywordtype}{double}[][] Cr = JPEG\_Utils.untreatComponent(SQCr, checked\_height, checked\_width, quality, \textcolor{keyword}{false});}
+\DoxyCodeLine{187         }
+\DoxyCodeLine{188         image = \textcolor{keyword}{new} PPM(Y, Cb, Cr, height, width);}
+\DoxyCodeLine{189         image.\mbox{\hyperlink{class_domain_1_1_p_p_m_a78f842de6845b6d5290309c89928e4b4}{YCbCrtoRGB}}();}
+\DoxyCodeLine{190         image.\mbox{\hyperlink{class_domain_1_1_p_p_m_a4bd3bbf393ea878c1d5b4441dbcb5785}{write}}();}
+\DoxyCodeLine{191     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_j_p_e_g_8java}{J\+P\+E\+G.\+java}}\end{DoxyCompactItemize}

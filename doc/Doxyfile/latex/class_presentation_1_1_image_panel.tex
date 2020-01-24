@@ -1,0 +1,99 @@
+\hypertarget{class_presentation_1_1_image_panel}{}\doxysection{Referència de la Classe Presentation.\+Image\+Panel}
+\label{class_presentation_1_1_image_panel}\index{Presentation.ImagePanel@{Presentation.ImagePanel}}
+
+
+Classe que s\textquotesingle{}hereda de J\+Panel perque en ell es puguin mostrar imatges.  
+
+
+Diagrama d\textquotesingle{}Herència per a Presentation.\+Image\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_presentation_1_1_image_panel}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_presentation_1_1_image_panel_a9f8ee3bb2969c8bd1e257ff364835c2f}{Image\+Panel}} (Buffered\+Image image)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_presentation_1_1_image_panel_a1c3dd94ebbfb12611dc8092123431e01}{paint\+Component}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}imatge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que s\textquotesingle{}hereda de J\+Panel perque en ell es puguin mostrar imatges. 
+
+Implementa l\textquotesingle{}operació paint\+Component per tal que al J\+Panel es puguin mostrar imatges.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_presentation_1_1_image_panel_a9f8ee3bb2969c8bd1e257ff364835c2f}\label{class_presentation_1_1_image_panel_a9f8ee3bb2969c8bd1e257ff364835c2f}} 
+\index{Presentation.ImagePanel@{Presentation.ImagePanel}!ImagePanel@{ImagePanel}}
+\index{ImagePanel@{ImagePanel}!Presentation.ImagePanel@{Presentation.ImagePanel}}
+\doxysubsubsection{\texorpdfstring{ImagePanel()}{ImagePanel()}}
+{\footnotesize\ttfamily Presentation.\+Image\+Panel.\+Image\+Panel (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{image }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em image} & Imatge que es vol mostrar al panel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat una nova instància de \mbox{\hyperlink{class_presentation_1_1_image_panel}{Image\+Panel}}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                            \{}
+\DoxyCodeLine{41         this.image = image;}
+\DoxyCodeLine{42         this.setPreferredSize(\textcolor{keyword}{new} Dimension(image.getHeight(), image.getWidth()));}
+\DoxyCodeLine{43     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_presentation_1_1_image_panel_a1c3dd94ebbfb12611dc8092123431e01}\label{class_presentation_1_1_image_panel_a1c3dd94ebbfb12611dc8092123431e01}} 
+\index{Presentation.ImagePanel@{Presentation.ImagePanel}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!Presentation.ImagePanel@{Presentation.ImagePanel}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void Presentation.\+Image\+Panel.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}imatge. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em g} & Grafics per mostrar l\textquotesingle{}imatge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha pinta l\textquotesingle{}imatge al panel. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                            \{}
+\DoxyCodeLine{54         super.paintComponent(g);}
+\DoxyCodeLine{55         g.drawImage(image, 0, 0, \textcolor{keyword}{null});}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Presentation/\mbox{\hyperlink{_image_panel_8java}{Image\+Panel.\+java}}\end{DoxyCompactItemize}

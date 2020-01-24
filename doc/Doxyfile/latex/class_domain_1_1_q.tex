@@ -1,0 +1,226 @@
+\hypertarget{class_domain_1_1_q}{}\doxysection{Referència de la Classe Domain.\+Q}
+\label{class_domain_1_1_q}\index{Domain.Q@{Domain.Q}}
+
+
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}} (int quality)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_q_aa10fc483796c1e5096d2a65ef465864b}{luminance\+Quantization}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} M)
+\begin{DoxyCompactList}\small\item\em Aplica la Quantificació a la luminància. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_q_a3e8ca00fec53fd84ca326422b138a01d}{inverse\+Luminance\+Quantization}} (int\mbox{[}$\,$\mbox{]} A)
+\begin{DoxyCompactList}\small\item\em Aplica la Quantificació inversa a la luminància. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_q_a4ce78a93c43aea10c198c6fa9716b15f}{chrominance\+Quantization}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} M)
+\begin{DoxyCompactList}\small\item\em Aplica la Quantificació a la crominància. \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_domain_1_1_q_af7559a8c2904c7f98002931801a266e9}{inverse\+Chrominance\+Quantization}} (int\mbox{[}$\,$\mbox{]} A)
+\begin{DoxyCompactList}\small\item\em Aplica la Quantificació inversa a la crominància. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe funcional de l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}. 
+
+Aquesta classe representa la classe de Quantificació i totes les operacions necessaries que es necessiten d\textquotesingle{}aquesta en el procés de realitzar l\textquotesingle{}algorisme \mbox{\hyperlink{class_domain_1_1_j_p_e_g}{J\+P\+EG}}.
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}\label{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}} 
+\index{Domain.Q@{Domain.Q}!Q@{Q}}
+\index{Q@{Q}!Domain.Q@{Domain.Q}}
+\doxysubsubsection{\texorpdfstring{Q()}{Q()}}
+{\footnotesize\ttfamily Domain.\+Q.\+Q (\begin{DoxyParamCaption}\item[{int}]{quality }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em quality} & Qualitat de l\textquotesingle{}imatge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Inicialitza les matrius de quantificació acorde amb la qualitat donada. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                           \{}
+\DoxyCodeLine{65         QualityLuminance = createQLuminance(quality);}
+\DoxyCodeLine{66         QualityChrominance = createQChrominance(quality);}
+\DoxyCodeLine{67     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_q_a4ce78a93c43aea10c198c6fa9716b15f}\label{class_domain_1_1_q_a4ce78a93c43aea10c198c6fa9716b15f}} 
+\index{Domain.Q@{Domain.Q}!chrominanceQuantization@{chrominanceQuantization}}
+\index{chrominanceQuantization@{chrominanceQuantization}!Domain.Q@{Domain.Q}}
+\doxysubsubsection{\texorpdfstring{chrominanceQuantization()}{chrominanceQuantization()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Domain.\+Q.\+chrominance\+Quantization (\begin{DoxyParamCaption}\item[{double}]{M\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Aplica la Quantificació a la crominància. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em M} & Matriu de doubles que representa el block tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un vector de ints el qual es el resultat d\textquotesingle{}aplica la Quantificació a {\itshape M}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                                                         \{}
+\DoxyCodeLine{172         \textcolor{keywordtype}{int}[] \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[64];}
+\DoxyCodeLine{173         }
+\DoxyCodeLine{174         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{175             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{176                 \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}}[(8*i)+j] = (\textcolor{keywordtype}{int}) round(M[i][j] / QualityChrominance[i][j]);}
+\DoxyCodeLine{177             \}}
+\DoxyCodeLine{178         \}}
+\DoxyCodeLine{179         }
+\DoxyCodeLine{180         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}};}
+\DoxyCodeLine{181     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_q_af7559a8c2904c7f98002931801a266e9}\label{class_domain_1_1_q_af7559a8c2904c7f98002931801a266e9}} 
+\index{Domain.Q@{Domain.Q}!inverseChrominanceQuantization@{inverseChrominanceQuantization}}
+\index{inverseChrominanceQuantization@{inverseChrominanceQuantization}!Domain.Q@{Domain.Q}}
+\doxysubsubsection{\texorpdfstring{inverseChrominanceQuantization()}{inverseChrominanceQuantization()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+Q.\+inverse\+Chrominance\+Quantization (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{A }\end{DoxyParamCaption})}
+
+
+
+Aplica la Quantificació inversa a la crominància. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em A} & Vector de ints que representa el block tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una matriu de doubles la qual es el resultat d\textquotesingle{}aplicar la Quantificació inversa a {\itshape A}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191                                                                \{      }
+\DoxyCodeLine{192         \textcolor{keywordtype}{double}[][] iQ = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[8][8];}
+\DoxyCodeLine{193         }
+\DoxyCodeLine{194         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{195             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{196                 iQ[i][j] = A[(8*i)+j] * QualityChrominance[i][j];}
+\DoxyCodeLine{197             \}}
+\DoxyCodeLine{198         \}}
+\DoxyCodeLine{199         }
+\DoxyCodeLine{200         \textcolor{keywordflow}{return} iQ;}
+\DoxyCodeLine{201     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_q_a3e8ca00fec53fd84ca326422b138a01d}\label{class_domain_1_1_q_a3e8ca00fec53fd84ca326422b138a01d}} 
+\index{Domain.Q@{Domain.Q}!inverseLuminanceQuantization@{inverseLuminanceQuantization}}
+\index{inverseLuminanceQuantization@{inverseLuminanceQuantization}!Domain.Q@{Domain.Q}}
+\doxysubsubsection{\texorpdfstring{inverseLuminanceQuantization()}{inverseLuminanceQuantization()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Domain.\+Q.\+inverse\+Luminance\+Quantization (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{A }\end{DoxyParamCaption})}
+
+
+
+Aplica la Quantificació inversa a la luminància. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em A} & Vector de ints que representa el block tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna una matriu de doubles la qual es el resultat d\textquotesingle{}aplicar la Quantificació inversa a {\itshape A}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151                                                              \{}
+\DoxyCodeLine{152         \textcolor{keywordtype}{double}[][] iQ = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[8][8];}
+\DoxyCodeLine{153         }
+\DoxyCodeLine{154         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{155             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{156                 iQ[i][j] = A[(8*i)+j] * QualityLuminance[i][j];}
+\DoxyCodeLine{157             \}}
+\DoxyCodeLine{158         \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160         \textcolor{keywordflow}{return} iQ;}
+\DoxyCodeLine{161     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_q_aa10fc483796c1e5096d2a65ef465864b}\label{class_domain_1_1_q_aa10fc483796c1e5096d2a65ef465864b}} 
+\index{Domain.Q@{Domain.Q}!luminanceQuantization@{luminanceQuantization}}
+\index{luminanceQuantization@{luminanceQuantization}!Domain.Q@{Domain.Q}}
+\doxysubsubsection{\texorpdfstring{luminanceQuantization()}{luminanceQuantization()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Domain.\+Q.\+luminance\+Quantization (\begin{DoxyParamCaption}\item[{double}]{M\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Aplica la Quantificació a la luminància. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em M} & Matriu de doubles que representa el block tractat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna un vector de ints el qual es el resultat d\textquotesingle{}aplica la Quantificació a {\itshape M}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                       \{}
+\DoxyCodeLine{132         \textcolor{keywordtype}{int}[] \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[64];}
+\DoxyCodeLine{133         }
+\DoxyCodeLine{134         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{135             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 8; j++) \{}
+\DoxyCodeLine{136                 \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}}[(8*i)+j] = (\textcolor{keywordtype}{int}) round(M[i][j] / QualityLuminance[i][j]);}
+\DoxyCodeLine{137             \}}
+\DoxyCodeLine{138         \}}
+\DoxyCodeLine{139         }
+\DoxyCodeLine{140         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_domain_1_1_q_a72fdb66c11dc363e33433a407eb46c6c}{Q}};}
+\DoxyCodeLine{141     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_q_8java}{Q.\+java}}\end{DoxyCompactItemize}

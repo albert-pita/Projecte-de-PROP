@@ -1,0 +1,184 @@
+\hypertarget{class_persistence_1_1_statistics_data_base}{}\doxysection{Referència de la Classe Persistence.\+Statistics\+Data\+Base}
+\label{class_persistence_1_1_statistics_data_base}\index{Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}}
+
+
+Aquest el gestor de BD dels estadístics.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_persistence_1_1_statistics_data_base_ae681d54c4abafeff578f7bc5dae60cb8}{create\+Data\+Base}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a5fec3534a75f93d955629d0172787e03}{save\+Statistics}} (String statistics)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Guarda el paràmetre {\itshape  statistics } a la BD. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a172f1f0708baddfa26256c7e0b2bf597}{get\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Retornar totes les estadístiques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_persistence_1_1_statistics_data_base_a43cc8f4a50fa7874c9a20da4cb13e49d}{delete\+Table\+Content}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Eliminar totes les estadístiques. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Aquest el gestor de BD dels estadístics. 
+
+Base de dades de les estadístiques
+
+\begin{DoxyAuthor}{Autor}
+Adrià Ventura i Herce 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_persistence_1_1_statistics_data_base_ae681d54c4abafeff578f7bc5dae60cb8}\label{class_persistence_1_1_statistics_data_base_ae681d54c4abafeff578f7bc5dae60cb8}} 
+\index{Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}!createDataBase@{createDataBase}}
+\index{createDataBase@{createDataBase}!Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}}
+\doxysubsubsection{\texorpdfstring{createDataBase()}{createDataBase()}}
+{\footnotesize\ttfamily void Persistence.\+Statistics\+Data\+Base.\+create\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Constructora per defecte. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea una nova instància de base de dades d\textquotesingle{}estadístiques. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                                     \{}
+\DoxyCodeLine{42             }
+\DoxyCodeLine{43         statisticsDataBase = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"HistorialEstadístic.txt"});}
+\DoxyCodeLine{44         \textcolor{keywordflow}{if} (!statisticsDataBase.exists()) \{}
+\DoxyCodeLine{45             statisticsDataBase.createNewFile();}
+\DoxyCodeLine{46         \}}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_statistics_data_base_a43cc8f4a50fa7874c9a20da4cb13e49d}\label{class_persistence_1_1_statistics_data_base_a43cc8f4a50fa7874c9a20da4cb13e49d}} 
+\index{Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}!deleteTableContent@{deleteTableContent}}
+\index{deleteTableContent@{deleteTableContent}!Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}}
+\doxysubsubsection{\texorpdfstring{deleteTableContent()}{deleteTableContent()}}
+{\footnotesize\ttfamily void Persistence.\+Statistics\+Data\+Base.\+delete\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Eliminar totes les estadístiques. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha eliminat totes les dades emmagatzemades a la BD. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                                                         \{}
+\DoxyCodeLine{103         \textcolor{keywordflow}{try} (FileWriter fW = \textcolor{keyword}{new} FileWriter(\textcolor{stringliteral}{"HistorialEstadístic.txt"}, \textcolor{keyword}{false}); PrintWriter pW = \textcolor{keyword}{new} PrintWriter(fW, \textcolor{keyword}{false})) \{}
+\DoxyCodeLine{104             pW.flush();}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_statistics_data_base_a172f1f0708baddfa26256c7e0b2bf597}\label{class_persistence_1_1_statistics_data_base_a172f1f0708baddfa26256c7e0b2bf597}} 
+\index{Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}!getTableContent@{getTableContent}}
+\index{getTableContent@{getTableContent}!Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}}
+\doxysubsubsection{\texorpdfstring{getTableContent()}{getTableContent()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ Persistence.\+Statistics\+Data\+Base.\+get\+Table\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Retornar totes les estadístiques. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Retorna}
+Retorna un Array\+List amb tot el contingut de la BD.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna tota la taula de estadístiques. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                                   \{}
+\DoxyCodeLine{74         ArrayList<String> tableContent = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{75         }
+\DoxyCodeLine{76         File table = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"HistorialEstadístic.txt"});}
+\DoxyCodeLine{77         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{78             BufferedReader bR = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} FileReader(table));}
+\DoxyCodeLine{79             String linea = bR.readLine();}
+\DoxyCodeLine{80             \textcolor{keywordflow}{while} (linea != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{81                 tableContent.add(linea);}
+\DoxyCodeLine{82                 linea = bR.readLine();}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84             }
+\DoxyCodeLine{85             \textcolor{keywordflow}{return} tableContent;}
+\DoxyCodeLine{86         \} \textcolor{keywordflow}{catch} (FileNotFoundException ex) \{}
+\DoxyCodeLine{87             Logger.getLogger(viewStatistics.class.getName()).log(Level.SEVERE, \textcolor{keyword}{null}, ex);}
+\DoxyCodeLine{88         \} \textcolor{keywordflow}{catch} (IOException ex) \{}
+\DoxyCodeLine{89             Logger.getLogger(viewStatistics.class.getName()).log(Level.SEVERE, \textcolor{keyword}{null}, ex);}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         }
+\DoxyCodeLine{92         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{93     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_persistence_1_1_statistics_data_base_a5fec3534a75f93d955629d0172787e03}\label{class_persistence_1_1_statistics_data_base_a5fec3534a75f93d955629d0172787e03}} 
+\index{Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}!saveStatistics@{saveStatistics}}
+\index{saveStatistics@{saveStatistics}!Persistence.StatisticsDataBase@{Persistence.StatisticsDataBase}}
+\doxysubsubsection{\texorpdfstring{saveStatistics()}{saveStatistics()}}
+{\footnotesize\ttfamily void Persistence.\+Statistics\+Data\+Base.\+save\+Statistics (\begin{DoxyParamCaption}\item[{String}]{statistics }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Guarda el paràmetre {\itshape  statistics } a la BD. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em statistics} & Estadístiques a guardar a la BD. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha guardat les estadístiques a la base de dades. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                                                      \{}
+\DoxyCodeLine{58         BufferedWriter bw;}
+\DoxyCodeLine{59         bw = \textcolor{keyword}{new} BufferedWriter(\textcolor{keyword}{new} FileWriter(statisticsDataBase, \textcolor{keyword}{true}));}
+\DoxyCodeLine{60         \textcolor{keywordflow}{if} (statisticsDataBase.length() != 0) bw.newLine();}
+\DoxyCodeLine{61         bw.write(statistics);}
+\DoxyCodeLine{62         bw.close();}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Persistence/\mbox{\hyperlink{_statistics_data_base_8java}{Statistics\+Data\+Base.\+java}}\end{DoxyCompactItemize}

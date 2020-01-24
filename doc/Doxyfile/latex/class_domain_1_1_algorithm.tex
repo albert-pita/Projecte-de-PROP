@@ -1,0 +1,132 @@
+\hypertarget{class_domain_1_1_algorithm}{}\doxysection{Referència de la Classe Domain.\+Algorithm}
+\label{class_domain_1_1_algorithm}\index{Domain.Algorithm@{Domain.Algorithm}}
+
+
+Classe abstracta que representa un algorisme de compressió i descompressió.  
+
+
+Diagrama d\textquotesingle{}Herència per a Domain.\+Algorithm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_domain_1_1_algorithm}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}{set\+\_\+is\+File}} (boolean b)
+\begin{DoxyCompactList}\small\item\em Setter per modificar l\textquotesingle{}atribut privat {\itshape is\+File}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}{get\+\_\+is\+File}} ()
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}atribut privat {\itshape is\+File}. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}{compress}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Operació abstracta de compressió. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}{decompress}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Operació abstracta de descompressió. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe abstracta que representa un algorisme de compressió i descompressió. 
+
+\begin{DoxyAuthor}{Autor}
+Albert Pita Argemí 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}\label{class_domain_1_1_algorithm_ae2bb8a7373316af6f31375221053f652}} 
+\index{Domain.Algorithm@{Domain.Algorithm}!compress@{compress}}
+\index{compress@{compress}!Domain.Algorithm@{Domain.Algorithm}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily abstract void Domain.\+Algorithm.\+compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Operació abstracta de compressió. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplementat a \mbox{\hyperlink{class_domain_1_1_j_p_e_g_a48265494908b63f4aea8f4b84d088855}{Domain.\+J\+P\+EG}}, \mbox{\hyperlink{class_domain_1_1_l_z_s_s_a62f82c5e3504a6644a74af5e28aefc94}{Domain.\+L\+Z\+SS}}, \mbox{\hyperlink{class_domain_1_1_l_z78_ad467131c62d2577d333d0245a2769655}{Domain.\+L\+Z78}} i \mbox{\hyperlink{class_domain_1_1_l_z_w_ac1f5b409490826433b468070f7c93d52}{Domain.\+L\+ZW}}.
+
+\mbox{\Hypertarget{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}\label{class_domain_1_1_algorithm_ac90ae54fe10529afa240727c87765f86}} 
+\index{Domain.Algorithm@{Domain.Algorithm}!decompress@{decompress}}
+\index{decompress@{decompress}!Domain.Algorithm@{Domain.Algorithm}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily abstract void Domain.\+Algorithm.\+decompress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Operació abstracta de descompressió. 
+
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplementat a \mbox{\hyperlink{class_domain_1_1_l_z_s_s_a970078d73a993c8189860b770fd767ff}{Domain.\+L\+Z\+SS}}, \mbox{\hyperlink{class_domain_1_1_j_p_e_g_aff41cd2d6305ae404ce4d9e665fd29de}{Domain.\+J\+P\+EG}}, \mbox{\hyperlink{class_domain_1_1_l_z78_adab41519f6d2a8e10a3991f7e8a0da9b}{Domain.\+L\+Z78}} i \mbox{\hyperlink{class_domain_1_1_l_z_w_ab0a6c2c2f9e5f6cd03ac05e3ad800144}{Domain.\+L\+ZW}}.
+
+\mbox{\Hypertarget{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}\label{class_domain_1_1_algorithm_afb2550a7d958ce52e691b8d6c01760f5}} 
+\index{Domain.Algorithm@{Domain.Algorithm}!get\_isFile@{get\_isFile}}
+\index{get\_isFile@{get\_isFile}!Domain.Algorithm@{Domain.Algorithm}}
+\doxysubsubsection{\texorpdfstring{get\_isFile()}{get\_isFile()}}
+{\footnotesize\ttfamily boolean Domain.\+Algorithm.\+get\+\_\+is\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de l\textquotesingle{}atribut privat {\itshape is\+File}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna el valor de {\itshape is\+File}.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat el valor de l\textquotesingle{}atribut privat {\itshape is\+File}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                 \{}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} isFile;}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}\label{class_domain_1_1_algorithm_a4e78a5bb66fb831b2b0c14a79650f090}} 
+\index{Domain.Algorithm@{Domain.Algorithm}!set\_isFile@{set\_isFile}}
+\index{set\_isFile@{set\_isFile}!Domain.Algorithm@{Domain.Algorithm}}
+\doxysubsubsection{\texorpdfstring{set\_isFile()}{set\_isFile()}}
+{\footnotesize\ttfamily void Domain.\+Algorithm.\+set\+\_\+is\+File (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Setter per modificar l\textquotesingle{}atribut privat {\itshape is\+File}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em b} & Valor que is\+File ha de prendre.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert.} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+L\textquotesingle{}atribut privat {\itshape is\+File} té ara valor {\itshape b}. 
+\end{DoxyPostcond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                       \{}
+\DoxyCodeLine{34         isFile = b;}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Albert Pita/\+Desktop/\+P\+R\+O\+P-\/21.\+1/\+P\+R\+O\+P/src/\+Domain/\mbox{\hyperlink{_algorithm_8java}{Algorithm.\+java}}\end{DoxyCompactItemize}
